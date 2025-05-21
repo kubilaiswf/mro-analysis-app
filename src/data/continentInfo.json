@@ -1,0 +1,485 @@
+{
+    "rapor_basligi": "Havacılık MRO Pazarları Genel Görünümü ve Projeksiyonları",
+    "bolgeler": [
+      {
+        "bolge_adi": "Avrupa",
+        "genel_gorunum_basligi": "Avrupa Havacılık MRO Pazarının Genel Görünümü",
+        "pazar_buyuklugu_ve_trendler": {
+          "baslik": "1. Pazarın Büyüklüğü ve Trendleri",
+          "veriler": [
+            {
+              "yil": "2023",
+              "pazar_buyuklugu_usd": "21,29 milyar USD",
+              "buyume_orani": null
+            },
+            {
+              "yil": "2025",
+              "pazar_buyuklugu_usd": "22,1 milyar USD",
+              "buyume_orani": "%2,3"
+            },
+            {
+              "yil": "2030 (Tahmini)",
+              "pazar_buyuklugu_usd": "24,81 milyar USD",
+              "buyume_orani": "%2,2"
+            }
+          ]
+        },
+        "segment_bazinda_dagilim": {
+          "baslik": "Segment Bazında Dağılım",
+          "aciklama": "Havacılık MRO sektörü dört ana segmentten oluşur. Avrupa pazarında bu segmentlerin oranları ve trendleri aşağıdaki gibidir:",
+          "pasta_grafigi_aciklama": "MRO (Bakım, Onarım ve Revizyon) pazar segmentlerinin yüzde dağılımını gösteren pasta grafiği. Motor MRO segmenti %38.4 ile en büyük paya sahip, onu sırasıyla Uçak Hattı Bakımı (%23.2), Uçak Gövde Bakımı (%20.2) ve Bileşen MRO (%18.2) takip ediyor."
+        },
+        "bolgesel_liderler": {
+          "baslik": "3. Bölgesel Liderler",
+          "ulkeler": [
+            {
+              "ulke": "Almanya",
+              "aciklama": "Lufthansa Technik'in merkezidir. Avrupa'nın en büyük MRO kapasitesine sahip ülkelerindendir."
+            },
+            {
+              "ulke": "Fransa",
+              "aciklama": "Airbus'ın bakım faaliyetleri, Safran gibi motor MRO firmaları burada yoğunlaşır."
+            },
+            {
+              "ulke": "İngiltere",
+              "aciklama": "Rolls-Royce'un motor MRO hizmetleri bu ülkededir."
+            },
+            {
+              "ulke": "Portekiz",
+              "aciklama": "TAP Maintenance & Engineering, Güney Avrupa'da stratejik rol oynar."
+            },
+            {
+              "ulke": "Polonya, Macaristan",
+              "aciklama": "Düşük maliyetli bakım hizmetleri sunan Doğu Avrupa ülkeleri, yeni yatırımlar için cazip hale geliyor."
+            }
+          ]
+        },
+        "mevcut_durum_ve_projeksiyonlar_genel": {
+          "baslik": "Avrupa MRO Pazarı ve Gelecek Projeksiyonları",
+          "mevcut_ucak_sayisi": {
+            "bilgi": "2023 itibarıyla Avrupa'da 5.000'den fazla ticari uçak bulunmaktadır."
+          },
+          "projeksiyon_2033": {
+            "bilgi": "Bu sayının 2033'e kadar yaklaşık 7.000'e ulaşması beklenmektedir."
+          }
+        },
+        "yatirim_icin_stratejik_gerekceler": {
+          "baslik": "Yatırım İçin Stratejik Gerekçeler",
+          "yeni_ucak_siparisleri": {
+            "baslik": "1.Yeni Uçak Siparişleri",
+            "aciklama": "Avrupa'daki havayolu şirketleri, filolarını modernize etmek ve genişletmek amacıyla önemli sayıda yeni uçak siparişi vermektedir. Bu siparişler, gelecekteki MRO hizmetlerine olan talebi artıracaktır.",
+            "en_fazla_siparis_veren_havayollari_2015_2025": [
+              {
+                "sira": 1,
+                "havayolu": "Wizz Air (Macaristan)",
+                "siparis_sayisi": "273 uçak (2018 itibarıyla)",
+                "agirlikli_modeller": "Airbus A320neo ve A321neo modelleri"
+              },
+              {
+                "sira": 2,
+                "havayolu": "EasyJet (Birleşik Krallık)",
+                "siparis_sayisi": "157 uçak (2023 itibarıyla)",
+                "agirlikli_modeller": "Airbus A320neo ve A321neo modelleri"
+              },
+              {
+                "sira": 3,
+                "havayolu": "International Airlines Group (IAG) – İspanya/İngiltere",
+                "siparis_sayisi": "71 uçak (2025 itibarıyla)",
+                "detay": "32 Boeing 787-10 ve 21 Airbus A330-900neo dahil"
+              },
+              {
+                "sira": 4,
+                "havayolu": "Air France-KLM (Fransa/Hollanda)",
+                "siparis_sayisi": "50 Airbus A350 (2023 itibarıyla)",
+                "ek_bilgi": "Ayrıca Airbus A220-300 siparişleri de bulunmaktadır"
+              },
+              {
+                "sira": 5,
+                "havayolu": "Ryanair (İrlanda)",
+                "siparis_sayisi": "210 Boeing 737 MAX 8 (2020 itibarıyla)"
+              },
+              {
+                "sira": 6,
+                "havayolu": "Lufthansa Group (Almanya)",
+                "siparis_sayisi": "40 Airbus A220-300 (2023 itibarıyla)"
+              },
+              {
+                "sira": 7,
+                "havayolu": "Pegasus Airlines (Türkiye)",
+                "siparis_sayisi": "100'ün üzerinde Airbus A320neo ve A321neo"
+              },
+              {
+                "sira": 8,
+                "havayolu": "Vueling (İspanya)",
+                "siparis_sayisi": "47 Airbus A320neo (IAG bünyesinde)"
+              },
+              {
+                "sira": 9,
+                "havayolu": "AirBaltic (Letonya)",
+                "siparis_sayisi": "90 Airbus A220-300 (2024 itibarıyla)"
+              }
+            ]
+          },
+          "yaslanan_ucak_filolari": {
+            "baslik": "2. Yaşlanan Uçak Filoları: Bakım Talebini Artıran Bir Faktör",
+            "aciklama": "Avrupa'daki birçok havayolu şirketi, yaşlanan uçak filoları nedeniyle artan bakım ve modernizasyon ihtiyaçlarıyla karşı karşıyadır. Bu durum, MRO hizmetlerine olan talebi doğrudan etkilemektedir.",
+            "ornekler": [
+              {
+                "sirket": "Air France",
+                "bilgi": "2023 yılı itibarıyla Air France filosunun ortalama yaşı 12,9 yıldır. Özellikle uzun menzilli uçakların ortalama yaşı 13,4 yıl olup, bu segmentteki uçaklar daha yoğun bakım gereksinimi duymaktadır."
+              },
+              {
+                "sirket": "Eastern Airways",
+                "bilgi": "Bu havayolu şirketinin filosu, 2024 yılı itibarıyla 25,3 yıllık bir ortalama yaşa sahiptir. Boeing 767-300ER ve Boeing 777-200 gibi modellerin yaşları sırasıyla 31,8 ve 20,9 yıldır."
+              },
+              {
+                "sirket": "Loganair",
+                "bilgi": "İngiltere merkezli bu bölgesel havayolu şirketinin filosunun ortalama yaşı 19,5 yıldır. Özellikle Embraer ERJ 145 uçaklarının ortalama yaşı 24,7 yıldır."
+              }
+            ],
+            "sonuc": "Bu yaşlanan filolar, bakım, onarım ve modernizasyon hizmetlerine olan talebi artırmakta ve MRO sektöründe yeni yatırım fırsatları yaratmaktadır."
+          },
+          "teknolojik_gelismeler": {
+            "baslik": "3. Teknolojik Gelişmeler",
+            "aciklama": "Yeni nesil uçakların ve motorların hizmete girmesi, özel eğitimli personel ve ekipman gereksinimi doğurarak MRO firmaları için yeni fırsatlar yaratacaktır."
+          },
+          "regulasyonlar_ve_guvenlik_standartlari": {
+            "baslik": "4. Regülasyonlar ve Güvenlik Standartları",
+            "aciklama": "Avrupa'daki sıkı hava güvenliği ve çevre regülasyonları, düzenli ve kapsamlı bakım hizmetlerini zorunlu kılmaktadır."
+          },
+          "filo_dagilimi_2025_itibariyla": {
+            "baslik": "Avrupa'da 2025 İtibarıyla Filo Dağılımı",
+            "tipler": [
+              {
+                "tip": "Dar gövdeli uçaklar",
+                "aciklama": "Avrupa'daki toplam uçak filosunun yaklaşık %80'ini oluşturmaktadır. Bu segmentte Airbus A320neo ve Boeing 737 MAX gibi modeller öne çıkmaktadır."
+              },
+              {
+                "tip": "Geniş gövdeli uçaklar",
+                "aciklama": "Kalan %20'lik kısmı temsil etmektedir. Bu uçaklar, uzun menzilli uluslararası uçuşlarda kullanılmakta olup, Boeing 787 ve Airbus A350 gibi modeller tercih edilmektedir."
+              }
+            ]
+          }
+        },
+        "gelecekteki_egilimler_ve_tahminler_bolgesel": {
+          "baslik": "Gelecekteki Eğilimler ve Tahminler",
+          "boeing_tahmini": "Boeing'in tahminine göre, 2040 yılına kadar Avrupa'da 8.705 yeni uçak teslim edilecek. Bunların 7.100'ü dar gövdeli, 1.545'i ise geniş gövdeli uçaklar olacak. Bu, dar gövdeli uçakların %82'lik bir paya sahip olacağını göstermektedir."
+        }
+      },
+      {
+        "bolge_adi": "Afrika",
+        "genel_gorunum_basligi": "Afrika Havacılık MRO Pazarının Genel Görünümü",
+        "pazar_buyuklugu_ve_trendler": {
+          "baslik": "1. Pazarın Büyüklüğü ve Trendleri",
+          "veriler": [
+            {
+              "yil": "2024",
+              "pazar_buyuklugu_usd": "1,54 milyar",
+              "buyume_orani_cagr": "%4,79",
+              "aciklama": "Güncel pazar büyüklüğü tahmini"
+            },
+            {
+              "yil": "2029 (tah.)",
+              "pazar_buyuklugu_usd": "1,94 milyar",
+              "buyume_orani_cagr": "%4,79",
+              "aciklama": "5 yıllık projeksiyon"
+            },
+            {
+              "yil_araligi": "2024-2043",
+              "pazar_buyuklugu_usd": "85 milyar (kümülatif)",
+              "buyume_orani_cagr": null,
+              "aciklama": "Boeing'e göre toplam MRO harcama tahmini"
+            }
+          ]
+        },
+        "segment_bazinda_dagilim": {
+          "baslik": "2. Segment Bazında Dağılım",
+          "aciklama_giris": "Afrika MRO pazarı, aşağıdaki ana segmentlerden oluşmaktadır:",
+          "segmentler": [
+            {
+              "adi": "Motor MRO (Engine Overhaul & Maintenance)",
+              "aciklama": "Pazarın en büyük segmentidir. Örneğin, Güney Afrika'da 2023 itibarıyla motor bakım segmenti %41,45'lik pazar payına sahiptir."
+            },
+            {
+              "adi": "Uçak Gövde Bakımı (Airframe Maintenance)",
+              "aciklama": "Yapısal bütünlüğün korunması için kritik öneme sahiptir. Afrika pazarı genelinde %25–30 arasında bir paya sahiptir (tahmini)."
+            },
+            {
+              "adi": "Bileşen Bakımı (Component Maintenance)",
+              "aciklama": "Aviyonik sistemler, iniş takımları ve yakıt sistemleri gibi alt bileşenlerin bakımı bu segmentte yer alır. Pazar payı yaklaşık olarak %15–20 (tahmini) seviyelerindedir."
+            },
+            {
+              "adi": "Hattı Bakımı (Line Maintenance)",
+              "aciklama": "Günlük operasyonlar sırasında yapılan kontroller ve küçük onarımlar bu segmentte sınıflandırılır. Tahmini pazar payı %10–15 aralığındadır."
+            }
+          ]
+        },
+        "bolgesel_liderler": {
+          "baslik": "Bölgesel Liderler",
+          "aciklama_giris": "Afrika'da MRO hizmetleri açısından öne çıkan ülkeler şunlardır:",
+          "ulkeler": [
+            {
+              "ulke": "Güney Afrika",
+              "aciklama": "Kapsamlı MRO altyapısına sahip olup, motor bakımında lider konumdadır."
+            },
+            {
+              "ulke": "Ethiopia",
+              "aciklama": "Ethiopian Airlines, Addis Ababa'da önemli bir MRO merkezi işletmektedir."
+            },
+            {
+              "ulke": "Kenya",
+              "aciklama": "Kenya Airways, Nairobi'de MRO hizmetleri sunmaktadır."
+            },
+            {
+              "ulke": "Fas",
+              "aciklama": "Embraer ve Safran gibi şirketlerin yatırımlarıyla MRO kapasitesini artırmaktadır."
+            }
+          ]
+        },
+        "afrika_mro_pazari_ve_gelecek_projeksiyonlari": {
+          "baslik": "Afrika MRO Pazarı ve Gelecek Projeksiyonları",
+          "mevcut_ucak_sayisi_2023": "2023 itibarıyla Afrika'da yaklaşık 700 ticari uçak bulunmaktadır.",
+          "boeing_tahmini_2043": "Boeing'in tahminlerine göre, bu sayının 2043 yılına kadar 1.550'ye ulaşması beklenmektedir."
+        },
+        "yatirim_icin_stratejik_gerekceler": {
+          "baslik": "Yatırım İçin Stratejik Gerekçeler",
+          "yeni_ucak_siparisleri": {
+            "baslik": "1.Yeni Uçak Siparişleri",
+            "siparis_listesi": [
+              {
+                "sira": 1,
+                "havayolu_sirketi": "Ethiopian Airlines",
+                "ulke": "Etiyopya",
+                "siparis_detaylari": "84 uçak: 11 Boeing 787 Dreamliner, 20 Boeing 737 MAX, 11 Airbus A350-900; ayrıca 8 Boeing 777-9 siparişi ve 12 opsiyon."
+              },
+              {
+                "sira": 2,
+                "havayolu_sirketi": "EgyptAir",
+                "ulke": "Mısır",
+                "siparis_detaylari": "28 uçak: 10 Airbus A350-900, 18 Boeing 737 MAX 8 (kiralama anlaşması)."
+              },
+              {
+                "sira": 3,
+                "havayolu_sirketi": "Air Algérie",
+                "ulke": "Cezayir",
+                "siparis_detaylari": "15 uçak: 8 Boeing 737 MAX 9, 5 Airbus A330-900, 2 Airbus A350-1000."
+              },
+              {
+                "sira": 4,
+                "havayolu_sirketi": "TAAG Angola Airlines",
+                "ulke": "Angola",
+                "siparis_detaylari": "13 uçak: 4 Boeing 787 (2 adet 787-9 ve 2 adet 787-10), 9 Airbus A220 (kiralama anlaşması)."
+              },
+              {
+                "sira": 5,
+                "havayolu_sirketi": "Air Peace",
+                "ulke": "Nijerya",
+                "siparis_detaylari": "23 uçak: 13 Embraer E195-E2, 10 Boeing 737 MAX."
+              },
+              {
+                "sira": 6,
+                "havayolu_sirketi": "Green Africa Airways",
+                "ulke": "Nijerya",
+                "siparis_detaylari": "50 uçak: 50 Airbus A220-300 siparişi; ayrıca 100 Boeing 737 MAX için ön anlaşma."
+              }
+            ]
+          },
+          "yolcu_trafigi_artiyor": {
+            "baslik": "2.Yolcu trafiği artıyor:",
+            "aciklama": "Afrika'daki havacılık sektörü, yıllık ortalama %5 büyüme oranıyla dünya ortalamasının üzerinde büyüyor (IATA verilerine göre)."
+          },
+          "mro_altyapisi_zayif": {
+            "baslik": "3.Afrika'da MRO altyapısı hala zayıf:",
+            "aciklama": "Afrika'da MRO kapasitesi ve kalitesi genellikle yetersiz. Avrupa'dan gelişmiş teknoloji, know-how ve yönetim becerileriyle müdahale ederek, pazarın kalitesini yükseltirken etkili olabilirsin."
+          },
+          "filo_dagilimi_2025_itibariyla": {
+            "baslik": "Afrika'da 2025 İtibarıyla Filo Dağılımı",
+            "aciklama": "Afrika'daki havayollarının filosu, genel olarak dar gövdeli uçaklardan (single-aisle) oluşmaktadır. Boeing'e göre, 2021 itibarıyla Afrika'daki ticari filosunun %61'i dar gövdeli uçaklardan oluşmaktadır. Geniş gövdeli uçaklar ise %24'lük bir paya sahiptir. Kalan %17'lik kısım ise bölgesel jetlerden oluşmaktadır."
+          }
+        },
+        "gelecekteki_egilimler_ve_tahminler_bolgesel": {
+          "baslik": "Gelecekteki Eğilimler ve Tahminler",
+          "tahminler": [
+            "Afrika'daki havacılık sektörü, önümüzdeki yıllarda önemli bir büyüme bekliyor.",
+            "Boeing, 2040 yılına kadar Afrika'da 1.030 yeni uçak talebi öngörüyor; bunların 740'ı dar gövdeli, 250'si ise geniş gövdeli uçaklar olacak.",
+            "Airbus ise 20 yıl içinde Afrika'da 1.180 yeni uçak talebi bekliyor; bunların 880'i dar gövdeli, 300'ü ise geniş gövdeli uçaklar olacak.",
+            "Embraer'in tahminlerine göre, Afrika'da 2043 yılına kadar 600 yeni küçük jet ve turboprop uçağı alınması bekleniyor. Bu, mevcut 470 uçaktan %80'lik bir artışı ifade ediyor."
+          ]
+        }
+      },
+      {
+        "bolge_adi": "Asya-Pasifik",
+        "genel_gorunum_basligi": "Asya-Pasifik Havacılık MRO Pazarının Genel Görünümü",
+        "pazar_buyuklugu_ve_trendler": {
+          "baslik": "1.Pazarın Büyüklüğü ve Trendleri",
+          "veriler": [
+            {
+              "yil": "2025",
+              "pazar_buyuklugu_milyar_abd_dolari": 24.03
+            },
+            {
+              "yil": "2030",
+              "pazar_buyuklugu_milyar_abd_dolari": 32.63
+            },
+            {
+              "donem": "CAGR",
+              "oran": "%6,31"
+            }
+          ],
+          "buyume_aciklamasi": "Çin, Hindistan ve Güneydoğu Asya'daki artan hava trafiği ve düşük maliyetli havayollarının genişlemesi bu büyümeyi desteklemektedir."
+        },
+        "segment_bazinda_dagilim": {
+          "baslik": "2. Segment Bazında Dağılım",
+          "segmentler": [
+            {
+              "adi": "Motor MRO (%78)",
+              "aciklama": "Ticari havacılık segmenti, 2024 yılında Asya-Pasifik uçak motoru MRO pazarının yaklaşık %78'ini oluşturmaktadır. Bu segment, yüksek bakım maliyetleri ve motor teknolojisinin karmaşıklığı nedeniyle pazarın en büyük payına sahiptir. Artan uçak sayısı ve motor teknolojilerindeki gelişmeler, bu alandaki büyümeyi desteklemektedir."
+            },
+            {
+              "adi": "Gövde MRO (%10–12)",
+              "aciklama": "Uçak gövdesi bakım hizmetleri, pazarın önemli bir bölümünü temsil etmektedir. Uzun ömürlü filo işletmeleri ve hava yolu şirketlerinin gövde yenileme yatırımları bu segmenti canlı tutmaktadır."
+            },
+            {
+              "adi": "Komponent MRO (%7–8)",
+              "aciklama": "Uçak bileşenlerinin bakımı ve onarımı, artan uçak sayısı ve elektronik/aviyonik sistemlerin karmaşıklığı ile birlikte büyümektedir. Özellikle iniş takımları, fren sistemleri ve aviyonik bileşenlerdeki bakım faaliyetleri bu segmentin gelişimini desteklemektedir."
+            },
+            {
+              "adi": "Hat Bakımı (%3–5)",
+              "aciklama": "Günlük operasyonel bakım hizmetleri, özellikle Çin, Hindistan ve Güneydoğu Asya gibi yoğun hava trafiği olan bölgelerde önem kazanmaktadır. Bu segmentte hızlı ve etkili müdahaleler, uçakların yere inmeden maksimum verimle çalışmasını sağlar."
+            }
+          ]
+        },
+        "bolgesel_dinamikler_ve_ulke_bazli_mro_analizi": {
+          "baslik": "Bölgesel Dinamikler ve Ülke Bazlı MRO Analizi (Sayısal Verilerle)",
+          "ulkeler": [
+            {
+              "ulke_adi": "Çin",
+              "mro_firma_sayisi": "Çin'de 80'den fazla MRO firması bulunmakta olup, bunların 25'i ticari havacılık için uçak, motor ve komponent bakım hizmeti sunmaktadır.",
+              "pazar_buyuklugu_ve_buyume": "Çin'in MRO pazarının, önümüzdeki on yılda %1,13 bileşik yıllık büyüme oranı (CAGR) ile büyümesi beklenmektedir.",
+              "filo_buyuklugu": "Çin'in ticari uçak filosu 3.700'ün üzerinde olup, önümüzdeki beş yıl içinde 700'den fazla yeni uçak teslimatı planlanmaktadır."
+            },
+            {
+              "ulke_adi": "Hindistan",
+              "pazar_buyuklugu": "2024'te 2,26 milyar ABD doları olan Hindistan MRO pazarı, 2032'ye kadar 5,16 milyar ABD dolarına ulaşması ve %10,9 CAGR ile büyümesi öngörülmektedir.",
+              "filo_buyuklugu": "Hindistan'ın ticari uçak filosu yaklaşık 713 uçaktan oluşmakta olup, önümüzdeki yıllarda 1.000'den fazla yeni uçak eklenmesi planlanmaktadır.",
+              "tedarik_zinciri": "Airbus, Collins Aerospace, Pratt & Whitney ve Rolls-Royce gibi küresel firmalar, Hindistan'dan parça tedarikini artırmaktadır.",
+              "hedef": "Hindistan, önümüzdeki on yıl içinde küresel tedarik zinciri pazarının %10'unu hedeflemektedir."
+            },
+            {
+              "ulke_adi": "Malezya",
+              "ade_buyumesi": "Asia Digital Engineering (ADE), 2023'te gelirini iki katına çıkararak 574 milyon ringgit (yaklaşık 122,91 milyon ABD doları) elde etmiştir. Şirket, 2025'e kadar tüm bakım slotlarını doldurmuş durumdadır ve Kuala Lumpur Uluslararası Havalimanı yakınlarında Malezya'nın en büyük bakım hangarını açmayı planlamaktadır.",
+              "mab_engineering": "Malezya Havayolları'nın bakım kolu olan MAB Engineering, tüm temel ve hat bakım faaliyetlerini yürütmekte olup, motor bakımı dış kaynaklardan sağlanmaktadır."
+            },
+            {
+              "ulke_adi": "Singapur",
+              "mro_firma_sayisi": "Singapur'da Ar-Ge, üretim, MRO, satış sonrası hizmetler ve yerel KOBİ tedarikçileri dahil olmak üzere 130'dan fazla havacılık şirketi bulunmaktadır.",
+              "one_cikan_firmalar": "ST Engineering, SIA Engineering Company ve Lufthansa Technik gibi firmalar, Singapur'da faaliyet göstermektedir.",
+              "yatirimlar": "2024 Singapur Airshow'da, Pratt & Whitney, Rolls-Royce, Thales, Airbus ve GE Aerospace gibi şirketler, önümüzdeki 3-5 yıl içinde 10 projeye toplamda 750 milyon Singapur doları yatırım yapma taahhüdünde bulunmuştur."
+            },
+            {
+              "ulke_adi": "Japonya",
+              "pazar_buyuklugu": "Japonya'nın MRO pazarının, 2025'te 6,71 milyar ABD dolarından 2033'e kadar 10,3 milyar ABD dolarına ulaşması ve %5,5 CAGR ile büyümesi öngörülmektedir."
+            },
+            {
+              "ulke_adi": "Güney Kore",
+              "pazar_buyuklugu": "Güney Kore'nin MRO pazarının, 2024-2030 döneminde %5,9 CAGR ile büyüyerek 2030'da 2,67 milyar ABD dolarına ulaşması beklenmektedir.",
+              "hukumet_hedefleri": "Ulaştırma Bakanlığı (MOLIT), 2021'de 611,5 milyon ABD doları değerindeki yerli MRO pazarını 2030'a kadar 4,3 milyar ABD dolarına çıkarmayı hedefleyen yeni planlar açıklamıştır."
+            }
+          ]
+        },
+        "asya_pasifik_mro_pazari_ve_gelecek_projeksiyonlari": {
+          "baslik": "Asya-Pasifik MRO Pazarı ve Gelecek Projeksiyonları",
+          "mevcut_durum_2024_itibariyla": {
+            "ticari_sivil_hava_tasiti_sayisi": "Yaklaşık 8.100 adet sivil yolcu uçağı aktif olarak hizmet vermektedir. (Kaynak: Boeing Commercial Market Outlook 2023, [Airbus Global Market Forecast])",
+            "bolgesel_konum": "Bu sayı, Asya-Pasifik'in dünya genelindeki ikinci en büyük ticari uçak filosuna sahip bölge olduğunu göstermektedir (Kuzey Amerika'dan sonra)."
+          },
+          "gelecek_tahmini_2042_yilina_kadar": {
+            "toplam_ucak_sayisi_beklentisi": "2042 yılına kadar Asya-Pasifik bölgesinde toplamda 20.600 ticari yolcu uçağına ulaşılması beklenmektedir. (Bu, yaklaşık 2,5 katlık bir büyümeye işaret eder.)",
+            "yeni_ucak_teslimati_tahmini_2023_2042": [
+              { "kaynak": "Boeing", "tahmin": "Yaklaşık 17.485 yeni uçak teslimatı bekleniyor." },
+              { "kaynak": "Airbus", "tahmin": "Yaklaşık 17.000 yeni uçak teslimatı öngörülmektedir." }
+            ],
+            "buyume_hizi": [
+              "Asya-Pasifik'teki hava trafiğinin yıllık ortalama %5,3 büyüme ile küresel ortalamanın üzerinde artacağı tahmin edilmektedir.",
+              "Bu da MRO (Bakım-Onarım) faaliyetlerinin ve altyapı yatırımlarının büyük oranda artacağı anlamına gelir."
+            ]
+          }
+        },
+        "yatirim_icin_stratejik_gerekceler": {
+          "baslik": "Yatırım İçin Stratejik Gerekçeler",
+          "yeni_ucak_siparisleri": {
+            "baslik": "1.Yeni Uçak Siparişleri",
+            "giris_aciklamasi": "Asya-Pasifik bölgesindeki havayolu şirketleri, hem mevcut filo büyüklükleri hem de verdikleri yeni uçak siparişleriyle küresel havacılık pazarında önemli bir yer tutmaktadır.",
+            "en_fazla_ucak_siparisi_veren_ve_en_buyuk_filolara_sahip_10_havayolu": [
+              { "sira": 1, "havayolu_sirketi": "China Southern Airlines", "ulke": "Çin", "mevcut_filo": "650+", "yeni_siparisler": "100+", "one_cikan_siparisler_ve_notlar": "Airbus A320neo, Boeing 737 MAX siparişleri; geniş iç hat ağı." },
+              { "sira": 2, "havayolu_sirketi": "China Eastern Airlines", "ulke": "Çin", "mevcut_filo": "600+", "yeni_siparisler": "200+", "one_cikan_siparisler_ve_notlar": "100 adet COMAC C919 siparişi; Airbus A320neo ve Boeing 737 MAX siparişleri." },
+              { "sira": 3, "havayolu_sirketi": "Air China", "ulke": "Çin", "mevcut_filo": "500+", "yeni_siparisler": "100+", "one_cikan_siparisler_ve_notlar": "Airbus A350 ve Boeing 787 siparişleri; uluslararası genişleme hedefi." },
+              { "sira": 4, "havayolu_sirketi": "IndiGo", "ulke": "Hindistan", "mevcut_filo": "300+", "yeni_siparisler": "500+", "one_cikan_siparisler_ve_notlar": "Airbus A320neo ve A321XLR siparişleri; düşük maliyetli taşıyıcı olarak hızlı büyüme." },
+              { "sira": 5, "havayolu_sirketi": "Singapore Airlines", "ulke": "Singapur", "mevcut_filo": "130+", "yeni_siparisler": "60+", "one_cikan_siparisler_ve_notlar": "31 adet Boeing 777-9 ve 30 adet 787-10 siparişi; premium hizmet odaklı." },
+              { "sira": 6, "havayolu_sirketi": "Cathay Pacific", "ulke": "Hong Kong", "mevcut_filo": "150+", "yeni_siparisler": "30+", "one_cikan_siparisler_ve_notlar": "30 adet Airbus A330-900 siparişi; bölgesel ağını güçlendirme planı." },
+              { "sira": 7, "havayolu_sirketi": "ANA (All Nippon Airways)", "ulke": "Japonya", "mevcut_filo": "250+", "yeni_siparisler": "50+", "one_cikan_siparisler_ve_notlar": "Boeing 787 ve Airbus A380 siparişleri; Japonya'nın en büyük havayolu." },
+              { "sira": 8, "havayolu_sirketi": "Qantas", "ulke": "Avustralya", "mevcut_filo": "130+", "yeni_siparisler": "100+", "one_cikan_siparisler_ve_notlar": "Airbus A321XLR ve Boeing 787 siparişleri; uzun menzilli uçuşlara odaklanma." },
+              { "sira": 9, "havayolu_sirketi": "Korean Air", "ulke": "Güney Kore", "mevcut_filo": "150+", "yeni_siparisler": "50+", "one_cikan_siparisler_ve_notlar": "Boeing 787 ve Airbus A321neo siparişleri; Asya ve Amerika pazarlarında genişleme." },
+              { "sira": 10, "havayolu_sirketi": "Hainan Airlines", "ulke": "Çin", "mevcut_filo": "224", "yeni_siparisler": "153", "one_cikan_siparisler_ve_notlar": "60 adet COMAC C919 ve 50 adet Boeing 737 MAX siparişi; bölgesel büyüme hedefi." }
+            ]
+          },
+          "filo_buyuklugu_ve_yaslanan_ucaklar_artan_bakim_talebi": {
+            "baslik": "2. Filo Büyüklüğü ve Yaşlanan Uçaklar = Artan Bakım Talebi",
+            "mevcut_ucak_sayisi_2024": "2024'te yaklaşık 8.100 uçak (sivil yolcu uçağı) hizmette.",
+            "gelecek_ucak_sayisi_2042": "2042'ye kadar bu sayı 20.600'e çıkacak (yaklaşık 2,5 kat artış).",
+            "yaslanan_filo_etkisi_ve_bakim_ihtiyaclari": "Filonun önemli kısmı 2025'ten sonra 12-15 yaşını geçecek ve bu uçaklar ağır bakım (C-check, D-check), motor revizyonu, komponent değişimi gibi daha maliyetli ve kapsamlı MRO hizmetlerine ihtiyaç duyacak."
+          },
+          "fiyat_kalite_dengesi_avrupanin_avantaji": {
+            "baslik": "3. Fiyat-Kalite Dengesi: Avrupa'nın Avantajı",
+            "durum_ve_nedenler": [
+              "Çin, Hindistan gibi ülkelerde yerel MRO hizmetleri bulunsa da:",
+              "Kritik komponentlerde uzmanlık eksikliği",
+              "Uluslararası sertifikasyonlar (EASA, FAA) konusundaki sınırlılık",
+              "Yüksek bakım kalitesi ve güvenilirliği ihtiyacı nedeniyle Avrupalı firmalara güven duyuluyor."
+            ]
+          },
+          "ucaklarin_avrupaya_bakim_icin_transferi_fly_in_fly_out_modeli": {
+            "baslik": "4. Uçakların Avrupa'ya Bakım için Transferi: \"Fly-In-Fly-Out\" Modeli",
+            "aciklama": "Dönemsel ağır bakımlar için birçok Asya havayolu şirketi uçaklarını Avrupa'ya getiriyor.",
+            "ornek_sirketler": [
+              "Singapur Airlines",
+              "Philippine Airlines",
+              "Air India",
+              "Garuda Indonesia"
+            ],
+            "tercih_nedeni": "gibi firmalar, bakım kalitesi ve verimlilik nedeniyle bu modeli tercih ediyor."
+          },
+          "asya_pasifik_filo_yapisinin_mevcut_durumu_2024": {
+            "baslik": "Asya-Pasifik Filo Yapısının Mevcut Durumu (2024)",
+            "filo_yapisi": [
+              {
+                "ucak_turu": "Dar Gövde (Narrow-body)",
+                "filo_icindeki_pay_yuzde": "~68%",
+                "aciklama": "Airbus A320ceo/neo ve Boeing 737 NG/MAX en yaygın modellerdir. Özellikle Çin, Hindistan ve Güneydoğu Asya'da kısa-orta menzilli uçuşlar için tercih ediliyor."
+              },
+              {
+                "ucak_turu": "Geniş Gövde (Wide-body)",
+                "filo_icindeki_pay_yuzde": "~32%",
+                "aciklama": "Airbus A330, A350, Boeing 777 ve 787 gibi uzun menzilli uçaklar; büyük şehirler arası ve uluslararası uçuşlarda kullanılıyor."
+              }
+            ]
+          },
+          "gelecek_tahmini_2033_filo_yapisi_degisim_trendi": {
+            "baslik": "Gelecek Tahmini(2033)",
+            "degisim_trendleri": [
+              {
+                "ucak_turu": "Dar Gövde",
+                "yillik_ortalama_artis": "+5%",
+                "degisim_trendi_aciklamasi": "Bölgesel havacılığın büyümesi, düşük maliyetli taşıyıcıların genişlemesiyle destekleniyor."
+              },
+              {
+                "ucak_turu": "Geniş Gövde",
+                "yillik_ortalama_artis": "+4%",
+                "degisim_trendi_aciklamasi": "Uzun mesafeli uçuşlara artan talep ve turizm destinasyonlarının çeşitlenmesi etkili."
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
