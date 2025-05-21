@@ -14,20 +14,42 @@
             },
             {
               "yil": "2025",
-              "pazar_buyuklugu_usd": "22,1 milyar USD",
-              "buyume_orani": "%2,3"
+              "pazar_buyuklugu_usd": "22,10 milyar USD",
+              "buyume_orani": "%1,89"
             },
             {
               "yil": "2030 (Tahmini)",
               "pazar_buyuklugu_usd": "24,81 milyar USD",
-              "buyume_orani": "%2,2"
+              "buyume_orani": "%2,35"
             }
           ]
         },
         "segment_bazinda_dagilim": {
           "baslik": "Segment Bazında Dağılım",
           "aciklama": "Havacılık MRO sektörü dört ana segmentten oluşur. Avrupa pazarında bu segmentlerin oranları ve trendleri aşağıdaki gibidir:",
-          "pasta_grafigi_aciklama": "MRO (Bakım, Onarım ve Revizyon) pazar segmentlerinin yüzde dağılımını gösteren pasta grafiği. Motor MRO segmenti %38.4 ile en büyük paya sahip, onu sırasıyla Uçak Hattı Bakımı (%23.2), Uçak Gövde Bakımı (%20.2) ve Bileşen MRO (%18.2) takip ediyor."
+          "pasta_grafigi_aciklama": "MRO (Bakım, Onarım ve Revizyon) pazar segmentlerinin yüzde dağılımını gösteren pasta grafiği. Motor MRO segmenti %38.4 ile en büyük paya sahip, onu sırasıyla Uçak Hattı Bakımı (%23.2), Uçak Gövde Bakımı (%20.2) ve Bileşen MRO (%18.2) takip ediyor.",
+          "pasta_grafigi_verileri": {
+            "labels": ["Bileşen MRO", "Uçak Gövde Bakımı", "Uçak Hattı Bakımı", "Motor MRO"],
+            "datasets": [
+              {
+                "label": "MRO Pazar Segmentleri Dağılımı (%)",
+                "data": [18.2, 20.2, 23.2, 38.4],
+                "backgroundColor": [
+                  "rgba(220, 53, 69, 0.7)",  
+                  "rgba(220, 53, 69, 0.5)", 
+                  "rgba(108, 117, 125, 0.7)",
+                  "rgba(108, 117, 125, 0.5)"
+                ],
+                "borderColor": [
+                  "rgba(220, 53, 69, 1)",
+                  "rgba(220, 53, 69, 0.8)",
+                  "rgba(108, 117, 125, 1)",
+                  "rgba(108, 117, 125, 0.8)"
+                ],
+                "borderWidth": 1
+              }
+            ]
+          }
         },
         "bolgesel_liderler": {
           "baslik": "3. Bölgesel Liderler",
@@ -147,6 +169,24 @@
             "baslik": "4. Regülasyonlar ve Güvenlik Standartları",
             "aciklama": "Avrupa'daki sıkı hava güvenliği ve çevre regülasyonları, düzenli ve kapsamlı bakım hizmetlerini zorunlu kılmaktadır."
           },
+          "fiyat_kalite_dengesi_avrupanin_avantaji": {
+            "baslik": "4. Fiyat-Kalite Dengesi: Avrupa'nın Avantajı",
+            "durum_ve_nedenler": [
+              "Avrupa'da fiyat-kalite dengesi diğer bölgelere göre daha avantajlıdır."
+            ],
+            "veriler": [
+              {
+                "yil": "2025",
+                "pazar_buyuklugu_usd": "22,10 milyar USD",
+                "buyume_orani": "%1,89"
+              },
+              {
+                "yil": "2030 (Tahmini)",
+                "pazar_buyuklugu_usd": "24,81 milyar USD",
+                "buyume_orani": "%2,35"
+              }
+            ]
+          },
           "filo_dagilimi_2025_itibariyla": {
             "baslik": "Avrupa'da 2025 İtibarıyla Filo Dağılımı",
             "tipler": [
@@ -174,21 +214,15 @@
           "veriler": [
             {
               "yil": "2024",
-              "pazar_buyuklugu_usd": "1,54 milyar",
-              "buyume_orani_cagr": "%4,79",
+              "pazar_buyuklugu_usd": "1,54 milyar USD",
+              "buyume_orani": null,
               "aciklama": "Güncel pazar büyüklüğü tahmini"
             },
             {
               "yil": "2029 (tah.)",
-              "pazar_buyuklugu_usd": "1,94 milyar",
-              "buyume_orani_cagr": "%4,79",
+              "pazar_buyuklugu_usd": "1,94 milyar USD",
+              "buyume_orani": "%4,74",
               "aciklama": "5 yıllık projeksiyon"
-            },
-            {
-              "yil_araligi": "2024-2043",
-              "pazar_buyuklugu_usd": "85 milyar (kümülatif)",
-              "buyume_orani_cagr": null,
-              "aciklama": "Boeing'e göre toplam MRO harcama tahmini"
             }
           ]
         },
@@ -315,15 +349,13 @@
           "veriler": [
             {
               "yil": "2025",
-              "pazar_buyuklugu_milyar_abd_dolari": 24.03
+              "pazar_buyuklugu_usd": "24,03 milyar USD",
+              "buyume_orani": null
             },
             {
               "yil": "2030",
-              "pazar_buyuklugu_milyar_abd_dolari": 32.63
-            },
-            {
-              "donem": "CAGR",
-              "oran": "%6,31"
+              "pazar_buyuklugu_usd": "32,63 milyar USD",
+              "buyume_orani": "%6,32"
             }
           ],
           "buyume_aciklamasi": "Çin, Hindistan ve Güneydoğu Asya'daki artan hava trafiği ve düşük maliyetli havayollarının genişlemesi bu büyümeyi desteklemektedir."
@@ -390,7 +422,7 @@
         "asya_pasifik_mro_pazari_ve_gelecek_projeksiyonlari": {
           "baslik": "Asya-Pasifik MRO Pazarı ve Gelecek Projeksiyonları",
           "mevcut_durum_2024_itibariyla": {
-            "ticari_sivil_hava_tasiti_sayisi": "Yaklaşık 8.100 adet sivil yolcu uçağı aktif olarak hizmet vermektedir. (Kaynak: Boeing Commercial Market Outlook 2023, [Airbus Global Market Forecast])",
+            "ticari_sivil_hava_tasiti_sayisi": "Yaklaşık 8.100 adet sivil yolcu uçağı aktif olarak hizmet vermektedir. (Kaynak: Boeing Commercial Market Outlook 2023, Airbus Global Market Forecast)",
             "bolgesel_konum": "Bu sayı, Asya-Pasifik'in dünya genelindeki ikinci en büyük ticari uçak filosuna sahip bölge olduğunu göstermektedir (Kuzey Amerika'dan sonra)."
           },
           "gelecek_tahmini_2042_yilina_kadar": {
@@ -399,10 +431,13 @@
               { "kaynak": "Boeing", "tahmin": "Yaklaşık 17.485 yeni uçak teslimatı bekleniyor." },
               { "kaynak": "Airbus", "tahmin": "Yaklaşık 17.000 yeni uçak teslimatı öngörülmektedir." }
             ],
-            "buyume_hizi": [
-              "Asya-Pasifik'teki hava trafiğinin yıllık ortalama %5,3 büyüme ile küresel ortalamanın üzerinde artacağı tahmin edilmektedir.",
-              "Bu da MRO (Bakım-Onarım) faaliyetlerinin ve altyapı yatırımlarının büyük oranda artacağı anlamına gelir."
-            ]
+            "buyume_hizi_analizi": {
+              "baslik": "Büyüme Hızı",
+              "veriler": [
+                "Asya-Pasifik'teki hava trafiğinin yıllık ortalama %5,3 büyüme ile küresel ortalamanın üzerinde artacağı tahmin edilmektedir.",
+                "Bu da MRO (Bakım-Onarım) faaliyetlerinin ve altyapı yatırımlarının büyük oranda artacağı anlamına gelir."
+              ]
+            }
           }
         },
         "yatirim_icin_stratejik_gerekceler": {
@@ -429,13 +464,14 @@
             "gelecek_ucak_sayisi_2042": "2042'ye kadar bu sayı 20.600'e çıkacak (yaklaşık 2,5 kat artış).",
             "yaslanan_filo_etkisi_ve_bakim_ihtiyaclari": "Filonun önemli kısmı 2025'ten sonra 12-15 yaşını geçecek ve bu uçaklar ağır bakım (C-check, D-check), motor revizyonu, komponent değişimi gibi daha maliyetli ve kapsamlı MRO hizmetlerine ihtiyaç duyacak."
           },
-          "fiyat_kalite_dengesi_avrupanin_avantaji": {
-            "baslik": "3. Fiyat-Kalite Dengesi: Avrupa'nın Avantajı",
+          "fiyat_kalite_dengesi_asya_pasifik": {
+            "baslik": "3. Fiyat-Kalite Dengesi: Asya-Pasifik Avantajı",
             "durum_ve_nedenler": [
-              "Çin, Hindistan gibi ülkelerde yerel MRO hizmetleri bulunsa da:",
-              "Kritik komponentlerde uzmanlık eksikliği",
-              "Uluslararası sertifikasyonlar (EASA, FAA) konusundaki sınırlılık",
-              "Yüksek bakım kalitesi ve güvenilirliği ihtiyacı nedeniyle Avrupalı firmalara güven duyuluyor."
+              "Asya-Pasifik bölgesindeki MRO hizmetleri şu avantajlara sahiptir:",
+              "Düşük işçilik maliyetleri sayesinde rekabetçi fiyatlandırma",
+              "Yeni kurulan modern tesisler ve ileri teknoloji yatırımları",
+              "Yüksek kalite standartlarını karşılayan EASA ve FAA sertifikalı tesislerin artması",
+              "Özellikle Singapur, Japonya ve Güney Kore'de yüksek teknik uzmanlık"
             ]
           },
           "ucaklarin_avrupaya_bakim_icin_transferi_fly_in_fly_out_modeli": {

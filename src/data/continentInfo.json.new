@@ -1,0 +1,242 @@
+{
+    "rapor_basligi": "Havacılık MRO Pazarları Genel Görünümü ve Projeksiyonları",
+    "bolgeler": [
+      {
+        "bolge_adi": "Avrupa",
+        "genel_gorunum_basligi": "Avrupa Havacılık MRO Pazarının Genel Görünümü",
+        "pazar_buyuklugu_ve_trendler": {
+          "baslik": "1. Pazarın Büyüklüğü ve Trendleri",
+          "veriler": [
+            {
+              "yil": "2023",
+              "pazar_buyuklugu_usd": "21,29 milyar USD",
+              "buyume_orani": null
+            },
+            {
+              "yil": "2025",
+              "pazar_buyuklugu_usd": "22,10 milyar USD",
+              "buyume_orani": "%1,89"
+            },
+            {
+              "yil": "2030 (Tahmini)",
+              "pazar_buyuklugu_usd": "24,81 milyar USD",
+              "buyume_orani": "%2,35"
+            }
+          ]
+        },
+        "segment_bazinda_dagilim": {
+          "baslik": "Segment Bazında Dağılım",
+          "aciklama": "Havacılık MRO sektörü dört ana segmentten oluşur. Avrupa pazarında bu segmentlerin oranları ve trendleri aşağıdaki gibidir:",
+          "pasta_grafigi_aciklama": "MRO (Bakım, Onarım ve Revizyon) pazar segmentlerinin yüzde dağılımını gösteren pasta grafiği. Motor MRO segmenti %38.4 ile en büyük paya sahip, onu sırasıyla Uçak Hattı Bakımı (%23.2), Uçak Gövde Bakımı (%20.2) ve Bileşen MRO (%18.2) takip ediyor.",
+          "pasta_grafigi_verileri": {
+            "labels": ["Bileşen MRO", "Uçak Gövde Bakımı", "Uçak Hattı Bakımı", "Motor MRO"],
+            "datasets": [
+              {
+                "label": "MRO Pazar Segmentleri Dağılımı (%)",
+                "data": [18.2, 20.2, 23.2, 38.4],
+                "backgroundColor": [
+                  "rgba(220, 53, 69, 0.7)",  
+                  "rgba(220, 53, 69, 0.5)", 
+                  "rgba(108, 117, 125, 0.7)",
+                  "rgba(108, 117, 125, 0.5)"
+                ],
+                "borderColor": [
+                  "rgba(220, 53, 69, 1)",
+                  "rgba(220, 53, 69, 0.8)",
+                  "rgba(108, 117, 125, 1)",
+                  "rgba(108, 117, 125, 0.8)"
+                ],
+                "borderWidth": 1
+              }
+            ]
+          }
+        },
+        "bolgesel_liderler": {
+          "baslik": "3. Bölgesel Liderler",
+          "ulkeler": [
+            {
+              "ulke": "Almanya",
+              "aciklama": "Lufthansa Technik'in merkezidir. Avrupa'nın en büyük MRO kapasitesine sahip ülkelerindendir."
+            },
+            {
+              "ulke": "Fransa",
+              "aciklama": "Airbus'ın bakım faaliyetleri, Safran gibi motor MRO firmaları burada yoğunlaşır."
+            },
+            {
+              "ulke": "İngiltere",
+              "aciklama": "Rolls-Royce'un motor MRO hizmetleri bu ülkededir."
+            },
+            {
+              "ulke": "Portekiz",
+              "aciklama": "TAP Maintenance & Engineering, Güney Avrupa'da stratejik rol oynar."
+            },
+            {
+              "ulke": "Polonya, Macaristan",
+              "aciklama": "Düşük maliyetli bakım hizmetleri sunan Doğu Avrupa ülkeleri, yeni yatırımlar için cazip hale geliyor."
+            }
+          ]
+        },
+        "mevcut_durum_ve_projeksiyonlar_genel": {
+          "baslik": "Avrupa MRO Pazarı ve Gelecek Projeksiyonları",
+          "mevcut_ucak_sayisi": {
+            "bilgi": "2023 itibarıyla Avrupa'da 5.000'den fazla ticari uçak bulunmaktadır."
+          },
+          "projeksiyon_2033": {
+            "bilgi": "Bu sayının 2033'e kadar yaklaşık 7.000'e ulaşması beklenmektedir."
+          }
+        }
+      },
+      {
+        "bolge_adi": "Asya-Pasifik",
+        "genel_gorunum_basligi": "Asya-Pasifik Havacılık MRO Pazarının Genel Görünümü",
+        "pazar_buyuklugu_ve_trendler": {
+          "baslik": "1. Pazarın Büyüklüğü ve Trendleri",
+          "veriler": [
+            {
+              "yil": "2023",
+              "pazar_buyuklugu_usd": "29,6 milyar USD",
+              "buyume_orani": null
+            },
+            {
+              "yil": "2025",
+              "pazar_buyuklugu_usd": "32,7 milyar USD",
+              "buyume_orani": "%5,1"
+            },
+            {
+              "yil": "2033 (Tahmini)",
+              "pazar_buyuklugu_usd": "49,2 milyar USD",
+              "buyume_orani": "%5,3"
+            }
+          ],
+          "buyume_aciklamasi": "Asya-Pasifik havacılık MRO pazarı, yıllık %5,3 CAGR ile en hızlı büyüyen bölge konumundadır. Özellikle Çin, Hindistan ve Güneydoğu Asya'daki artan hava trafiği bu büyümeyi desteklemektedir."
+        },
+        "segment_bazinda_dagilim": {
+          "baslik": "2. Segment Bazında Dağılım",
+          "aciklama_giris": "Asya-Pasifik MRO pazarında dört ana segment bulunmaktadır. Bu segmentlerin bölge içindeki dağılımı şöyledir:",
+          "segmentler": [
+            {
+              "segment_adi": "Motor MRO",
+              "pazar_payi": "%41,5",
+              "aciklama": "Ticari havacılık segmenti, 2024 yılında Asya-Pasifik uçak motoru MRO pazarının yaklaşık %78'ini oluşturmaktadır. Bu segment, yüksek bakım maliyetleri ve motor teknolojisinin karmaşıklığı nedeniyle pazarın en büyük payına sahiptir. Artan uçak sayısı ve motor teknolojilerindeki gelişmeler, bu alandaki büyümeyi desteklemektedir."
+            },
+            {
+              "segment_adi": "Komponent MRO",
+              "pazar_payi": "%22,8",
+              "aciklama": "Asya-Pasifik'te bileşen MRO segmenti, özellikle aviyonik sistemler, iniş takımları ve APU (Yardımcı Güç Ünitesi) gibi karmaşık parçaların bakımını kapsamaktadır. Bu segment, yeni uçak tiplerinin daha fazla bileşene sahip olması nedeniyle büyümeye devam etmektedir."
+            },
+            {
+              "segment_adi": "Hat Bakımı (Line Maintenance)",
+              "pazar_payi": "%19,6",
+              "aciklama": "Hat bakımı, özellikle Singapur, Hong Kong ve Kuala Lumpur gibi büyük havacılık merkezlerinde yoğunlaşmaktadır. Düşük maliyetli taşıyıcıların artışı ve uçuş frekanslarının yükselmesi, bu segmentteki talep artışını desteklemektedir."
+            },
+            {
+              "segment_adi": "Gövde Bakımı (Airframe Maintenance)",
+              "pazar_payi": "%16,1",
+              "aciklama": "Gövde bakımı, Asya-Pasifik'te özellikle Çin, Singapur ve Filipinler'deki büyük tesislerde gerçekleştirilmektedir. Düşük işçilik maliyetleri, bu bölgeyi ağır bakım faaliyetleri için rekabetçi bir merkez haline getirmiştir."
+            }
+          ]
+        },
+        "asya_pasifik_mro_pazari_ve_gelecek_projeksiyonlari": {
+          "baslik": "Asya-Pasifik MRO Pazarı ve Gelecek Projeksiyonları",
+          "mevcut_durum_2024_itibariyla": {
+            "ticari_sivil_hava_tasiti_sayisi": "Yaklaşık 8.100 adet sivil yolcu uçağı aktif olarak hizmet vermektedir. (Kaynak: Boeing Commercial Market Outlook 2023, Airbus Global Market Forecast)",
+            "bolgesel_konum": "Bu sayı, Asya-Pasifik'in dünya genelindeki ikinci en büyük ticari uçak filosuna sahip bölge olduğunu göstermektedir (Kuzey Amerika'dan sonra)."
+          },
+          "gelecek_tahmini_2042_yilina_kadar": {
+            "toplam_ucak_sayisi_beklentisi": "2042 yılına kadar Asya-Pasifik bölgesinde toplamda 20.600 ticari yolcu uçağına ulaşılması beklenmektedir. (Bu, yaklaşık 2,5 katlık bir büyümeye işaret eder.)",
+            "yeni_ucak_teslimati_tahmini_2023_2042": [
+              { "kaynak": "Boeing", "tahmin": "Yaklaşık 17.485 yeni uçak teslimatı bekleniyor." },
+              { "kaynak": "Airbus", "tahmin": "Yaklaşık 17.000 yeni uçak teslimatı öngörülmektedir." }
+            ],
+            "buyume_hizi_analizi": {
+              "baslik": "Büyüme Hızı",
+              "veriler": [
+                "Asya-Pasifik'teki hava trafiğinin yıllık ortalama %5,3 büyüme ile küresel ortalamanın üzerinde artacağı tahmin edilmektedir.",
+                "Bu da MRO (Bakım-Onarım) faaliyetlerinin ve altyapı yatırımlarının büyük oranda artacağı anlamına gelir."
+              ]
+            }
+          }
+        },
+        "yatirim_icin_stratejik_gerekceler": {
+          "baslik": "Yatırım İçin Stratejik Gerekçeler",
+          "yeni_ucak_siparisleri": {
+            "baslik": "1. Yeni Uçak Siparişleri",
+            "giris_aciklamasi": "Asya-Pasifik bölgesindeki havayolu şirketleri, hem mevcut filo büyüklükleri hem de verdikleri yeni uçak siparişleriyle küresel havacılık pazarında önemli bir yer tutmaktadır.",
+            "en_fazla_ucak_siparisi_veren_ve_en_buyuk_filolara_sahip_10_havayolu": [
+              { "sira": 1, "havayolu_sirketi": "China Southern Airlines", "ulke": "Çin", "mevcut_filo": "650+", "yeni_siparisler": "100+", "one_cikan_siparisler_ve_notlar": "Airbus A320neo, Boeing 737 MAX siparişleri; geniş iç hat ağı." },
+              { "sira": 2, "havayolu_sirketi": "China Eastern Airlines", "ulke": "Çin", "mevcut_filo": "600+", "yeni_siparisler": "200+", "one_cikan_siparisler_ve_notlar": "100 adet COMAC C919 siparişi; Airbus A320neo ve Boeing 737 MAX siparişleri." },
+              { "sira": 3, "havayolu_sirketi": "Air China", "ulke": "Çin", "mevcut_filo": "500+", "yeni_siparisler": "100+", "one_cikan_siparisler_ve_notlar": "Airbus A350 ve Boeing 787 siparişleri; uluslararası genişleme hedefi." },
+              { "sira": 4, "havayolu_sirketi": "IndiGo", "ulke": "Hindistan", "mevcut_filo": "300+", "yeni_siparisler": "500+", "one_cikan_siparisler_ve_notlar": "Airbus A320neo ve A321XLR siparişleri; düşük maliyetli taşıyıcı olarak hızlı büyüme." },
+              { "sira": 5, "havayolu_sirketi": "Singapore Airlines", "ulke": "Singapur", "mevcut_filo": "130+", "yeni_siparisler": "60+", "one_cikan_siparisler_ve_notlar": "31 adet Boeing 777-9 ve 30 adet 787-10 siparişi; premium hizmet odaklı." },
+              { "sira": 6, "havayolu_sirketi": "Cathay Pacific", "ulke": "Hong Kong", "mevcut_filo": "150+", "yeni_siparisler": "30+", "one_cikan_siparisler_ve_notlar": "30 adet Airbus A330-900 siparişi; bölgesel ağını güçlendirme planı." },
+              { "sira": 7, "havayolu_sirketi": "ANA (All Nippon Airways)", "ulke": "Japonya", "mevcut_filo": "250+", "yeni_siparisler": "50+", "one_cikan_siparisler_ve_notlar": "Boeing 787 ve Airbus A380 siparişleri; Japonya'nın en büyük havayolu." },
+              { "sira": 8, "havayolu_sirketi": "Qantas", "ulke": "Avustralya", "mevcut_filo": "130+", "yeni_siparisler": "100+", "one_cikan_siparisler_ve_notlar": "Airbus A321XLR ve Boeing 787 siparişleri; uzun menzilli uçuşlara odaklanma." },
+              { "sira": 9, "havayolu_sirketi": "Korean Air", "ulke": "Güney Kore", "mevcut_filo": "150+", "yeni_siparisler": "50+", "one_cikan_siparisler_ve_notlar": "Boeing 787 ve Airbus A321neo siparişleri; Asya ve Amerika pazarlarında genişleme." },
+              { "sira": 10, "havayolu_sirketi": "Hainan Airlines", "ulke": "Çin", "mevcut_filo": "224", "yeni_siparisler": "153", "one_cikan_siparisler_ve_notlar": "60 adet COMAC C919 ve 50 adet Boeing 737 MAX siparişi; bölgesel büyüme hedefi." }
+            ]
+          },
+          "filo_buyuklugu_ve_yaslanan_ucaklar_artan_bakim_talebi": {
+            "baslik": "2. Filo Büyüklüğü ve Yaşlanan Uçaklar = Artan Bakım Talebi",
+            "mevcut_ucak_sayisi_2024": "2024'te yaklaşık 8.100 uçak (sivil yolcu uçağı) hizmette.",
+            "gelecek_ucak_sayisi_2042": "2042'ye kadar bu sayı 20.600'e çıkacak (yaklaşık 2,5 kat artış).",
+            "yaslanan_filo_etkisi_ve_bakim_ihtiyaclari": "Filonun önemli kısmı 2025'ten sonra 12-15 yaşını geçecek ve bu uçaklar ağır bakım (C-check, D-check), motor revizyonu, komponent değişimi gibi daha maliyetli ve kapsamlı MRO hizmetlerine ihtiyaç duyacak."
+          },
+          "fiyat_kalite_dengesi_asya_pasifik": {
+            "baslik": "3. Fiyat-Kalite Dengesi: Asya-Pasifik Avantajı",
+            "durum_ve_nedenler": [
+              "Asya-Pasifik bölgesindeki MRO hizmetleri şu avantajlara sahiptir:",
+              "Düşük işçilik maliyetleri sayesinde rekabetçi fiyatlandırma",
+              "Yeni kurulan modern tesisler ve ileri teknoloji yatırımları",
+              "Yüksek kalite standartlarını karşılayan EASA ve FAA sertifikalı tesislerin artması",
+              "Özellikle Singapur, Japonya ve Güney Kore'de yüksek teknik uzmanlık"
+            ]
+          },
+          "ucaklarin_avrupaya_bakim_icin_transferi_fly_in_fly_out_modeli": {
+            "baslik": "4. Uçakların Avrupa'ya Bakım için Transferi: \"Fly-In-Fly-Out\" Modeli",
+            "aciklama": "Dönemsel ağır bakımlar için birçok Asya havayolu şirketi uçaklarını Avrupa'ya getiriyor.",
+            "ornek_sirketler": [
+              "Singapur Airlines",
+              "Philippine Airlines",
+              "Air India",
+              "Garuda Indonesia"
+            ],
+            "tercih_nedeni": "gibi firmalar, bakım kalitesi ve verimlilik nedeniyle bu modeli tercih ediyor."
+          }
+        },
+        "asya_pasifik_filo_yapisinin_mevcut_durumu_2024": {
+          "baslik": "Asya-Pasifik Filo Yapısının Mevcut Durumu (2024)",
+          "filo_yapisi": [
+            {
+              "ucak_turu": "Dar Gövde (Narrow-body)",
+              "filo_icindeki_pay_yuzde": "~68%",
+              "aciklama": "Airbus A320ceo/neo ve Boeing 737 NG/MAX en yaygın modellerdir. Özellikle Çin, Hindistan ve Güneydoğu Asya'da kısa-orta menzilli uçuşlar için tercih ediliyor."
+            },
+            {
+              "ucak_turu": "Geniş Gövde (Wide-body)",
+              "filo_icindeki_pay_yuzde": "~27%",
+              "aciklama": "Boeing 777, 787 ve Airbus A330, A350 modelleri yaygındır. Özellikle uzun menzilli rotalarda ve yüksek yolcu kapasitesi gerektiren yoğun rotalarda kullanılmaktadır."
+            },
+            {
+              "ucak_turu": "Bölgesel Jetler",
+              "filo_icindeki_pay_yuzde": "~5%",
+              "aciklama": "Embraer E-Jets, Bombardier CRJ serisi ve Mitsubishi SpaceJet gibi uçaklar, daha düşük yolcu kapasiteli bölgesel hatlarda hizmet vermektedir."
+            }
+          ],
+          "yas_dagilimi": {
+            "0_5_yas": {
+              "oran": "~42%",
+              "yillik_ortalama_artis": "+4%"
+            },
+            "6_12_yas": {
+              "oran": "~38%",
+              "yillik_ortalama_artis": "-1%"
+            },
+            "12_yas_uzeri": {
+              "oran": "~20%",
+              "yillik_ortalama_artis": "-3%"
+            }
+          }
+        }
+      }
+    ]
+}

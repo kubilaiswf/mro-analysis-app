@@ -4,102 +4,220 @@ import { useNavigate } from 'react-router-dom';
 // amCharts imports
 import * as am5 from '@amcharts/amcharts5';
 import * as am5map from '@amcharts/amcharts5/map';
-import am5geodata_worldLow from '@amcharts/amcharts5-geodata/worldLow';
+// import am5geodata_worldLow from '@amcharts/amcharts5-geodata/worldLow'; // Kullanılmıyor
 import am5geodata_continentsLow from '@amcharts/amcharts5-geodata/continentsLow';
 import am5themes_Animated from '@amcharts/amcharts5/themes/Animated';
 
 const ContinentMap = () => {
   const chartRef = useRef(null);
   const navigate = useNavigate();
+  const [selectedContinent, setSelectedContinent] = useState(null);
+  
+  // Kıta ID'sini isimden alma yardımcı fonksiyonu
+  const getContinentId = (continentName) => {
+    const idMap = {
+      "Africa": "AF", "Asia": "AS", "Europe": "EU",
+      "North America": "NA", "South America": "SA", "Oceania": "OC"
+    };
+    return idMap[continentName] || "";
+  };
+
+  // Kıta merkez koordinatlarını alma - Bu koordinatlar geoOrthographic projeksiyon için uyarlanmıştır
+  const getContinentCenter = (continentName) => {
+    const centerMap = {
+      "Africa": { longitude: 20, latitude: 5 }, 
+      "Asia": { longitude: 95, latitude: 35 },
+      "Europe": { longitude: 15, latitude: 52 }, 
+      "North America": { longitude: -100, latitude: 45 },
+      "South America": { longitude: -60, latitude: -20 }, 
+      "Oceania": { longitude: 140, latitude: -25 }
+    };
+    return centerMap[continentName] || { longitude: 0, latitude: 0 };
+  };
+
+  // Kıta zoom seviyelerini alma
+  const getContinentZoom = (continentName) => {
+    const zoomMap = {
+      "Africa": 2.8, "Asia": 2.5, "Europe": 4.5,
+      "North America": 2.5, "South America": 3.3, "Oceania": 3.3
+    };
+    return zoomMap[continentName] || 1.5;
+  };
 
   const handleContinentClick = (continentName) => {
-    console.log("ContinentMap - Kıtaya tıklandı, yönlendiriliyor:", continentName);
-    navigate(`/continent/${continentName}`);
+    // Her zaman sabit tanımladığımız merkez noktalarını kullanıyoruz
+    const centerToUse = getContinentCenter(continentName);
+    
+    console.log(`ContinentMap - Clicked: ${continentName}, Using Fixed Center:`, centerToUse);
+
+    if (chartRef.current && chartRef.current.map && chartRef.current.series && chartRef.current.root) {
+      const continentData = {
+        name: continentName,
+        id: getContinentId(continentName),
+        center: centerToUse,
+        zoom: getContinentZoom(continentName)
+      };
+      setSelectedContinent(continentData);
+      
+      zoomToContinent(continentData);
+    } else {
+      console.warn("Chart references not fully available for handleContinentClick, navigating directly for", continentName);
+      navigate(`/continent/${continentName}`);
+    }
+  };
+
+  const zoomToContinent = (continent) => {
+    if (!chartRef.current || !chartRef.current.map || !chartRef.current.series) {
+      console.error("Chart references not available for zoom. Navigating directly for", continent.name);
+      navigate(`/continent/${continent.name}`);
+      return;
+    }
+
+    const chart = chartRef.current.map;
+    const continentSeries = chartRef.current.series;
+    const animationDuration = chart.get("animationDuration", 800); // Genel animasyon süresini al
+
+    // Seçilen kıtanın polygon referansını bul (diğer kıtaları saydamlaştırmak için)
+    let selectedPolygon = null;
+    continentSeries.mapPolygons.each(function(polygon) {
+      if (polygon.dataItem.dataContext.id === continent.id) {
+        selectedPolygon = polygon;
+      }
+    });
+
+    if (!selectedPolygon || !selectedPolygon.dataItem) { 
+      console.error("Selected polygon or its dataItem not found for continent:", continent.name);
+      navigate(`/continent/${continent.name}`);
+      return;
+    }
+
+    // Diğer kıtaları saydamlaştır
+    continentSeries.mapPolygons.each(function(polygon) {
+      if (polygon.filters) {
+        polygon.filters.clear();
+      }
+      if (polygon.dataItem.dataContext.id !== continent.id) {
+        polygon.animate({ key: "fillOpacity", to: 0.3, duration: 400 });
+        polygon.animate({ key: "strokeOpacity", to: 0.2, duration: 400 });
+      } else {
+        polygon.animate({ key: "fillOpacity", to: 0.85, duration: 400 });
+        polygon.animate({ key: "strokeOpacity", to: 1, duration: 400 });
+      }
+    });
+
+    // 1. Haritayı seçilen kıtanın merkezine döndür
+    console.log(`Rotating to: Longitude ${-continent.center.longitude}, Latitude ${continent.center.latitude} for ${continent.name}`);
+    
+    chart.animate({
+      key: "rotationX",
+      to: -continent.center.longitude,
+      duration: animationDuration,
+      easing: am5.ease.out(am5.ease.cubic)
+    });
+
+    chart.animate({
+      key: "rotationY",
+      to: -continent.center.latitude,
+      duration: animationDuration,
+      easing: am5.ease.out(am5.ease.cubic)
+    });
+    
+    // 2. Dönme animasyonu bittikten sonra yakınlaştır
+    setTimeout(() => {
+      console.log(`Zooming to level: ${continent.zoom} for ${continent.name}`);
+      chart.animate({
+        key: "zoomLevel",
+        to: continent.zoom,
+        duration: animationDuration / 2, // Yakınlaşma animasyonu biraz daha hızlı olabilir
+        easing: am5.ease.out(am5.ease.cubic)
+      });
+
+      // Yakınlaşma animasyonu da bittikten sonra yönlendir
+      setTimeout(() => {
+        navigate(`/continent/${continent.name}`);
+      }, (animationDuration / 2) + 200);
+
+    }, animationDuration); // Dönme animasyon süresi kadar bekle
   };
 
   useLayoutEffect(() => {
     let root = am5.Root.new("continentmapdiv");
     root.setThemes([am5themes_Animated.new(root)]);
 
-    root.interfaceColors.set("grid", am5.color("#ffffff"));
-    root.interfaceColors.set("text", am5.color("#ffffff"));
+    root.interfaceColors.set("grid", am5.color(0xffffff));
+    root.interfaceColors.set("text", am5.color(0xffffff));
+    root.interfaceColors.set("background", am5.color(0x1f2937));
 
     let chart = root.container.children.push(
       am5map.MapChart.new(root, {
-        panX: "translateX",
-        panY: "translateY",
-        projection: am5map.geoMercator(),
-        paddingBottom: 20,
-        paddingTop: 20,
-        paddingLeft: 20,
-        paddingRight: 20
+        panX: "rotateX",
+        panY: "rotateY",
+        projection: am5map.geoOrthographic(),
+        paddingBottom: 10, paddingTop: 10, paddingLeft: 10, paddingRight: 10,
+        homeZoomLevel: 1,
+        homeGeoPoint: { longitude: 0, latitude: 20 }, // Başlangıç merkezi
+        maxZoomLevel: 7,
+        minZoomLevel: 1,
+        rotationX: 0, 
+        rotationY: 0,  
+        animationDuration: 1200, // Genel animasyon süresi (ms) - biraz artırıldı
+        wheelRotateAnimationDuration: 600, // Tekerlek ile döndürme animasyon süresi
+        panAnimationDuration: 600 // Pan animasyon süresi
       })
     );
+    
+    chart.chartContainer.set("background", am5.Rectangle.new(root, {
+        fill: am5.color(0x1f2937),
+        fillOpacity: 1
+    }));
 
     let continentSeries = chart.series.push(
       am5map.MapPolygonSeries.new(root, {
         geoJSON: am5geodata_continentsLow,
-        valueField: "value"
+        valueField: "value",
+        exclude: ["AQ"]
       })
     );
 
     continentSeries.data.setAll([
-      { id: "AF", value: 1, name: "Africa" },
-      { id: "AS", value: 2, name: "Asia" },
-      { id: "EU", value: 3, name: "Europe" },
-      { id: "NA", value: 4, name: "North America" },
-      { id: "SA", value: 5, name: "South America" },
-      { id: "OC", value: 6, name: "Oceania" }
+      { id: "AF", value: 1, name: "Africa", polygonSettings: { fill: am5.color("#fbbf24")} },
+      { id: "AS", value: 2, name: "Asia", polygonSettings: { fill: am5.color("#34d399")} },
+      { id: "EU", value: 3, name: "Europe", polygonSettings: { fill: am5.color("#818cf8")} },
+      { id: "NA", value: 4, name: "North America", polygonSettings: { fill: am5.color("#f87171")} },
+      { id: "SA", value: 5, name: "South America", polygonSettings: { fill: am5.color("#a78bfa")} },
+      { id: "OC", value: 6, name: "Oceania", polygonSettings: { fill: am5.color("#60a5fa")} }
     ]);
-
-    continentSeries.events.once("datavalidated", function() {
-      console.log("ContinentMap - Tüm poligonlar:", continentSeries.dataItems.map(di => di.dataContext));
-    });
-
-    let continentColors = {
-      1: am5.color("#fbbf24"),
-      2: am5.color("#34d399"),
-      3: am5.color("#818cf8"),
-      4: am5.color("#f87171"),
-      5: am5.color("#a78bfa"),
-      6: am5.color("#60a5fa")
-    };
 
     continentSeries.mapPolygons.template.setAll({
       tooltipText: "{name}",
       interactive: true,
-      fill: am5.color("#374151"),
-      strokeWidth: 1,
-      strokeOpacity: 0.8,
-      stroke: am5.color("#4B5563")
-    });
-
-    continentSeries.mapPolygons.template.adapters.add("fill", function(fill, target) {
-      let dataItem = target.dataItem;
-      if (dataItem && dataItem.dataContext) {
-        let value = dataItem.dataContext.value;
-        return continentColors[value] || fill;
-      }
-      return fill;
+      templateField: "polygonSettings",
+      strokeWidth: 1.5,
+      strokeOpacity: 0.7,
+      stroke: am5.color(0xffffff),
+      fillOpacity: 0.75
     });
 
     continentSeries.mapPolygons.template.states.create("hover", {
-      fillOpacity: 0.7,
+      fillOpacity: 0.9,
       strokeWidth: 2,
-      stroke: am5.color("#ffffff")
+      strokeOpacity: 1,
     });
-
+    
     continentSeries.mapPolygons.template.events.on("click", function(ev) {
       let dataItem = ev.target.dataItem;
       if (dataItem && dataItem.dataContext && dataItem.dataContext.name) {
+        // DÜZELTME 3: Dynamic centroid kullanımını kaldırıp sabit tanımladığımız merkez noktalarına güveniyoruz
+        console.log(`Polygon Click: ${dataItem.dataContext.name}`); 
         handleContinentClick(dataItem.dataContext.name);
-      } else {
-        console.log("[POLYGON] Tıklanan: data yok", ev);
       }
     });
 
     let labelSeries = chart.series.push(
-      am5map.MapPointSeries.new(root, {})
+      am5map.MapPointSeries.new(root, {
+        longitudeField: "longitude",
+        latitudeField: "latitude"
+      })
     );
 
     labelSeries.bullets.push(function(root, series, dataItem) {
@@ -110,56 +228,71 @@ const ContinentMap = () => {
         centerX: am5.p50,
         centerY: am5.p50,
         textAlign: "center",
-        fontSize: 16,
-        fontWeight: "700",
-        shadowColor: am5.color("#000000"),
-        shadowBlur: 4,
-        shadowOffsetX: 1,
-        shadowOffsetY: 1
+        fontSize: "1.1em",
+        fontWeight: "600",
+        paddingTop: 3, paddingBottom: 3, paddingLeft: 6, paddingRight: 6,
+        shadowColor: am5.color("#000000"), shadowBlur: 3, shadowOffsetX: 1, shadowOffsetY: 1,
+        interactive: true,
+        cursorOverStyle: "pointer",
+        background: am5.RoundedRectangle.new(root, {
+          fill: am5.color(0x000000), fillOpacity: 0.5, strokeOpacity: 0
+        })
       });
 
       label.events.on("click", function(ev) {
-        const context = dataItem.dataContext;
-        if (context && context.name) {
-          handleContinentClick(context.name);
+        const labelDataContext = dataItem.dataContext;
+        if (labelDataContext && labelDataContext.name) {
+          // DÜZELTME 4: Etiket tıklamalarında da geoCentroid hesaplamayı kaldırdık
+          console.log(`Label Click for ${labelDataContext.name}`);
+          handleContinentClick(labelDataContext.name);
         }
       });
-
-      return am5.Bullet.new(root, { sprite: label });
+      return am5.Bullet.new(root, {
+        sprite: label,
+        dynamic: true
+      });
     });
-
+    
+    // Kıta etiketlerinin konumları - küre görünümü için uyarlandı
+    let labelPositions = {
+      "AF": { longitude: 20, latitude: 0 }, 
+      "AS": { longitude: 90, latitude: 25 },
+      "EU": { longitude: 15, latitude: 55 }, 
+      "NA": { longitude: -100, latitude: 45 },
+      "SA": { longitude: -60, latitude: -25 }, 
+      "OC": { longitude: 140, latitude: -20 }
+    };
+    
     labelSeries.data.setAll([
-      { geometry: { type: "Point", coordinates: [20, 10] }, name: "Africa" },
-      { geometry: { type: "Point", coordinates: [95, 35] }, name: "Asia" },
-      { geometry: { type: "Point", coordinates: [15, 50] }, name: "Europe" },
-      { geometry: { type: "Point", coordinates: [-100, 40] }, name: "North America" },
-      { geometry: { type: "Point", coordinates: [-60, -20] }, name: "South America" },
-      { geometry: { type: "Point", coordinates: [140, -25] }, name: "Oceania" }
+      { id: "AF", name: "Africa", longitude: labelPositions.AF.longitude, latitude: labelPositions.AF.latitude },
+      { id: "AS", name: "Asia", longitude: labelPositions.AS.longitude, latitude: labelPositions.AS.latitude },
+      { id: "EU", name: "Europe", longitude: labelPositions.EU.longitude, latitude: labelPositions.EU.latitude },
+      { id: "NA", name: "North America", longitude: labelPositions.NA.longitude, latitude: labelPositions.NA.latitude },
+      { id: "SA", name: "South America", longitude: labelPositions.SA.longitude, latitude: labelPositions.SA.latitude },
+      { id: "OC", name: "Oceania", longitude: labelPositions.OC.longitude, latitude: labelPositions.OC.latitude }
     ]);
-
-    labelSeries.events.once("datavalidated", function() {
-      console.log("ContinentMap - Tüm label'lar:", labelSeries.dataItems.map(di => di.dataContext));
-    });
-
-    chart.children.unshift(
-      am5.Rectangle.new(root, {
-        fill: am5.color("#1f2937"),
-        x: am5.p0,
-        y: am5.p0,
-        width: am5.p100,
-        height: am5.p100,
-        layer: 0
-      })
-    );
-
-    chart.appear(1000, 100);
+    
     chart.set("zoomControl", am5map.ZoomControl.new(root, {}));
+    if (chart.zoomControl && chart.zoomControl.homeButton) {
+      chart.zoomControl.homeButton.set("visible", true);
+    }
+    
+    chart.setAll({ wheelSensitivity: 0.6, maxPanOut: 0.1 });
+    chart.appear(1000, 100);
+
+    chartRef.current = {
+      root: root, map: chart, series: continentSeries, labelSeries: labelSeries
+    };
 
     return () => {
-      root.dispose();
+      if (chartRef.current && chartRef.current.root) {
+        chartRef.current.root.dispose();
+      }
+      chartRef.current = null;
     };
-  }, []);
+  }, [navigate]);
 
+  // renderPazarBuyuklugu, renderBolgeselLiderler, renderYatirimGerekceleri fonksiyonları aynı kalır.
   const renderPazarBuyuklugu = (data) => {
     if (!data) return null;
     return (
@@ -279,6 +412,7 @@ const ContinentMap = () => {
     );
   };
 
+
   return (
     <div className="h-[550px] rounded-lg shadow-xl overflow-hidden border border-gray-700 bg-gray-800">
       <h3 className="text-xl font-semibold text-white px-4 py-3 border-b border-gray-700 bg-gray-700">
@@ -289,4 +423,4 @@ const ContinentMap = () => {
   );
 };
 
-export default ContinentMap; 
+export default ContinentMap;
