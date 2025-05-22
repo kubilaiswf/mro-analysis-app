@@ -63,6 +63,14 @@ export const getMROLogoFilename = (companyName) => {
     'bird aviation': 'bird.jpg',
     'certified aviation services': 'CAS.jpg',
     'cas': 'CAS.jpg',
+    'excel engineering ltd': '2excel.png',
+    'ga telesis engine services': 'ga-telesis.png',
+    'aar corp': 'AAR.png',
+    'adria tehnika': 'adria.jpg',
+    'aviation technical services (ats)': 'ATS.png',
+    'iberia maintenance': 'iberia.jpg',
+    'gmf aeroasia': 'gmf.png',
+    'haeco group': 'HAECO.png',
     // 'exhibitor bird': 'exhibitor-bird.jpg', // Still unclear
     // 'Untitled-1.png' : '' // Still needs MRO Name
   };

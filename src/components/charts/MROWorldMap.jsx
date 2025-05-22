@@ -54,7 +54,15 @@ const cityToCountryMapping = {
   "Warsaw": "Poland",
   "Hamburg": "Germany",
   "Hong Kong": "China",
-  "Phoenix": "USA"
+  "Phoenix": "USA",
+  "Lasham": "United Kingdom",
+  "Vantaa": "Finland",
+  "Wood Dale": "USA",
+  "Ljubljana": "Slovenia",
+  "Everett": "USA",
+  "Madrid": "Spain",
+  "Jakarta": "Indonesia",
+  "Xiamen": "China"
 };
 
 // Ülke-kıta eşleşmesi (Genişletilmiş)
@@ -595,6 +603,14 @@ const MROWorldMap = ({ continent }) => {
       "Etihad Engineering": "Abu Dhabi",
       "AEI Aeronautical Engineers, Inc.": "Miami",
       "FEAM Maintenance/Engineering": "Cincinnati",
+      "2Excel Engineering Ltd": "Lasham",
+      "GA Telesis Engine Services (GATES)": "Vantaa",
+      "AAR Corp": "Wood Dale",
+      "Adria Tehnika": "Ljubljana",
+      "Aviation Technical Services (ATS)": "Everett",
+      "Iberia Maintenance": "Madrid",
+      "GMF AeroAsia (PT Garuda Maintenance Facility Aero Asia Tbk)": "Jakarta",
+      "HAECO Group (Hong Kong Aircraft Engineering Company Limited)": "Xiamen",
       
       // Yeni manuel override'lar
       "Aerospace Rotables": "Phoenix",
@@ -701,7 +717,16 @@ const MROWorldMap = ({ continent }) => {
               "indira gandhi": "Delhi",
               "san josé": "San Jose",
               "st. petersburg": "St. Petersburg",
-              "nairobi": "Nairobi"
+              "nairobi": "Nairobi",
+              "lasham": "Lasham",
+              "vantaa": "Vantaa",
+              "wood dale": "Wood Dale",
+              "ljubljana": "Ljubljana",
+              "everett": "Everett",
+              "paine field": "Everett",
+              "madrid": "Madrid",
+              "jakarta": "Jakarta",
+              "xiamen": "Xiamen"
             };
             
             for (const [key, value] of Object.entries(cityMapping)) {

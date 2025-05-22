@@ -3166,6 +3166,694 @@ export const lufthansaTechnikData = {
   ]
 };
 
+export const gaTelesisEngineServicesData = {
+  mroFirmasiAdi: "GA Telesis Engine Services (GATES)",
+  kimdir: "GA Telesis Engine Services (GATES), GA Telesis LLC'nin tamamına sahip olduğu bir iştiraki olarak, Finlandiya'nın Helsinki kentinde faaliyet göstermektedir. FAA, EASA, CAAC, TCCA, GACA ve diğer otoritelerden onaylı olan GATES, CFM56-5B, CFM56-7B ve CF6-80C2 motorları için kapsamlı bakım, onarım ve revizyon (MRO) hizmetleri sunmaktadır. Tesis, yılda 200 motor kapasitesine sahiptir.",
+  hizmetleri: [
+    "Motor Bakım ve Revizyonu (CF6-80C2, CFM56-5B, CFM56-7B).",
+    "Special Procedures Aero-Engine Hospital (SPAH).",
+    "Saha ve Kanat Üzeri Destek.",
+    "24/7 AOG Desteği.",
+    "Test Hücresi Hizmetleri."
+  ],
+  sertifikalar: [
+    "FAA Part 145",
+    "EASA Part 145",
+    "CAAC",
+    "TCCA",
+    "GACA",
+    "DGCA (Hindistan)",
+    "ANAC (Brezilya)",
+    "ECAA (Etiyopya)" // Metinde Etiyopya olarak geçmiş, ECAA olabilir.
+  ],
+  hangarVeTesisKonumlari: [
+    {
+      konum: "Helsinki, Finlandiya (Ana Tesis)",
+      detay: "Yılda 200 motor kapasitesi. 100.000 lb'ye kadar motor test kapasitesi."
+    },
+    {
+      konum: "Wilmington, Ohio, ABD (Ortak Girişim Tesisi)",
+      detay: "Air Transport Services Group ile ortak girişim kapsamında ikinci bir tesis."
+    },
+    {
+      konum: "El Salvador (Yeni Bölge Merkezi)", // Yatırımlar bölümünden
+      detay: "2025'te açıldı. Latin Amerika ve Karayipler için bileşen dağıtımı ve MRO hizmetleri."
+    }
+  ],
+  musteriPortfoyu: [ // Sadece anlaşmalar bölümünden çıkarılanlar
+    { havayolu: "Lion Air Group", ulke: "Endonezya", merkezSehir: null, anlasmaDetayi: "Uzun vadeli motor bakım (CFM56-7B), kiralık motor desteği, LLP yönetimi, lojistik (Boeing 737NG). Anlaşma: 2022-2023." },
+    { havayolu: "Nok Air", ulke: "Tayland", merkezSehir: null, anlasmaDetayi: "Performans restorasyon motor atölye ziyaretleri (CFM56-7B, Boeing 737NG). Anlaşma: 2024." },
+    { havayolu: "Philippines AirAsia", ulke: "Filipinler", merkezSehir: null, anlasmaDetayi: "Motor bakım, onarım, revizyon (CFM56-5B, 15x Airbus A320-200). Anlaşma: Nisan 2023." },
+    { havayolu: "AirAsia India", ulke: "Hindistan", merkezSehir: null, anlasmaDetayi: "Motor bakım, onarım, revizyon, kiralık motor desteği, LLP yönetimi (CFM56-5B, Airbus A320ceo/neo). Anlaşma: 2022." },
+    { havayolu: "Atlas Air", ulke: "ABD", merkezSehir: null, anlasmaDetayi: "7 yıllık kapsamlı motor bakım ve onarım (CF6-80C2B, Boeing 747-400F, 767-300F). Anlaşma: Ekim 2022." },
+    { havayolu: "Transaero Airlines (Rusya)", ulke: "Rusya", merkezSehir: null, anlasmaDetayi: "10 yıllık münhasır motor bakım ve onarım (CF6-80C2, Boeing 747, 767). (Not: Havayolu faaliyette değil)." }
+  ],
+  bakimHizmetiVerilenUcakTipleri: { // Motor tiplerinden çıkarılan uçak modelleri
+    Airbus: ["A320 ailesi (CFM56-5B, V2500-A5 motorlu)"],
+    Boeing: ["747-400 (CF6-80C2 motorlu)", "767-300ER (CF6-80C2 motorlu)", "737NG (CFM56-7B motorlu)"]
+    // Embraer (CF34 motoru geçiyor ama spesifik ERJ serisi belirtilmemiş), Bombardier bu metinde yok.
+  },
+  anlasmalar2023_2025: [
+    "Nok Air ile CFM56-7B motorları için performans restorasyon atölye ziyaretleri (2024).",
+    "Philippines AirAsia ile CFM56-5B motorları için MRO hizmetleri (Nisan 2023)."
+    // Diğer anlaşmalar 2022 tarihli.
+  ],
+  sonDonemdekiYatirimlar: [
+    "Sürdürülebilir Havacılık Yakıtı (SAF) Kullanımı (2024, DHL ile iş birliği, Neste SAF kullanımı).",
+    "Latin Amerika ve Karayipler Merkez Ofisi Açılışı (2025, El Salvador).",
+    "AAR'nin İniş Takımı ve Tekerlek & Fren İş Birimi Satın Alımı (2025)."
+  ],
+  tahminiYillikBakimKapasitesi: [
+    "Yıllık yaklaşık 200 motor kapasitesi (Helsinki tesisi)."
+  ],
+  finansalVeriler: [
+    "Büyüme ve Performans: 2021 mali yılı sonunda satış ve kazançlar 2019 pandemi öncesi seviyelerin üzerine çıktı."
+    // Spesifik ciro, kar rakamları yok.
+  ],
+  teknikAltyapi: [
+    "Ana Tesis (Helsinki): Yılda 200 motor kapasitesi, 100.000 lb'ye kadar motor test kapasitesi.",
+    "Ortak Girişim Tesisi (Wilmington, Ohio): Air Transport Services Group ile.",
+    "Yeni Bölge Merkezi (El Salvador): Bileşen dağıtımı ve MRO.",
+    "Motor Uzmanlığı: CF6-80C2, CFM56-5B, CFM56-7B, V2500-A5, PW4000-94/100, CF6-80E1, CF34-8/10."
+  ]
+};
+
+export const excelEngineeringLtdData = {
+  mroFirmasiAdi: "2Excel Engineering Ltd",
+  kimdir: "2Excel Engineering Ltd, Birleşik Krallık merkezli özel bir MRO sağlayıcısıdır. Askeri ve ticari uçaklara yönelik çok çeşitli bakım hizmetleri sunmaktadır. Yaklaşık 173 çalışanı vardır.",
+  hizmetleri: [
+    "Ağır Bakım (Base Maintenance): Boeing 727, 737 Classic/NG, 757 ve Airbus A320ceo/neo serisi.",
+    "Hat Bakımı (Line Maintenance)",
+    "Bileşen Bakımı (Component Maintenance)",
+    "Yapısal Onarımlar ve Modifikasyonlar",
+    "Kompozit ve Kabin İç Mekan Hizmetleri",
+    "Boyama ve Dekorasyon",
+    "Tahribatsız Muayene (NDT)"
+  ],
+  sertifikalar: [
+    "UK – CAA Maintenance Organisation Approvals Certificate (UK.145.01353)",
+    "US – FAA Repair Station Operator Approval (LH6Y959J)",
+    "Bermuda – Aircraft Maintenance Approval (BDA AMO 656)",
+    "Cayman Islands – Approved Maintenance Organisation (202-CAY-AMO)",
+    "Guernsey – Maintenance Organisation Validation Certificate (2-REG.145.70)",
+    "Isle of Man – Practice 3",
+    "UK – CAA Maintenance Training and Examination Organisation Approval Certificate (UK.147.0147)",
+    "EASA – Maintenance Organisation Approval Certificate (EASA.145.3227)",
+    "TCCA" // Metnin başında EASA, CAA, FAA, TCCA onayları olduğu belirtilmiş.
+  ],
+  hangarVeTesisKonumlari: [
+    {
+      konum: "Lasham Airfield, Hampshire, Birleşik Krallık",
+      detay: "4 dar gövdeli uçak hangarı, 2 commuter kategorisi uçak hangarı. 30 uçaklık park alanı. NDT, aviyonik, yapısal onarım, boya ve kabin içi atölyeleri."
+    },
+    {
+      konum: "Shannon Havalimanı, İrlanda (2Excel Ireland - Yeni Şube)", // Yatırımlar bölümünden
+      detay: "Bristow Ireland ile iş birliği. İrlanda Sahil Güvenlik için SAR ve çevresel izleme (2 King Air uçağı)."
+    }
+  ],
+  musteriPortfoyu: [
+    { havayolu: "easyJet", ulke: "Birleşik Krallık", merkezSehir: null, anlasmaDetayi: null },
+    { havayolu: "TUI", ulke: null, merkezSehir: null, anlasmaDetayi: null },
+    { havayolu: "Ryanair", ulke: "İrlanda", merkezSehir: null, anlasmaDetayi: null },
+    { havayolu: "Titan Airways (Birleşik Krallık)", ulke: "Birleşik Krallık", merkezSehir: null, anlasmaDetayi: "Ağır bakım (C-check), modifikasyon, sertifikasyon (A320neo/ceo, A321neo, B727, 737, 757). 2022'den itibaren 4x A320neo ailesi bakımı." },
+    { havayolu: "Leonardo S.p.A.", ulke: "İtalya", merkezSehir: null, anlasmaDetayi: "Uçuş test platformu modifikasyonu ve bakım (1x King Air B200, 1x Boeing 757-200). Anlaşma: 2017–2021, yenilenen 2021–2026." },
+    { havayolu: "Oil Spill Response Ltd (OSRL)", ulke: null, merkezSehir: null, anlasmaDetayi: "Özel görev modifikasyonu ve bakım (2x Boeing 727-200F). Anlaşma Başlangıcı: 2023." }
+  ],
+  bakimHizmetiVerilenUcakTipleri: {
+    Airbus: ["A318", "A319", "A320", "A320 NEO", "A321"],
+    Boeing: ["727", "737–300/400/500", "737–600/700/800/900", "737 Boeing Business Jet Series", "757–200/300"],
+    Beechcraft: ["Beech 200 Series", "King Air B200", "Piston Engine Aeroplanes"] // AJW şablonunda yok, "Diger" altına.
+    // Embraer, Bombardier bu metinde ticari MRO için geçmiyor.
+  },
+  anlasmalar2023_2025: [
+    "Oil Spill Response Ltd (OSRL) ile Boeing 727-200F için özel görev modifikasyonu ve bakım anlaşması (Başlangıç 2023)."
+    // Titan Airways ve Leonardo anlaşmaları 2022 ve öncesine dayanıyor ama devam ediyor olabilir.
+  ],
+  sonDonemdekiYatirimlar: [
+    "İrlanda'da Yeni Şube Kurulumu: 2Excel Ireland (Bristow Ireland ile, SAR ve çevresel izleme görevleri için).",
+    "Savunma Eğitim Yatırımı: JD2E Ortaklığı (Birleşik Krallık Savunma Bakanlığı için 3 yıllık eğitim sözleşmesi, PA-31 Navajo/Panther uçakları).",
+    "İnsansız Hava Aracı (İHA) Geliştirme: IAI ile İş Birliği (Heron İHA'sının Birleşik Krallık'ta operasyonel hale getirilmesi)."
+  ],
+  tahminiYillikBakimKapasitesi: [
+    "Yılda yaklaşık 60 adet derin bakım (heavy maintenance) kontrolü."
+  ],
+  finansalVeriler: [
+    "Yıllık Gelir (2023): Yaklaşık 46,8 milyon $.",
+    "Varlıklar (2023): Toplam 10 milyon $.",
+    "Çalışan Sayısı: Yaklaşık 173."
+  ],
+  teknikAltyapi: [
+    "Konum: Lasham Airfield, Hampshire, Birleşik Krallık.",
+    "Hangar Kapasitesi: 4 dar gövdeli uçak hangarı, 2 commuter kategori uçak hangarı.",
+    "Park Alanı: 30 uçaklık.",
+    "Atölyeler: NDT, aviyonik, yapısal onarım, boya ve kabin içi.",
+    "Personel: Yaklaşık 173."
+  ]
+};
+
+export const aarCorpData = {
+  mroFirmasiAdi: "AAR Corp.",
+  kimdir: "AAR Corp., merkezi Illinois, ABD'de bulunan ve dünya genelinde ticari ve askeri müşterilere bakım, onarım ve revizyon (MRO) hizmetleri sunan lider bir havacılık hizmetleri şirketidir. Şirket, Airframe MRO, komponent onarımı, iniş takımı bakımı, entegre lojistik destek ve parça tedariki gibi geniş bir hizmet yelpazesi sunmaktadır. (Önemli Gelişme: Nepal ve Güney Afrika'daki iddialarla ilgili ABD Adalet Bakanlığı ve SEC ile 55 milyon USD ödeme anlaşması.)",
+  hizmetleri: [
+    "Airframe MRO (Uçak Gövde Bakımı): Ağır bakım, yapısal onarımlar, modifikasyonlar, iç mekan iyileştirmeleri (Airbus, Boeing, Bombardier, Embraer). Korozyon kontrolü, NDT, STC/AD/SB entegrasyonları, uçak yıkama.",
+    "Component Services (Bileşen Servisleri): APU, hidrolik, pnomatik, yakıt sistemleri, elektrikli aksesuarlar, iç mekan bileşenleri (10.000+ parça) test, onarım, revizyon.",
+    "Engine Solutions (Motor Çözümleri): Yedek parça temini, motor alım-satımı, kitting, teardown, AOG desteği (CFM56, PW4000, V2500, RB211). Geniş envanter (P&W, RR, GE, IAE).",
+    "Landing Gear & Wheel/Brake Services (İniş Takımı ve Fren Servisleri)",
+    "Engineering Services (Mühendislik Hizmetleri)"
+  ],
+  sertifikalar: [
+    "FAA",
+    "EASA",
+    "TCCA",
+    "CAAC",
+    "CAA" // Hangi ülkenin CAA'sı olduğu belirtilmemiş, genel bir ifade.
+  ],
+  hangarVeTesisKonumlari: [
+    {
+      konum: "Oklahoma City – Will Rogers World Airport, ABD (Yeni Tesis)",
+      detay: "Yaklaşık 7.400 m² hangar ve depo alanı. Tüm Boeing 737 varyantlarını (737-10 dahil) barındırabilecek üç bölmeli yeni hangar. Operasyon Başlangıcı: 2026 başı."
+    },
+    {
+      konum: "Miami – Miami Uluslararası Havalimanı (MIA), ABD (Yeni Tesis)",
+      detay: "Yaklaşık 10.600 m² üç bölmeli hangar. Mevcut kapasiteye %33 ekleme. Operasyon Başlangıcı: Ekim 2025."
+    },
+    // Komponent Servisleri Tesisleri
+    { konum: "Amsterdam, Hollanda", detay: "Bileşen servis tesisi." },
+    { konum: "Tayland", detay: "Bileşen servis tesisi." },
+    { konum: "New York, ABD", detay: "Bileşen servis tesisi." },
+    { konum: "Teksas, ABD", detay: "Bileşen servis tesisi." },
+    { konum: "Arkansas, ABD", detay: "Bileşen servis tesisi." },
+    { konum: "Kansas, ABD", detay: "Bileşen servis tesisi." }
+  ],
+  musteriPortfoyu: [
+    { havayolu: "Alaska Airlines", ulke: "ABD", merkezSehir: null, anlasmaDetayi: "Komponent onarımı ve yönetimi (87x B737-700/800/900). Anlaşma: 10 yıl (2012–2022)." },
+    { havayolu: "United Airlines", ulke: "ABD", merkezSehir: null, anlasmaDetayi: "Airframe ağır bakım (Boeing 737 serisi). Anlaşma: 2023–2030." },
+    { havayolu: "Flydubai", ulke: "BAE", merkezSehir: null, anlasmaDetayi: "Müşteri." },
+    { havayolu: "Wizz Air", ulke: "Macaristan", merkezSehir: null, anlasmaDetayi: "Müşteri." },
+    { havayolu: "Nepal Airlines", ulke: "Nepal", merkezSehir: null, anlasmaDetayi: "Müşteri." },
+    { havayolu: "US Air Forces in Europe (USAFE)", ulke: "ABD/Avrupa", merkezSehir: null, anlasmaDetayi: "Askeri müşteri." },
+    { havayolu: "Air Canada", ulke: "Kanada", merkezSehir: null, anlasmaDetayi: "Bakım anlaşması (34x Boeing 767). Anlaşma: 5 yıl (2017–2022)." },
+    { havayolu: "Asiana Airlines", ulke: "Güney Kore", merkezSehir: null, anlasmaDetayi: "İniş takımı tadilatları ve değişim (B767-38EF/-300, B777-200ER). Anlaşma: 5 yıl (2016–2021)." },
+    { havayolu: "Virgin America", ulke: "ABD", merkezSehir: null, anlasmaDetayi: "Ağır bakım (D-Check), koltuk ve IFE kurulumları (A320 serisi). Anlaşma: 18 ay (2011–2012)." },
+    { havayolu: "Finnair", ulke: "Finlandiya", merkezSehir: null, anlasmaDetayi: "Rotable komponent destek (4x B757, 250+ komponent). Anlaşma: 3 yıl (2011–2014)." },
+    { havayolu: "Cebu Pacific", ulke: "Filipinler", merkezSehir: null, anlasmaDetayi: "Nacelle MRO (Airbus A320 CFM56-5B motorlu). Anlaşma: 2025 ve sonrası (çok yıllı)." }
+  ],
+  bakimHizmetiVerilenUcakTipleri: {
+    Airbus: ["A300", "A310", "A320", "A330", "A340"],
+    Boeing: ["B717", "737 (tüm varyantlar)", "747", "757", "767", "777"],
+    McDonnellDouglas: ["DC-9", "MD-80 / MD-90"],
+    Bombardier: ["CRJ-200 / CRJ-700 / CRJ-900", "Dash-8"],
+    Embraer: ["ERJ-135 / ERJ-145", "E170", "E175", "E190"]
+  },
+  anlasmalar2023_2025: [
+    "United Airlines ile Boeing 737 serisi için airframe ağır bakım anlaşması (2023–2030).",
+    "Cebu Pacific ile Airbus A320 (CFM56-5B motorlu) için nacelle MRO hizmetleri anlaşması (2025 ve sonrası)."
+  ],
+  sonDonemdekiYatirimlar: [
+    "Chromalloy ile Yeni Dağıtım Anlaşması (2024): CF6-80C2 motorları için PMA parçalarının küresel dağıtımı.",
+    "Oklahoma City Yeni Tesis İnşaatı (2026 başı operasyon).",
+    "Miami Yeni Hangar İnşaatı (Ekim 2025 operasyon)."
+  ],
+  tahminiYillikBakimKapasitesi: [
+    // Metinde spesifik yıllık kapasite rakamı yok.
+  ],
+  finansalVeriler: [
+    "Toplam Satışlar (2024): 2,318.9 milyon USD (Yıllık Büyüme: %16.5).",
+    "Süregelen Faaliyetlerden Net Gelir (2024): 46.3 milyon USD.",
+    "GAAP Hisse Başına Kâr (EPS) (2024): 1.29 USD.",
+    "Toplam Satışlar (2023): 1,990.5 milyon USD.",
+    "Süregelen Faaliyetlerden Net Gelir (2023): 89.8 milyon USD.",
+    "GAAP Hisse Başına Kâr (EPS) (2023): 2.52 USD."
+  ],
+  teknikAltyapi: [
+    "Tesisler: Oklahoma City (yeni), Miami (yeni), Amsterdam, Tayland, New York, Teksas, Arkansas, Kansas (komponent).",
+    "Uzmanlık Alanları: Airframe MRO, komponent onarımı, motor çözümleri, iniş takımı/fren servisleri, mühendislik."
+    // Çalışan sayısı bilgisi metinde yok.
+  ]
+};
+
+export const adriaTehnikaData = {
+  mroFirmasiAdi: "Adria Tehnika",
+  kimdir: "Adria Tehnika, Slovenya'nın Ljubljana Havalimanı'nda faaliyet gösteren, Avrupa'nın önde gelen bağımsız MRO şirketlerinden biridir. 2002 yılında Adria Airways'in bakım departmanının ayrılmasıyla kurulan şirket, 2010 yılında bağımsız bir tüzel kişilik haline gelmiş ve 2015'te Polonya merkezli Linetech Holding S.A. tarafından satın alınmıştır. Adria Tehnika, özellikle Bombardier CRJ serisi ve Airbus A320 ailesi uçaklarında uzmanlaşmıştır. (2024'te Hartenberg Holding tamamını satın aldı).",
+  hizmetleri: [
+    "Ağır Gövde Bakımı (Base Maintenance): Airbus A320 ailesi ve Bombardier CRJ serisi.",
+    "Hat Bakımı (Line Maintenance)",
+    "Komponent Bakımı ve İsteğe Bağlı Destek",
+    "Kabini Yenileme ve Modifikasyon"
+  ],
+  sertifikalar: [
+    "EASA Part-145",
+    "EASA Part-147",
+    "FAA 14 CFR Part 145",
+    "CAMO (Continuing Airworthiness Management Organization) Yetkisi"
+  ],
+  hangarVeTesisKonumlari: [
+    {
+      konum: "Ljubljana Havalimanı, Slovenya",
+      detay: "İki hangarda aynı anda 2 ila 5 uçak bakımı. Beşinci hangar planı (6.400 m², A330/A350 kapasiteli, 2026 açılış)."
+    }
+  ],
+  musteriPortfoyu: [
+    { havayolu: "Wizz Air", ulke: "Macaristan", merkezSehir: null, anlasmaDetayi: null },
+    { havayolu: "Vueling", ulke: "İspanya", merkezSehir: null, anlasmaDetayi: null },
+    { havayolu: "Volotea", ulke: "İspanya", merkezSehir: null, anlasmaDetayi: null },
+    { havayolu: "Brussels Airlines", ulke: "Belçika", merkezSehir: null, anlasmaDetayi: null },
+    { havayolu: "WOW Air", ulke: "İzlanda", merkezSehir: null, anlasmaDetayi: "(Faaliyeti durdurdu)" },
+    { havayolu: "Lufthansa Group", ulke: "Almanya", merkezSehir: null, anlasmaDetayi: null },
+    { havayolu: "easyJet", ulke: "Birleşik Krallık", merkezSehir: null, anlasmaDetayi: "Kabin modifikasyonu (SpaceFlex, 100+ uçak 2016'dan beri), hat bakımı, komponent bakımı, isteğe bağlı destek. (2021–2026 yeni anlaşma)." },
+    { havayolu: "TAP Air Portugal", ulke: "Portekiz", merkezSehir: null, anlasmaDetayi: "Bakım hizmetleri (4x Airbus A320, Haziran–Temmuz 2022)." }
+  ],
+  bakimHizmetiVerilenUcakTipleri: {
+    Airbus: ["A318", "A319", "A320", "A321", "A320 NEO"],
+    Bombardier: ["CRJ100", "CRJ200", "CRJ700", "CRJ900", "CRJ1000"],
+    McDonnellDouglas: ["DC-9", "MD80"]
+    // Embraer bu metinde geçmiyor.
+  },
+  anlasmalar2023_2025: [
+    "easyJet ile devam eden anlaşma (2021–2026, kabin modifikasyonu, hat bakımı vb.)."
+    // TAP Air Portugal anlaşması 2022'de.
+  ],
+  sonDonemdekiYatirimlar: [
+    "Yeni Geniş Gövdeli Uçak Bakım Hangarı Planı (Ljubljana, 6.400 m², A330/A350 kapasiteli, planlanan açılış 2026).",
+    "Hartenberg Holding’in Tam Sahipliği ve Yönetim Değişikliği (2024, yeni CEO: Barbara Perko Brvar)."
+    // "Yeni Hangar ve Kapasite Artışı Planı (2025–2030): İş hacmi %10 arttı." ifadesi biraz genel.
+  ],
+  tahminiYillikBakimKapasitesi: [
+    "Mevcut Kapasite: Aynı anda 6 adet Airbus A320/Boeing 737 veya 10 adet Bombardier CRJ700/900/1000.",
+    "Yıllık Tahmini: 100 ila 150 uçak.",
+    "Gelecek Kapasite (Yeni Hangar ile): Bakım kapasitesinde %50 artış."
+  ],
+  finansalVeriler: [ // 2023 yılı için
+    "Net Satış Geliri Artışı: Bir önceki yıla göre %8,37.",
+    "Toplam Varlıklar Büyümesi: %17,84.",
+    "Net Kâr Marjı Azalması: %0,05.",
+    "Özsermaye Getirisi (ROE) Düşüşü: %1,01.",
+    "Borç / Özsermaye Oranı Azalması: %26,39."
+    // Çalışan sayısı metinde direkt verilmemiş.
+  ],
+  teknikAltyapi: [
+    "Konum: Ljubljana Havalimanı, Slovenya.",
+    "Hangarlar: İki adet (yeni beşinci hangar planı).",
+    "Uzmanlık: Airbus A320 ailesi, Bombardier CRJ serisi."
+  ]
+};
+
+export const atsData = {
+  mroFirmasiAdi: "Aviation Technical Services (ATS)",
+  kimdir: "Aviation Technical Services (ATS), 1970 yılında Amerika Birleşik Devletleri'nin Washington eyaletinde kurulmuş, köklü ve bağımsız bir uçak bakım, onarım ve revizyon (MRO) şirketidir. Merkezi Everett Paine Field’da bulunan firma, ticari ve kargo uçakları için kapsamlı bakım hizmetleri sunar. ATS, Kuzey Amerika’nın en büyük MRO firmalarından biridir. Aviation Week 2016 MRO of the Year Ödülü'ne (Lider Bağımsız Kuruluş) layık görülmüştür. Dünya çapında 100'den fazla havayolu ve OEM müşterisine hizmet veren Kuzey Amerika'nın en büyük bağımsız MRO'sudur.",
+  hizmetleri: [
+    "Airframe Hizmetleri",
+    "Ağır Bakımlar",
+    "Modlar (Modifikasyonlar)",
+    "Komponent Onarımı",
+    "Mühendislik Çözümleri",
+    "Uçak yıkama", // Airframe hizmetleri altında belirtilmiş
+    "STC/AD/SB entegrasyonları", // Airframe hizmetleri altında belirtilmiş
+    "Korozyon kontrolü", // Airframe hizmetleri altında belirtilmiş
+    "NDT (Non-Destructive Testing)" // Airframe hizmetleri altında belirtilmiş
+  ],
+  sertifikalar: [
+    "U.S. FAA",
+    "EASA",
+    "Cayman Islands – CAA",
+    "United Arab Emirates – GCAA",
+    "United Kingdom – CAA",
+    "Fiji – CAAF"
+  ],
+  hangarVeTesisKonumlari: [
+    {
+      konum: "Everett, WA – Paine Field (Ana Üs)",
+      detay: "Snohomish County Havaalanı/Paine Field'de (PAE). 250.000 ft² (yaklaşık 23.200 m²) hangar alanı."
+    },
+    {
+      konum: "Kansas City, MO – Kansas City International Airport (MCI)",
+      detay: "Ocak 2014'te açıldı. 607.000 ft² hangar alanı, 80.000 ft² atölye alanı. Aynı anda 12 uçağa kadar barındırabilir. Öncelikle dar gövdeli (Airbus, Boeing) ticari uçaklara hizmet."
+    },
+    {
+      konum: "Moses Lake, WA – Grant County International Airport",
+      detay: "102.000 ft² hangar alanı. Ağır bakımlar ve VIP/VVIP/devlet başkanı uçakları için interior iyileştirmeleri."
+    },
+    {
+      konum: "Fort Worth, TX – Alliance Airport",
+      detay: "Komponent onarımı, AOG ve mühendislik hizmetleri sunan tesis."
+    }
+  ],
+  musteriPortfoyu: [
+    // Metinde "---" olarak belirtilmiş, spesifik müşteri listesi yok.
+    // "Dünya çapında 100'den fazla havayolu ve OEM müşterisine hizmet" genel ifadesi var.
+  ],
+  bakimHizmetiVerilenUcakTipleri: {
+    // Metinde "---" olarak belirtilmiş.
+    // Ancak hizmetler bölümünde "Airbus, Boeing, Bombardier ve Embraer gibi platformlarda ağır bakım" ifadesi var.
+    Airbus: ["Genel platformlar"],
+    Boeing: ["Genel platformlar"],
+    Bombardier: ["Genel platformlar"],
+    Embraer: ["Genel platformlar"]
+  },
+  anlasmalar2023_2025: [
+    // Metinde "---" olarak belirtilmiş.
+  ],
+  sonDonemdekiYatirimlar: [
+    "Dallas-Fort Worth (DFW) Tesis Konsolidasyonu (2021): Bileşen onarım süreçlerini hızlandırma ve verimliliği artırma.",
+    "JLL Partners ile Ortaklık: Mühendislik ve bileşen hizmetleri alanında çözümleri geliştirme.",
+    "Çıraklık Programı Başarıları: 200'den fazla teknisyenin mekanikçi pozisyonlarına terfisi."
+  ],
+  tahminiYillikBakimKapasitesi: [
+    "Son beş yılda yılda ortalama 450 uçak bakımı.",
+    "Dar gövdeli uçaklar için toplamda 33 uçaklık bakım kapasitesi (Everett, Kansas City, Moses Lake tesisleri).",
+    "Geniş gövdeli uçaklara da hizmet verebilecek donanım."
+  ],
+  finansalVeriler: [
+    "Yıllık Gelir (2023 Yaklaşık): 680 milyon ABD doları.",
+    "Çalışan Sayısı: 1.000+."
+  ],
+  teknikAltyapi: [
+    "Toplam Hangar Alanı: Yaklaşık 1.6 milyon ft² (yaklaşık 150.000 m²).",
+    "Bakım Hat Sayısı: 30+.",
+    "Çalışan Sayısı: 1.000+."
+  ]
+};
+
+export const gmfAeroAsiaData = {
+  mroFirmasiAdi: "GMF AeroAsia (PT Garuda Maintenance Facility Aero Asia Tbk)",
+  kimdir: "GMF AeroAsia (PT Garuda Maintenance Facility Aero Asia Tbk), Endonezya merkezli bir uçak bakım, onarım ve revizyon (MRO) şirketidir. 1949 yılında Garuda Indonesia'nın teknik bölümü olarak kurulan şirket, 2002 yılında bağımsız bir tüzel kişilik haline gelmiştir. Merkezi, Jakarta yakınlarındaki Soekarno-Hatta Uluslararası Havalimanı'nda bulunan GMF AeroAsia, 2017 yılında Endonezya Borsası'nda (IDX) halka arz edilmiştir. 60'tan fazla ülkede müşterilere hizmet vermektedir.",
+  hizmetleri: [
+    "Gövde Bakımı (Airframe Maintenance): Dar ve geniş gövdeli uçaklar için ağır bakım, modifikasyonlar, yapısal onarımlar.",
+    "Motor ve APU Hizmetleri: CFM56-3/5B/7B, PW100 serisi motorlar ve GTCP85, GTCP131-9A/B, GTCP331-350 APU'lar için MRO.",
+    "Komponent Hizmetleri: B737, B747, B777, A320, A330, CRJ1000 için entegre komponent hizmetleri (yönetim, bakım, havuzlama, onarım yönetimi, ödünç/değişim, güvenilirlik, garanti).",
+    "Malzeme ve Lojistik Hizmetleri: Parça tedariki, yönetimi, dağıtımı (varlık yönetimi, komponent havuzlama, parça ticareti, envanter yönetimi, lojistik, AOG).",
+    "Eğitim Hizmetleri: Endonezya DGCA AMTO onaylı (CASR 147 Temel ve Tip Eğitimi), EASA 147 onaylı Boeing eğitimi, Airbus Eğitim Merkezi (ACT simülatörleri).",
+    "Hat Bakımı (Line Maintenance): 70+ hatta A kontrol seviyesine kadar. MCC ile AOG müdahalesi. Günde 1.000+ uçuşa hizmet.",
+    "Askeri ve Savunma MRO Hizmetleri: B737CL/NG/BBJ, A320s, CRJ1000s, ATR72s, B747s, B777s, A330s, C-130, Bell 412, Super Puma, C-212 gövde bakımı; CFM56-3/5B/7 motor revizyonu; GTCP85-129, GTCP131-9A/B, GTCP331-350 APU bakımı."
+  ],
+  sertifikalar: [
+    "FAA",
+    "EASA",
+    "UK CAA",
+    "CASA (Avustralya)",
+    "DGCA (Endonezya)",
+    "Diğer 25+ Ülke Onayı (Singapur, Tayland, Malezya, Hindistan, Vietnam, Yemen, Pakistan, Bangladeş, Nijerya, BAE, Güney Kore, Bahreyn, Umman, İran, Irak vb.)",
+    "Aviation Supplier Association (Malzemeler için)"
+  ],
+  hangarVeTesisKonumlari: [
+    {
+      konum: "Soekarno-Hatta Uluslararası Havalimanı, Jakarta, Endonezya (Ana Tesis)",
+      detay: "Toplam 1.150.000 m² alan. Hangar 1 (22.000 m², 2 geniş gövde), Hangar 2 (23.000 m², 2 geniş/6 dar gövde, A/B check), Hangar 3 (23.000 m², 3 A330, ağır bakım), Hangar 4 (66.940 m², 16 dar gövde + 1 boyama hattı, dünyanın en büyük dar gövde hangarı). Motor test hücresi (100.000 lb itki), komponent atölyeleri, yedek parça deposu (8461 m²), apron, eğitim merkezi (Airbus Eğitim Merkezi 136 m²), iniş takımı atölyesi (4500 m²), koltuk atölyesi (621 m²), atık arıtma."
+    },
+    {
+      konum: "Melbourne, Avustralya (Uluslararası Şube)", // Yatırımlar bölümünden
+      detay: "Şubat 2020'de açıldı. Airbus A330 için hat bakım (gelecekte A330 Neo, B777 sertifikasyonu planlı)."
+    },
+    {
+      konum: "Halim Perdanakusuma Havalimanı, Jakarta, Endonezya (Yeni Hangar)", // Yatırımlar bölümünden
+      detay: "PT Arta Hanggar Indonesia (AHI) ile ortaklık. İnşaat 2024 sonu tamamlanacak, 2025 ortası operasyonel."
+    },
+    {
+      konum: "Endonezya Geneli Hat Bakım İstasyonları",
+      detay: "70'ten fazla istasyon."
+    },
+    {
+      konum: "Uluslararası Hat Bakım İstasyonları",
+      detay: "Cidde, Medine, Kuala Lumpur, Singapur, Melbourne vb."
+    }
+  ],
+  musteriPortfoyu: [
+    { havayolu: "Garuda Indonesia", ulke: "Endonezya", merkezSehir: "Jakarta", anlasmaDetayi: "Ana müşteri (Anlaşma Eylül 2024)." },
+    { havayolu: "Citilink Indonesia", ulke: "Endonezya", merkezSehir: null, anlasmaDetayi: "Hat/üs bakımı, komponent, kabin, motor/APU, iniş takımı, GSE, mühendislik, kalite (A320, ATR72, B737-500). Anlaşma: Eylül 2024." },
+    { havayolu: "Asiana Airlines", ulke: "Güney Kore", merkezSehir: null, anlasmaDetayi: "Üs bakım (C Check) (1x Boeing 747-400). Anlaşma: Ekim 2024." },
+    { havayolu: "Sky One (BAE)", ulke: "BAE", merkezSehir: null, anlasmaDetayi: null },
+    { havayolu: "Korean Airlines", ulke: "Güney Kore", merkezSehir: null, anlasmaDetayi: null },
+    { havayolu: "Fiji Airways", ulke: "Fiji", merkezSehir: null, anlasmaDetayi: null },
+    { havayolu: "Cebu Pacific Air", ulke: "Filipinler", merkezSehir: null, anlasmaDetayi: null },
+    { havayolu: "Vietravel Airlines", ulke: "Vietnam", merkezSehir: null, anlasmaDetayi: null },
+    { havayolu: "Japan Airlines", ulke: "Japonya", merkezSehir: null, anlasmaDetayi: null },
+    { havayolu: "Bismillah Airlines", ulke: "Bangladeş", merkezSehir: null, anlasmaDetayi: null },
+    { havayolu: "Peach Aviation", ulke: "Japonya", merkezSehir: null, anlasmaDetayi: null },
+    { havayolu: "Nepal Airlines", ulke: "Nepal", merkezSehir: null, anlasmaDetayi: null }
+  ],
+  bakimHizmetiVerilenUcakTipleri: {
+    Airbus: ["A320 Ailesi (A318/A319/A320/A321)", "A310", "A330ceo/neo"],
+    Boeing: ["737 Classic/NG/MAX", "737-500", "747-300/400", "777-200/300/300ER"],
+    McDonnellDouglas: ["DC-10", "MD-11"],
+    Bombardier: ["CRJ Serisi (CRJ700/CRJ900/CRJ1000)"],
+    ATR: ["ATR72s"],
+    AskeriVeDiger: ["C-130", "Bell 412", "Super Puma", "C-212"]
+  },
+  anlasmalar2023_2025: [
+    "Citilink Indonesia ile kapsamlı bakım anlaşması (Eylül 2024).",
+    "Asiana Airlines ile Boeing 747-400 için C Check anlaşması (Ekim 2024).",
+    "Garuda Indonesia ile bakım anlaşması (Eylül 2024)."
+  ],
+  sonDonemdekiYatirimlar: [
+    "Asia Digital Engineering (ADE) ile Ortak Yatırım – İniş Takımı Hizmetleri Genişletilmesi (Mayıs 2024).",
+    "Airbus ile Bakım Eğitimi Ortaklığının Yenilenmesi (2023, beş yıl uzatma).",
+    "Avustralya'da İlk Uluslararası Şube Açılışı (Şubat 2020, Melbourne).",
+    "PDQ Airspares ile Fazla Stok Yönetimi Anlaşması (Eylül 2024, Surplus2Revenue programı).",
+    "Sanad ile Motor ve Endüstriyel Türbin İşbirliği Mutabakatı (Kasım 2022).",
+    "Elektrikli Araç Projeleri – Üniversitelerle İş Birliği (2023, ALTO, ARTEMITS, Elektrikli Malzeme Taşıma Aracı).",
+    "INKA Grubu ile Demiryolu MRO Ortaklığı (Şubat 2025).",
+    "Soekarno-Hatta Havalimanı'nda Hangar 4 İnşası (2020, 67.022 m², 16 dar gövde kapasitesi).",
+    "Halim Perdanakusuma Havalimanı'nda Yeni Hangar İşbirliği (2024–2025, PT Arta Hanggar Indonesia ile)."
+  ],
+  tahminiYillikBakimKapasitesi: [
+    "300-400 uçak/yıl."
+  ],
+  finansalVeriler: [
+    "Gelir (2024): 421,2 milyon ABD doları (%12,9 artış).",
+    "Net Kâr (2024): 26,9 milyon ABD doları (%33 artış).",
+    "Faaliyet Nakit Akışı (2024): 14,2 milyon ABD doları.",
+    "Öz Sermaye (2024 sonu): -257,9 milyon ABD doları (2023 sonu: -311,2 milyon USD)."
+  ],
+  teknikAltyapi: [
+    "Hangar Alanı (Soekarno-Hatta): Yaklaşık 972.000 metrekare (yanlış olabilir, PDF'te hangar alanları toplamı daha az). Dört ana hangar (Hangar 1, 2, 3, 4 - Hangar 4 dünyanın en büyüğü).", // PDF'te 1.150.000 m² toplam tesis alanı, 66.940 m² Hangar 4, diğerleri 22-23bin m²
+    "Çalışan Sayısı: 4.600.",
+    "Motor Test Hücresi: 100.000 lb itki kapasitesi.",
+    "Eğitim: DGCA AMTO, EASA 147 (Boeing), Airbus Eğitim Merkezi."
+  ]
+};
+
+export const haecoGroupData = {
+  mroFirmasiAdi: "HAECO Group (Hong Kong Aircraft Engineering Company Limited)",
+  kimdir: "HAECO Group (Hong Kong Aircraft Engineering Company Limited), merkezi Hong Kong'da bulunan ve Swire Pacific Limited'in bir iştiraki olan, dünya çapında faaliyet gösteren bir uçak bakım, onarım ve revizyon (MRO) hizmet sağlayıcısıdır. 1950 yılında kurulan şirket, 2022 itibarıyla yaklaşık 15.000 kişiye istihdam sağlamaktadır.",
+  hizmetleri: [
+    "Uçak Gövde Bakımı (Airframe Services)",
+    "Hat Bakımı (Line Services): Kabin hizmetleri, AOG kurtarma.",
+    "Bileşen Bakımı ve Revizyonu (Component Services): Kapalı döngü onarımlar, OEM yetkili onarımlar (Hong Kong, Xiamen).",
+    "Motor Bakımı ve Revizyonu (Engine MRO): Rolls-Royce Trent serileri, GE90 (HAESL Trent XWB-97 onaylı).",
+    "Küresel Motor Desteği (Global Engine Support): 7/24 kanat üstü/dışı destek (Hong Kong, Amsterdam, Londra, Dallas).",
+    "Envanter Teknik Yönetimi (ITM): Komponent havuzlama, onarım yönetimi, mühendislik, depolama, lojistik (uçak gövdesi, motor, APU, iniş takımı, kargo yükleme).",
+    "Parça Üretimi (Parts Manufacturing): Xiamen'de (yüksek performanslı baskı, 3D tarama).",
+    "Teknik Eğitim",
+    "AOG Desteği (7/24)"
+  ],
+  sertifikalar: [
+    "EASA Part 145",
+    "FAA Part 145",
+    "CAAC CCAR 145 (Çin)",
+    "ISO 9001 (Kalite Yönetim)",
+    "AS9100 (Havacılık, Uzay ve Savunma Kalite Yönetim)",
+    "ISO 14001 (Çevre Yönetim)",
+    "ISO 45001 (İş Sağlığı ve Güvenliği)",
+    "ISO/IEC 17025 (Test ve Kalibrasyon Laboratuvarları)"
+  ],
+  hangarVeTesisKonumlari: [
+    {
+      konum: "HAECO Xiamen – Xiang’an Uluslararası Havalimanı (Çin)",
+      detay: "Alan: Toplam 537.300 m² (292.300 m² inşaat + 284.000 m² apron). Kapasite: 12 geniş gövdeli ve 6 dar gövdeli uçak. Özellikler: Dünyanın en büyük tek açıklıklı uçak bakım hangarı; 2 adet boya hangarı; LEED Gold sertifikası hedefi."
+    },
+    {
+      konum: "HAECO Hong Kong – Hong Kong Uluslararası Havalimanı",
+      detay: "Hangar Sayısı: 3. Kapasite: Her biri 2 geniş gövdeli ve 1 dar gövdeli. Toplam Kapasite: 6 geniş gövdeli ve 3 dar gövdeli uçak."
+    },
+    {
+      konum: "HAECO Americas – Piedmont Triad Uluslararası Havalimanı (Greensboro, ABD)",
+      detay: "Açılış: Nisan 2018. En Büyük Hangar: 23.225 m² (250.000 ft²). Kapasite: 8 dar gövdeli veya 2 geniş + 2 dar gövdeli. Toplam Kapasite: Yaklaşık 20 dar gövdeli uçak."
+    },
+    {
+      konum: "Dallas, Teksas, ABD (Yeni Motor Bakım Tesisi)", // Yatırımlar bölümünden
+      detay: "Alan: 290.000 ft² (~26.940 m²). Açılış: Ocak 2025. Amaç: Yeni nesil uçak motorları endüstrileştirme/onarım kapasitesi artışı."
+    },
+    {
+      konum: "Vietnam – Quang Ninh (Yeni MRO ve Kargo Tesisleri - Planlı)", // Yatırımlar bölümünden
+      detay: "Van Don Uluslararası Havalimanı çevresinde uçak bakım hangarı ve kargo terminali kurulum planı."
+    }
+  ],
+  musteriPortfoyu: [
+    { havayolu: "Loong Air", ulke: "Çin", merkezSehir: null, anlasmaDetayi: "Hat bakım sözleşmesi (Temmuz 2024)." },
+    { havayolu: "Air Canada", ulke: "Kanada", merkezSehir: null, anlasmaDetayi: "Boeing 787 ve Airbus A330 için özel üs bakım (5+5 yıl). Filo: 8x B787-8, 30x B787-9, 18x A330. (Şubat 2024)." },
+    { havayolu: "Philippine Airlines (PAL) ve PAL Express", ulke: "Filipinler", merkezSehir: null, anlasmaDetayi: "PAL Express A320/A321 üs bakım; PAL B777 üs bakım genişletildi (D kontrolleri). (Ocak 2025)." },
+    { havayolu: "Tigerair Taiwan", ulke: "Tayvan", merkezSehir: null, anlasmaDetayi: "A320 filosu için kira sonu (EOL) kontrolleri (5x A320ceo, 2026–2028). (Şubat 2025)." },
+    { havayolu: "Cargolux", ulke: "Lüksemburg", merkezSehir: null, anlasmaDetayi: "Boeing 747-400ERF filosu için üs bakım desteği genişletildi (2026–2028). (Temmuz 2024)." },
+    { havayolu: "EVA Air", ulke: "Tayvan", merkezSehir: null, anlasmaDetayi: "Hat bakım sözleşmesi 2026 sonuna kadar uzatıldı (HKIA kabin temizliği vb.). (Ocak 2025)." },
+    { havayolu: "SF Airlines", ulke: "Çin", merkezSehir: null, anlasmaDetayi: "Boeing 747 kargo filosu için C kontrolleri (2025'te 3x B747, 2026–2030 arası 10x B747 slot rezervasyonu). (Nisan 2025)." },
+    { havayolu: "MSC Air", ulke: null, merkezSehir: null, anlasmaDetayi: "Hat bakım hizmeti (Boeing 777-200LRF). (Mart 2025)." },
+    { havayolu: "Emirates", ulke: "BAE", merkezSehir: null, anlasmaDetayi: "B777 iniş takımları MRO. (Şubat 2025)." },
+    { havayolu: "Central Air", ulke: "Çin", merkezSehir: null, anlasmaDetayi: "Kapsamlı hat bakım, rutin transit kontroller (Boeing 777F). (Mayıs 2024)." },
+    { havayolu: "China Airlines", ulke: "Tayvan", merkezSehir: null, anlasmaDetayi: "Komponent onarım/güvenilirlik yönetimi, AOG (10x B777-300ER, 10x B777-200). 2027'ye kadar B777-300ER iniş takımı bakımı. (Nisan 2024, 2032'ye kadar)." },
+    { havayolu: "Nippon Cargo Airlines", ulke: "Japonya", merkezSehir: null, anlasmaDetayi: "Nacelle komponentleri (inlet cowl, fan cowl, thrust reverser) (Boeing 747-8). (Kasım 2023)." },
+    // Diğer genel müşteri listesi
+    { havayolu: "Silk Way West Airlines (Azerbaycan)", ulke: "Azerbaycan", merkezSehir: null, anlasmaDetayi: null },
+    { havayolu: "Swiss International Air Lines", ulke: "İsviçre", merkezSehir: null, anlasmaDetayi: null },
+    { havayolu: "Southwest Airlines (ABD)", ulke: "ABD", merkezSehir: null, anlasmaDetayi: null },
+    { havayolu: "Spring Japan (Japonya)", ulke: "Japonya", merkezSehir: null, anlasmaDetayi: null },
+    { havayolu: "RoyalJet (Birleşik Arap Emirlikleri)", ulke: "BAE", merkezSehir: null, anlasmaDetayi: null },
+    { havayolu: "Lufthansa (Almanya)", ulke: "Almanya", merkezSehir: null, anlasmaDetayi: null },
+    { havayolu: "Chengdu Airlines (Çin)", ulke: "Çin", merkezSehir: null, anlasmaDetayi: null },
+    { havayolu: "Genghis Khan Airlines (Çin)", ulke: "Çin", merkezSehir: null, anlasmaDetayi: null },
+    { havayolu: "China Southern Airlines (Çin)", ulke: "Çin", merkezSehir: null, anlasmaDetayi: null },
+    { havayolu: "One-Two-Three Airlines (Çin)", ulke: "Çin", merkezSehir: null, anlasmaDetayi: null },
+    { havayolu: "Jiangxi Air (Çin)", ulke: "Çin", merkezSehir: null, anlasmaDetayi: null },
+    { havayolu: "China Express Airlines (Çin)", ulke: "Çin", merkezSehir: null, anlasmaDetayi: null },
+    { havayolu: "TransNusa (Endonezya)", ulke: "Endonezya", merkezSehir: null, anlasmaDetayi: null },
+    { havayolu: "YTO Cargo Airlines (Çin)", ulke: "Çin", merkezSehir: null, anlasmaDetayi: null },
+    { havayolu: "Longhao Airlines (Çin)", ulke: "Çin", merkezSehir: null, anlasmaDetayi: null },
+    { havayolu: "Aeroflot (Rusya)", ulke: "Rusya", merkezSehir: null, anlasmaDetayi: null },
+    { havayolu: "Peach Aviation", ulke: "Japonya", merkezSehir: null, anlasmaDetayi: null }
+  ],
+  bakimHizmetiVerilenUcakTipleri: {
+    Airbus: ["A319 / A320 / A321 (neo dahil)", "A330", "A350"],
+    Boeing: ["737", "747 (ERF, -8 dahil)", "777 (-200LRF, -300ER dahil)"],
+    Sukhoi: ["Superjet 100 (SSJ100)"] // AJW şablonunda yok, "Diger" altına
+  },
+  anlasmalar2023_2025: [ // Yukarıdaki müşteri listesinden derlenmiş 2023-2025 anlaşmaları
+    "Loong Air ile hat bakım sözleşmesi (Temmuz 2024).",
+    "Air Canada ile B787/A330 üs bakım (Şubat 2024, 5+5 yıl).",
+    "Philippine Airlines (PAL) ve PAL Express ile A320/A321/B777 üs bakım (Ocak 2025).",
+    "Tigerair Taiwan ile A320 EOL kontrolleri (Şubat 2025, 2026–2028 arası).",
+    "Cargolux ile B747-400ERF üs bakım genişletme (Temmuz 2024, 2026–2028).",
+    "EVA Air ile hat bakım sözleşmesi uzatması (Ocak 2025, 2026 sonuna kadar).",
+    "SF Airlines ile B747 C kontrolleri ve slot rezervasyonu (Nisan 2025).",
+    "MSC Air ile B777-200LRF hat bakım (Mart 2025).",
+    "Emirates ile B777 iniş takımı MRO (Şubat 2025).",
+    "Central Air ile B777F hat bakım (Mayıs 2024).",
+    "China Airlines ile B777 komponent/iniş takımı MRO (Nisan 2024, 2032'ye kadar).",
+    "Nippon Cargo Airlines ile B747-8 nacelle komponentleri (Kasım 2023)."
+  ],
+  sonDonemdekiYatirimlar: [
+    "Xiamen Xiang’an Uluslararası Havalimanı'nda Yeni Bakım Üssü (İnşaat Başlangıcı: Ocak 2023, Operasyon Planı: 2026).",
+    "Hong Kong'da Güneş Enerjisi Sisteminin Genişletilmesi (2022'de 6.000 panel, 2025'te Hangar 1'e 2.200 panel ile toplam 8.000 panel, 4M kWh/yıl üretim, 1.700 ton CO₂ azaltımı).",
+    "Dallas, Teksas'ta Yeni Motor Bakım Tesisi (Duyuru: Aralık 2024, Alan: 290.000 ft², Açılış: Ocak 2025, 100+ istihdam).",
+    "Vietnam – Quang Ninh'de Yeni MRO ve Kargo Tesisleri Planı (2023, Van Don Uluslararası Havalimanı).",
+    "COMAC ile MRO Hizmetleri İçin Stratejik Ortaklık (2024, ARJ21/C919 gövde, motor, komponent; CF34-10A, ARJ21 iniş takımı yetenek geliştirme)."
+  ],
+  tahminiYillikBakimKapasitesi: [
+    "Toplam Uçak Bakım Girişi: Yılda 1.500'den fazla.",
+    "Motor Bakım Kapasitesi (Yıllık Giriş): Yılda 300'den fazla."
+  ],
+  finansalVeriler: [
+    "Toplam Gelir (2023): HK$11,2 milyar. Net Kâr (2023): HK$960 milyon. FAVÖK (2023): HK$1.950 milyon. Uçak Bakım Sayısı (2023): 1.500. Motor Bakım Sayısı (2023): 300. Komponent Hizmet Geliri (2023): HK$1.100 milyon.",
+    "Toplam Gelir (2024): HK$12,5 milyar (%12 artış). Net Kâr (2024): HK$1.200 milyon (%25 artış). FAVÖK (2024): HK$2.300 milyon (%18 artış). Uçak Bakım Sayısı (2024): 1.725 (%15 artış). Motor Bakım Sayısı (2024): 360 (%20 artış). Komponent Hizmet Geliri (2024): HK$1.342 milyon (%22 artış).",
+    "Çalışan Sayısı (2022 itibarıyla): Yaklaşık 15.000."
+  ],
+  teknikAltyapi: [
+    "Tesisler: Xiamen (Xiang’an), Hong Kong, Greensboro (ABD).",
+    "Hangar Kapasiteleri: Xiamen (12 geniş, 6 dar gövde), Hong Kong (6 geniş, 3 dar gövde), Greensboro (~20 dar gövde).",
+    "Uzmanlık Alanları: Gövde, hat, komponent, motor MRO, parça üretimi, ITM, eğitim.",
+    "Motor Yetkinlikleri: Rolls-Royce Trent serileri, GE90 (HAESL Trent XWB-97 onaylı)."
+  ]
+};
+
+export const iberiaMaintenanceData = {
+  mroFirmasiAdi: "Iberia Maintenance",
+  kimdir: "Iberia Maintenance, merkezi Madrid'de bulunan ve Iberia Havayolları'nın bir iştiraki olan bir uçak bakım, onarım ve revizyon (MRO) şirketidir. Şirket, hem IAG Grubu'na bağlı havayollarına (Iberia, Vueling, British Airways, Aer Lingus) hem de dünya genelindeki üçüncü taraf müşterilere hizmet vermektedir. Motor, gövde, komponent ve hat bakımı gibi geniş bir hizmet yelpazesi sunmaktadır.",
+  hizmetleri: [
+    "Motor Bakımı: CFM56, V2500, RB211 ve Pratt & Whitney GTF motorları için bakım ve test.",
+    "Gövde (Airframe) Bakımı: A320ceo/neo, A330, A350 için ağır bakım (C/D check), yapısal onarımlar, modifikasyonlar, kabin yenilemeleri.",
+    "Hat (Line) Bakımı: İspanya içi (Madrid, Barselona, Palma de Mallorca, Malaga, Las Palmas, Tenerife, Bilbao) ve Avrupa'da günlük kontroller, transit kontroller, küçük arıza giderme.",
+    "Komponent Bakımı: Çeşitli uçak bileşenlerinin onarımı ve revizyonu.",
+    "Eğitim (Training): EASA Part-147 sertifikalı eğitim merkezi."
+  ],
+  sertifikalar: [
+    "FAA",
+    "DGAC (Meksika)",
+    "TCCA (Kanada)",
+    "EASA Part-145",
+    "EASA Part-147",
+    "UK CAA",
+    "RWANDA (Africa)", // Metinde Afrika olarak belirtilmiş
+    "CAAS (Singapur)",
+    "ANAC (Brezilya)"
+  ],
+  hangarVeTesisKonumlari: [
+    {
+      konum: "La Muñoza Yerleşkesi, Madrid, İspanya",
+      detay: "Toplam 7 hangar. En büyük hangar (Hangar 6 - 1995'te açıldı) aynı anda 10 dar gövdeli uçağı barındırabilir, 31.000 m² kolonsuz alan, 230m çatı. Motor bakım atölyesi, motor test tezgahı, yardımcı motor aksesuar atölyesi."
+    },
+    {
+      konum: "El Prat Hangarı, Barselona, İspanya",
+      detay: "Tek ana hangar (2010'da açıldı). Aynı anda dört dar gövdeli uçağı barındırabilir. 13.200 m² hangar alanı (toplam 24.000 m² arazi). Yıllık 300.000 adam-saat bakım kapasitesi, 300 mühendis/teknisyen. Vueling A320 filosu C-check ve 6 yıllık bakımlar."
+    },
+    {
+      konum: "Komponent Atölyesi Tesisi (Genel)", // Komponent hizmetlerinden
+      detay: "34.350 metrekare."
+    }
+  ],
+  musteriPortfoyu: [
+    { havayolu: "Iberia", ulke: "İspanya", merkezSehir: "Madrid", anlasmaDetayi: "Ana müşteri (IAG Grubu)." },
+    { havayolu: "Vueling", ulke: "İspanya", merkezSehir: "Barselona", anlasmaDetayi: "Airbus A320 filosu için C-check ve 6 yıllık bakımlar (El Prat)." },
+    { havayolu: "British Airways", ulke: "Birleşik Krallık", merkezSehir: null, anlasmaDetayi: "IAG Grubu üyesi." },
+    { havayolu: "Aer Lingus", ulke: "İrlanda", merkezSehir: null, anlasmaDetayi: "IAG Grubu üyesi." },
+    { havayolu: "LEVEL", ulke: "İspanya", merkezSehir: null, anlasmaDetayi: "IAG Grubu üyesi." },
+    { havayolu: "Iberia Express", ulke: "İspanya", merkezSehir: "Madrid", anlasmaDetayi: "IAG Grubu üyesi." },
+    { havayolu: "RwandAir", ulke: "Ruanda", merkezSehir: null, anlasmaDetayi: "Motor bakımı ve onarımı (Boeing 737, CFM56-7B/-7BE). Anlaşma: Ocak 2023." },
+    { havayolu: "Volotea", ulke: "İspanya", merkezSehir: null, anlasmaDetayi: "C-check bakımları (Airbus A320 ailesi). Anlaşma: Mayıs 2022." },
+    { havayolu: "HK Express", ulke: "Hong Kong", merkezSehir: null, anlasmaDetayi: "Motor bakımı ve onarımı (Airbus A320ceo/A321ceo, V2500). Anlaşma: Ocak 2023." },
+    { havayolu: "Qatar Airways", ulke: "Katar", merkezSehir: null, anlasmaDetayi: "Motor bakımı ve onarımı (V2500). Anlaşma: Şubat 2022." },
+    { havayolu: "AvAir", ulke: "ABD", merkezSehir: null, anlasmaDetayi: "1.5 milyon tüketilebilir parça ve 30.000 rotabl parça satışı. Anlaşma: Nisan 2021." },
+    { havayolu: "Vietnam Airlines", ulke: "Vietnam", merkezSehir: null, anlasmaDetayi: null },
+    { havayolu: "Air Nostrum", ulke: "İspanya", merkezSehir: null, anlasmaDetayi: null },
+    { havayolu: "Finnair", ulke: "Finlandiya", merkezSehir: null, anlasmaDetayi: null },
+    { havayolu: "SAS", ulke: null, merkezSehir: null, anlasmaDetayi: null },
+    { havayolu: "Volaris", ulke: "Meksika", merkezSehir: null, anlasmaDetayi: null },
+    { havayolu: "Cathay Pacific", ulke: "Hong Kong", merkezSehir: null, anlasmaDetayi: null },
+    { havayolu: "Meridiana", ulke: "İtalya", merkezSehir: null, anlasmaDetayi: "(Faaliyeti durdurdu)" },
+    { havayolu: "Pluna", ulke: "Uruguay", merkezSehir: null, anlasmaDetayi: "(Faaliyeti durdurdu)" },
+    { havayolu: "Privilege Style", ulke: "İspanya", merkezSehir: null, anlasmaDetayi: null },
+    { havayolu: "Conviasa", ulke: "Venezuela", merkezSehir: null, anlasmaDetayi: null },
+    { havayolu: "Iberworld", ulke: "İspanya", merkezSehir: null, anlasmaDetayi: "(Faaliyeti durdurdu)" }
+  ],
+  bakimHizmetiVerilenUcakTipleri: {
+    Airbus: ["A320 ailesi (A318, A319, A320, A321, neo dahil)", "A330 ailesi (A330-200, A330-300)", "A350-900", "A321XLR"],
+    Boeing: ["737 ailesi (CFM56-7B motorlu)", "757 (RB211-535 motorlu)", "767 (V2500 motorlu)"]
+    // Embraer, Bombardier bu metinde geçmediği için eklenmedi.
+  },
+  anlasmalar2023_2025: [
+    "RwandAir ile Boeing 737 (CFM56-7B/-7BE) motor bakımı ve onarımı anlaşması (Ocak 2023).",
+    "HK Express ile Airbus A320ceo/A321ceo (V2500) motor bakımı ve onarımı anlaşması (Ocak 2023)."
+    // Volotea ve Qatar Airways anlaşmaları 2022, AvAir 2021 tarihli.
+  ],
+  sonDonemdekiYatirimlar: [
+    "Pratt & Whitney GTF™ Motorları Bakım Kapasitesi: La Muñoza tesislerinde tam operasyonel kapasiteye ulaşılması.",
+    "A320 Kabin Modernizasyonu: Yeni Airspace L Bins ile %60 daha fazla el bagajı kapasitesi.",
+    "Sürdürülebilir Havacılık Yakıtı (SAF) Kullanımı: La Muñoza motor test tezgahlarında %5 SAF kullanımı (Yıllık 115 ton CO₂ azaltımı).",
+    "Güneş Enerjisi Tesisleri: La Muñoza'da Getting Greener iş birliğiyle (Yıllık 2,63 milyon kWh enerji tasarrufu).",
+    "Eğitim Merkezi Genişlemesi: 2024'te 218.000+ saat teknik eğitim (%45 artış).",
+    "Stajyer Programları: 2024/2025'te La Muñoza'da 144 mesleki-teknik öğrenciye staj (%50 artış).",
+    "İnsan Kaynağı Artışı: 2024'te 200 yeni uzman personel (Toplam 2.200 çalışan)."
+  ],
+  tahminiYillikBakimKapasitesi: [
+    "Yıllık Ağır Bakım İşlemi (2024): 181 uçak (Madrid ve Barselona).",
+    "Toplam Bakım Pozisyonu: 18 (Madrid'de 3 hangar, Barselona'da 1 hangar).",
+    "Yıllık Adam Saati: +1.000.000.",
+    "Üs Bakım Kontrolü: +200.",
+    "Komponent Onarımı (2022): 29.000 bileşen."
+  ],
+  finansalVeriler: [ // IAG Grubu verileri olabilir, metinde Iberia Maintenance'a özel değil gibi.
+    "Toplam Gelir: 32,1 milyar € (%9 artış, 2023'e göre).",
+    "Faaliyet Kârı (istisnai kalemler hariç): 4,44 milyar € (2023: 3,51 milyar €).",
+    "Net Kâr: 2,73 milyar € (2023: 2,66 milyar €).",
+    "Faaliyet Kâr Marjı: %13,8.",
+    "Hisse Başına Kâr: 0,557 €.",
+    "Çalışan Sayısı: 2100+." // Kimdir bölümünden
+  ],
+  teknikAltyapi: [
+    "Ana Tesisler: La Muñoza (Madrid - 7 hangar, motor atölyesi, test tezgahı), El Prat (Barselona - 1 hangar).",
+    "Komponent Atölyesi: 34.350 m².",
+    "Eğitim Merkezi: EASA Part-147 onaylı.",
+    "Motor Yetkinlikleri: CFM56, V2500, RB211, Pratt & Whitney GTF."
+  ]
+};
+
 export const mroSablonu = {
   mroFirmasiAdi: "MRO Firma Adı",
   kimdir: "MRO firma tanımı ve kısa tarihçesi",
@@ -3284,9 +3972,7 @@ export const groupMROsByCountry = (mroFirmalari) => {
       'Londra': 'Birleşik Krallık',
       'London': 'Birleşik Krallık',
       'East Midlands': 'Birleşik Krallık',
-      'Miami': 'ABD',
-      'Florida': 'ABD',
-      'Alabama': 'ABD'
+            'Miami': 'ABD',      'Florida': 'ABD',      'Alabama': 'ABD',      'Lasham': 'Birleşik Krallık',      'Vantaa': 'Finlandiya',      'Wood Dale': 'ABD',      'Ljubljana': 'Slovenya'
     };
     
     // Ülke adını direkt aramak
@@ -3366,7 +4052,15 @@ export const mroFirmalari = [
   koreanAirMROData,
   klmUkEngineeringMROData,
   lotamsData,
-  lufthansaTechnikData
+  lufthansaTechnikData,
+  excelEngineeringLtdData,
+  gaTelesisEngineServicesData,
+  adriaTehnikaData,
+  aarCorpData,
+  atsData,
+  iberiaMaintenanceData,
+  haecoGroupData,
+  gmfAeroAsiaData
 ];
 
 // Eski veri yapısıyla geriye uyumluluk için yardımcı fonksiyon

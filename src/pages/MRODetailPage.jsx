@@ -93,7 +93,7 @@ const MRODetailPage = () => {
             <div className="flex items-center gap-4">
               <MROLogo companyName={company.mroFirmasiAdi} size={128} className="border border-gray-200" />
               <div>
-                <h1 className="text-2xl font-bold text-gray-800">{company.mroFirmasiAdi} Detayları</h1>
+                <h1 className="text-2xl font-bold text-gray-800">{company.mroFirmasiAdi}</h1>
                 <p className="text-gray-600 mt-1">{company.kimdir.split('.')[0]}.</p>
               </div>
             </div>
