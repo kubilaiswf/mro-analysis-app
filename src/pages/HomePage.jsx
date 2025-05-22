@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import { FaGlobe, FaInfoCircle } from 'react-icons/fa';
-import MROWorldMap from '../components/charts/MROWorldMap';
 import SimpleWorldMap from '../components/charts/SimpleWorldMap';
 import { mroFirmalari } from '../data/maintenanceData';
 
@@ -8,12 +7,6 @@ const HomePage = () => {
   useEffect(() => {
     console.log("HomePage.jsx: Component did mount.");
     console.log("HomePage.jsx: mroFirmalari data:", mroFirmalari);
-    
-    if (typeof MROWorldMap === 'undefined') {
-      console.error("HomePage.jsx: MROWorldMap is undefined! Check import.");
-    } else {
-      console.log("HomePage.jsx: MROWorldMap component is imported:", MROWorldMap);
-    }
     
     if (typeof SimpleWorldMap === 'undefined') {
       console.error("HomePage.jsx: SimpleWorldMap is undefined! Check import.");
@@ -27,7 +20,8 @@ const HomePage = () => {
   return (
     <div className="min-h-screen bg-gray-50 pt-16 pb-10">
       <div className="container mx-auto p-4">
-        {/* İnteraktif Dünya Haritası */}
+        {/* İnteraktif Dünya Haritası - BU BÖLÜM KALDIRILACAK */}
+        {/*
         <section className="mb-10">
           <div className="flex items-center mb-4">
             <FaGlobe className="text-primary-500 text-xl mr-2" />
@@ -38,6 +32,7 @@ const HomePage = () => {
             {MROWorldMap ? <MROWorldMap /> : <p>MROWorldMap yüklenemedi!</p>}
           </div>
         </section>
+        */}
         
         {/* Basit Harita Bölümü */}
         <section className="mb-10">

@@ -1,0 +1,97 @@
+{
+    "bolge_adi": "Afrika",
+    "genel_gorunum_basligi": "Afrika Havacılık MRO Pazarının Genel Görünümü",
+    "bolumler": [
+      {
+        "id": "pazar_buyuklugu_ve_trendler_afrika",
+        "baslikAna": "1. Pazarın Büyüklüğü ve Trendleri",
+        "tip": "pazar_trendi_tablosu_cagr_aciklamali",
+        "tabloVerileri": [
+          { "yil": "2024", "pazar_buyuklugu_usd": "1,54 milyar", "cagr_str": "%4,79", "aciklama": "Güncel pazar büyüklüğü tahmini" },
+          { "yil": "2029 (tah.)", "pazar_buyuklugu_usd": "1,94 milyar", "cagr_str": "%4,79", "aciklama": "5 yıllık projeksiyon" }
+        ],
+        "ek_bilgi_tablosu": [
+           { "donem": "2024-2043 (kümülatif)", "deger": "85 milyar", "aciklama": "Boeing'e göre toplam MRO harcama tahmini"}
+        ]
+      },
+      {
+        "id": "segment_bazinda_dagilim_afrika",
+        "baslikAna": "2. Segment Bazında Dağılım",
+        "tip": "paragraf_ve_maddeli_liste",
+        "giris_paragrafi_html": "Afrika MRO pazarı, aşağıdaki ana segmentlerden oluşmaktadır:",
+        "liste_elemanlari_html": [
+          "<strong>Motor MRO (Engine Overhaul & Maintenance):</strong> Pazarın en büyük segmentidir. Örneğin, Güney Afrika'da 2023 itibarıyla motor bakım segmenti %41,45'lik pazar payına sahiptir.",
+          "<strong>Uçak Gövde Bakımı (Airframe Maintenance):</strong> Yapısal bütünlüğün korunması için kritik öneme sahiptir. Afrika pazarı genelinde %25-30 arasında bir paya sahiptir (tahmini).",
+          "<strong>Bileşen Bakımı (Component Maintenance):</strong> Aviyonik sistemler, iniş takımları ve yakıt sistemleri gibi alt bileşenlerin bakımı bu segmentte yer alır. Pazar payı yaklaşık olarak %15–20 (tahmini) seviyelerindedir.",
+          "<strong>Hattı Bakımı (Line Maintenance):</strong> Günlük operasyonlar sırasında yapılan kontroller ve küçük onarımlar bu segmentte sınıflandırılır. Tahmini pazar payı %10–15 aralığındadır."
+        ]
+      },
+      {
+        "id": "bolgesel_liderler_afrika",
+        "baslikAna": "Bölgesel Liderler",
+        "tip": "paragraf_ve_maddeli_liste",
+        "giris_paragrafi_html": "Afrika'da MRO hizmetleri açısından öne çıkan ülkeler şunlardır:",
+        "liste_elemanlari_html": [
+          "<strong>Güney Afrika:</strong> Kapsamlı MRO altyapısına sahip olup, motor bakımında lider konumdadır.",
+          "<strong>Ethiopia:</strong> Ethiopian Airlines, Addis Ababa'da önemli bir MRO merkezi işletmektedir.",
+          "<strong>Kenya:</strong> Kenya Airways, Nairobi'de MRO hizmetleri sunmaktadır.",
+          "<strong>Fas:</strong> Embraer ve Safran gibi şirketlerin yatırımlarıyla MRO kapasitesini artırmaktadır."
+        ]
+      },
+      {
+        "id": "afrika_mro_pazari_ve_gelecek_projeksiyonlari",
+        "baslikAna": "Afrika MRO Pazarı ve Gelecek Projeksiyonları",
+        "tip": "basit_metin_bloklari",
+        "bloklar_html": [
+          "2023 itibarıyla Afrika'da yaklaşık 700 ticari uçak bulunmaktadır. Boeing'in tahminlerine göre, bu sayının 2043 yılına kadar 1.550'ye ulaşması beklenmektedir."
+        ]
+      },
+      {
+        "id": "yatirim_icin_stratejik_gerekceler_afrika",
+        "baslikAna": "Yatırım İçin Stratejik Gerekçeler",
+        "tip": "yatirim_gerekceleri_detayli",
+        "alt_bolumler": [
+          {
+            "id": "yeni_ucak_siparisleri_afrika",
+            "baslik_alt": "1. Yeni Uçak Siparişleri",
+            "liste_tipi": "tablo_siparis",
+            "tablo_basliklari": ["Sıra", "Havayolu Şirketi", "Ülke", "Sipariş Sayısı ve Detayları"],
+            "tablo_verileri": [
+              [1, "Ethiopian Airlines", "Etiyopya", "84 uçak: 11 Boeing 787 Dreamliner, 20 Boeing 737 MAX, 11 Airbus A350-900; ayrıca 8 Boeing 777-9 siparişi ve 12 opsiyon."],
+              [2, "EgyptAir", "Mısır", "28 uçak: 10 Airbus A350-900, 18 Boeing 737 MAX 8 (kiralama anlaşması)."],
+              [3, "Air Algérie", "Cezayir", "15 uçak: 8 Boeing 737 MAX 9, 5 Airbus A330-900, 2 Airbus A350-1000."],
+              [4, "TAAG Angola Airlines", "Angola", "13 uçak: 4 Boeing 787 (2 adet 787-9 ve 2 adet 787-10), 9 Airbus A220 (kiralama anlaşması)."],
+              [5, "Air Peace", "Nijerya", "23 uçak: 13 Embraer E195-E2, 10 Boeing 737 MAX."],
+              [6, "Green Africa Airways", "Nijerya", "50 uçak: 50 Airbus A220-300 siparişi; ayrıca 100 Boeing 737 MAX için ön anlaşma."]
+            ]
+          },
+          {
+            "id": "yolcu_trafigi_artiyor_afrika",
+            "baslik_alt": "2. Yolcu trafiği artıyor:",
+            "aciklama_html": "Afrika'daki havacılık sektörü, yıllık ortalama %5 büyüme oranıyla dünya ortalamasının üzerinde büyüyor (IATA verilerine göre)."
+          },
+          {
+            "id": "mro_altyapisi_zayif_afrika",
+            "baslik_alt": "3. Afrika'da MRO altyapısı hala zayıf:",
+            "aciklama_html": "Afrika'da MRO kapasitesi ve kalitesi genellikle yetersiz. Avrupa'dan gelişmiş teknoloji, know-how ve yönetim becerileriyle müdahale ederek, pazarın kalitesini yükseltirken etkili olabilirsin."
+          },
+          {
+            "id": "filo_dagilimi_afrika",
+            "baslik_alt": "Afrika'da 2025 İtibarıyla Filo Dağılımı",
+            "aciklama_html": "Afrika'daki havayollarının filosu, genel olarak dar gövdeli uçaklardan (single-aisle) oluşmaktadır. Boeing'e göre, 2021 itibarıyla Afrika'daki ticari filosunun %61'i dar gövdeli uçaklardan oluşmaktadır. Geniş gövdeli uçaklar ise %24'lük bir paya sahiptir. Kalan %17'lik kısım ise bölgesel jetlerden oluşmaktadır."
+          }
+        ]
+      },
+      {
+        "id": "gelecekteki_egilimler_ve_tahminler_afrika",
+        "baslikAna": "Gelecekteki Eğilimler ve Tahminler",
+        "tip": "madde_imleriyle_liste",
+        "liste_elemanlari_html": [
+          "Afrika'daki havacılık sektörü, önümüzdeki yıllarda önemli bir büyüme bekliyor.",
+          "Boeing, 2040 yılına kadar Afrika'da 1.030 yeni uçak talebi öngörüyor; bunların 740'ı dar gövdeli, 250'si ise geniş gövdeli uçaklar olacak.",
+          "Airbus ise 20 yıl içinde Afrika'da 1.180 yeni uçak talebi bekliyor; bunların 880'i dar gövdeli, 300'ü ise geniş gövdeli uçaklar olacak.",
+          "Embraer'in tahminlerine göre, Afrika'da 2043 yılına kadar 600 yeni küçük jet ve turboprop uçağı alınması bekleniyor. Bu, mevcut 470 uçaktan %80'lik bir artışı ifade ediyor."
+        ]
+      }
+    ]
+  }

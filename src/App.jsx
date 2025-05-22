@@ -75,13 +75,6 @@ function App() {
               {activeView === 'dashboard' && (
                 <>
                   <DashboardSummary data={maintenanceData} />
-                  <div 
-                    className="mt-6 overflow-hidden" 
-                    onWheel={preventPageScroll}
-                    style={{ touchAction: 'none' }}
-                  >
-                    <MROWorldMap />
-                  </div>
                   <div className="mt-6">
                     <ContinentMap />
                   </div>

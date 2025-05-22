@@ -1,0 +1,125 @@
+{
+    "bolge_adi": "Avrupa",
+    "genel_gorunum_basligi": "Avrupa Havacılık MRO Pazarının Genel Görünümü",
+    "bolumler": [
+      {
+        "id": "pazar_buyuklugu_ve_trendler",
+        "baslikAna": "1. Pazarın Büyüklüğü ve Trendleri",
+        "tip": "pazar_trendi_tablosu_genel",
+        "tabloVerileri": [
+          { "yil": "2023", "pazar_buyuklugu_usd": "21,29 milyar USD", "buyume_orani_str": "-" },
+          { "yil": "2025", "pazar_buyuklugu_usd": "22,1 milyar USD", "buyume_orani_str": "%2,3" },
+          { "yil": "2030 (Tahmini)", "pazar_buyuklugu_usd": "24,81 milyar USD", "buyume_orani_str": "%2,2" }
+        ]
+      },
+      {
+        "id": "segment_bazinda_dagilim",
+        "baslikAna": "Segment Bazında Dağılım",
+        "tip": "segment_dagilimi_pasta_grafik_genel",
+        "giris_aciklamasi_html": "Havacılık MRO sektörü dört ana segmentten oluşur. Avrupa pazarında bu segmentlerin oranları ve trendleri aşağıdaki gibidir:",
+        "pasta_grafigi_baslik": "MRO Pazar Segmentleri Dağılımı",
+        "pasta_grafigi_verileri": {
+          "labels": ["Bileşen MRO", "Uçak Gövde Bakımı", "Uçak Hattı Bakımı", "Motor MRO"],
+          "datasets": [
+            {
+              "label": "Dağılım (%)",
+              "data": [18.2, 20.2, 23.2, 38.4],
+              "backgroundColor": [
+                "rgba(255, 159, 64, 0.7)",
+                "rgba(54, 162, 235, 0.7)",
+                "rgba(75, 192, 192, 0.7)",
+                "rgba(220, 53, 69, 0.7)"
+              ],
+              "borderColor": ["#FF9F40", "#36A2EB", "#4BC0C0", "#DC3545"],
+              "borderWidth": 1
+            }
+          ]
+        },
+        "grafik_alti_aciklama_html": "MRO (Bakım, Onarım ve Revizyon) pazar segmentlerinin yüzde dağılımını gösteren pasta grafiği. Motor MRO segmenti %38.4 ile en büyük paya sahip, onu sırasıyla Uçak Hattı Bakımı (%23.2), Uçak Gövde Bakımı (%20.2) ve Bileşen MRO (%18.2) takip ediyor."
+      },
+      {
+        "id": "bolgesel_liderler",
+        "baslikAna": "3. Bölgesel Liderler",
+        "tip": "madde_imleriyle_liste",
+        "liste_elemanlari_html": [
+          "<strong>Almanya:</strong> Lufthansa Technik'in merkezidir. Avrupa'nın en büyük MRO kapasitesine sahip ülkelerindendir.",
+          "<strong>Fransa:</strong> Airbus'ın bakım faaliyetleri, Safran gibi motor MRO firmaları burada yoğunlaşır.",
+          "<strong>İngiltere:</strong> Rolls-Royce’un motor MRO hizmetleri bu ülkededir.",
+          "<strong>Portekiz:</strong> TAP Maintenance & Engineering, Güney Avrupa'da stratejik rol oynar.",
+          "<strong>Polonya, Macaristan:</strong> Düşük maliyetli bakım hizmetleri sunan Doğu Avrupa ülkeleri, yeni yatırımlar için cazip hale geliyor."
+        ]
+      },
+      {
+        "id": "mevcut_durum_ve_projeksiyonlar_genel",
+        "baslikAna": "Avrupa MRO Pazarı ve Gelecek Projeksiyonları",
+        "tip": "basit_metin_bloklari",
+        "bloklar_html": [
+          "<strong>Mevcut Uçak Sayısı:</strong> 2023 itibarıyla Avrupa'da 5.000'den fazla ticari uçak bulunmaktadır.",
+          "<strong>2033 Projeksiyonu:</strong> Bu sayının 2033'e kadar yaklaşık 7.000'e ulaşması beklenmektedir."
+        ]
+      },
+      {
+        "id": "yatirim_icin_stratejik_gerekceler",
+        "baslikAna": "Yatırım İçin Stratejik Gerekçeler",
+        "tip": "yatirim_gerekceleri_detayli",
+        "alt_bolumler": [
+          {
+            "id": "yeni_ucak_siparisleri",
+            "baslik_alt": "1. Yeni Uçak Siparişleri",
+            "aciklama_html": "Avrupa'daki havayolu şirketleri, filolarını modernize etmek ve genişletmek amacıyla önemli sayıda yeni uçak siparişi vermektedir. Bu siparişler, gelecekteki MRO hizmetlerine olan talebi artıracaktır.",
+            "alt_baslik_icerik": "2015-2025 Döneminde En Fazla Uçak Siparişi Veren 10 Avrupa Havayolu",
+            "liste_tipi": "numarali_alt_detayli_liste",
+            "liste_verileri": [
+              { "ana_baslik": "Wizz Air (Macaristan)", "alt_detaylar_html": ["Sipariş Sayısı: 273 uçak (2018 itibarıyla)", "Ağırlıklı olarak Airbus A320neo ve A321neo modelleri"] },
+              { "ana_baslik": "EasyJet (Birleşik Krallık)", "alt_detaylar_html": ["Sipariş Sayısı: 157 uçak (2023 itibarıyla)", "Airbus A320neo ve A321neo modelleri"] },
+              { "ana_baslik": "International Airlines Group (IAG) – İspanya/İngiltere", "alt_detaylar_html": ["Sipariş Sayısı: 71 uçak (2025 itibarıyla)", "32 Boeing 787-10 ve 21 Airbus A330-900neo dahil"] },
+              { "ana_baslik": "Air France-KLM (Fransa/Hollanda)", "alt_detaylar_html": ["Sipariş Sayısı: 50 Airbus A350 (2023 itibarıyla)", "Ayrıca Airbus A220-300 siparişleri de bulunmaktadır"] },
+              { "ana_baslik": "Ryanair (İrlanda)", "alt_detaylar_html": ["Sipariş Sayısı: 210 Boeing 737 MAX 8 (2020 itibarıyla)"] },
+              { "ana_baslik": "Lufthansa Group (Almanya)", "alt_detaylar_html": ["Sipariş Sayısı: 40 Airbus A220-300 (2023 itibarıyla)"] },
+              { "ana_baslik": "Pegasus Airlines (Türkiye)", "alt_detaylar_html": ["Sipariş Sayısı: 100'ün üzerinde Airbus A320neo ve A321neo"] },
+              { "ana_baslik": "Vueling (İspanya)", "alt_detaylar_html": ["Sipariş Sayısı: 47 Airbus A320neo (IAG bünyesinde)"] },
+              { "ana_baslik": "AirBaltic (Letonya)", "alt_detaylar_html": ["Sipariş Sayısı: 90 Airbus A220-300 (2024 itibarıyla)"] }
+            ]
+          },
+          {
+            "id": "yaslanan_ucak_filolari",
+            "baslik_alt": "2. Yaşlanan Uçak Filoları: Bakım Talebini Artıran Bir Faktör",
+            "aciklama_html": "Avrupa'daki birçok havayolu şirketi, yaşlanan uçak filoları nedeniyle artan bakım ve modernizasyon ihtiyaçlarıyla karşı karşıyadır. Bu durum, MRO hizmetlerine olan talebi doğrudan etkilemektedir.",
+            "alt_baslik_icerik": "Örnekler:",
+            "madde_imleriyle_liste_html": [
+              "<strong>Air France:</strong> 2023 yılı itibarıyla Air France filosunun ortalama yaşı 12,9 yıldır. Özellikle uzun menzilli uçakların ortalama yaşı 13,4 yıl olup, bu segmentteki uçaklar daha yoğun bakım gereksinimi duymaktadır.",
+              "<strong>Eastern Airways:</strong> Bu havayolu şirketinin filosu, 2024 yılı itibarıyla 25,3 yıllık bir ortalama yaşa sahiptir. Boeing 767-300ER ve Boeing 777-200 gibi modellerin yaşları sırasıyla 31,8 ve 20,9 yıldır.",
+              "<strong>Loganair:</strong> İngiltere merkezli bu bölgesel havayolu şirketinin filosunun ortalama yaşı 19,5 yıldır. Özellikle Embraer ERJ 145 uçaklarının ortalama yaşı 24,7 yıldır."
+            ],
+            "sonuc_paragrafi_html": "Bu yaşlanan filolar, bakım, onarım ve modernizasyon hizmetlerine olan talebi artırmakta ve MRO sektöründe yeni yatırım fırsatları yaratmaktadır."
+          },
+          {
+            "id": "teknolojik_gelismeler",
+            "baslik_alt": "3. Teknolojik Gelişmeler",
+            "aciklama_html": "Yeni nesil uçakların ve motorların hizmete girmesi, özel eğitimli personel ve ekipman gereksinimi doğurarak MRO firmaları için yeni fırsatlar yaratacaktır."
+          },
+          {
+            "id": "regulasyonlar_ve_guvenlik_standartlari",
+            "baslik_alt": "4. Regülasyonlar ve Güvenlik Standartları",
+            "aciklama_html": "Avrupa'daki sıkı hava güvenliği ve çevre regülasyonları, düzenli ve kapsamlı bakım hizmetlerini zorunlu kılmaktadır."
+          },
+          {
+            "id": "filo_dagilimi_2025",
+            "baslik_alt": "Avrupa'da 2025 İtibarıyla Filo Dağılımı",
+            "madde_imleriyle_liste_html": [
+              "<strong>Dar gövdeli uçaklar:</strong> Avrupa'daki toplam uçak filosunun yaklaşık %80'ini oluşturmaktadır. Bu segmentte Airbus A320neo ve Boeing 737 MAX gibi modeller öne çıkmaktadır.",
+              "<strong>Geniş gövdeli uçaklar:</strong> Kalan %20'lik kısmı temsil etmektedir. Bu uçaklar, uzun menzilli uluslararası uçuşlarda kullanılmakta olup, Boeing 787 ve Airbus A350 gibi modeller tercih edilmektedir."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "gelecekteki_egilimler_ve_tahminler_bolgesel",
+        "baslikAna": "Gelecekteki Eğilimler ve Tahminler",
+        "tip": "basit_metin_bloklari",
+        "bloklar_html": [
+          "Boeing'in tahminine göre, 2040 yılına kadar Avrupa'da 8.705 yeni uçak teslim edilecek. Bunların 7.100'ü dar gövdeli, 1.545'i ise geniş gövdeli uçaklar olacak. Bu, dar gövdeli uçakların %82'lik bir paya sahip olacağını göstermektedir."
+        ]
+      }
+    ]
+  }
