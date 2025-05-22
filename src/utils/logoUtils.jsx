@@ -71,6 +71,10 @@ export const getMROLogoFilename = (companyName) => {
     'iberia maintenance': 'iberia.jpg',
     'gmf aeroasia': 'gmf.png',
     'haeco group': 'HAECO.png',
+    'turkish technic': 'Turkish.png',
+    'thy technic': 'Turkish.png',
+    'turkish airlines technic': 'Turkish.png',
+    'thy technical': 'Turkish.png',
     // 'exhibitor bird': 'exhibitor-bird.jpg', // Still unclear
     // 'Untitled-1.png' : '' // Still needs MRO Name
   };

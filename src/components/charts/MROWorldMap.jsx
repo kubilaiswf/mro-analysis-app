@@ -22,25 +22,27 @@ const cityToCountryMapping = {
   "Rome": "Italy",
   "Olbia": "Italy",
   "Cardiff": "United Kingdom",
-  "Miami": "USA",
-  "Dothan": "USA",
+  "Miami": "United States of America",
+  "Dothan": "United States of America",
   "Kelowna": "Canada",
   "Jinan": "China",
   "Xiamen": "China",
   "Haikou": "China",
   "Shannon": "Ireland",
-  "Abu Dhabi": "UAE",
+  "Abu Dhabi": "United Arab Emirates",
   "Addis Ababa": "Ethiopia",
-  "Cincinnati": "USA",
+  "Cincinnati": "United States of America",
+  "Oklahoma City": "United States of America",
+  "Oklahoma": "United States of America",
   
   // Yeni şehir-ülke eşleştirmeleri
-  "Atlanta": "USA",
+  "Atlanta": "United States of America",
   "Amsterdam": "Netherlands",
   "Bacău": "Romania",
   "Delhi": "India",
-  "Tampa": "USA",
+  "Tampa": "United States of America",
   "Abbotsford": "Canada",
-  "Ontario": "USA",
+  "Ontario": "United States of America",
   "San Jose": "Costa Rica",
   "Cairo": "Egypt",
   "Dresden": "Germany",
@@ -54,12 +56,12 @@ const cityToCountryMapping = {
   "Warsaw": "Poland",
   "Hamburg": "Germany",
   "Hong Kong": "China",
-  "Phoenix": "USA",
+  "Phoenix": "United States of America",
   "Lasham": "United Kingdom",
   "Vantaa": "Finland",
-  "Wood Dale": "USA",
+  "Wood Dale": "United States of America",
   "Ljubljana": "Slovenia",
-  "Everett": "USA",
+  "Everett": "United States of America",
   "Madrid": "Spain",
   "Jakarta": "Indonesia",
   "Xiamen": "China"
@@ -605,7 +607,7 @@ const MROWorldMap = ({ continent }) => {
       "FEAM Maintenance/Engineering": "Cincinnati",
       "2Excel Engineering Ltd": "Lasham",
       "GA Telesis Engine Services (GATES)": "Vantaa",
-      "AAR Corp": "Wood Dale",
+      "AAR Corp": "Oklahoma City",
       "Adria Tehnika": "Ljubljana",
       "Aviation Technical Services (ATS)": "Everett",
       "Iberia Maintenance": "Madrid",
@@ -938,14 +940,14 @@ const MROWorldMap = ({ continent }) => {
               {mroCityMarkers.map(marker => (
               <Marker key={`${marker.name}-${marker.city}`} coordinates={marker.coordinates}>
                 <g
-                  transform="translate(-7, -20)"
+                  transform="translate(-6, -12)"
                   className="cursor-pointer hover:opacity-90 transition-opacity"
                   data-tooltip-id="mro-city-tooltip"
-                  data-tooltip-content={`${marker.name} - ${marker.country}, ${marker.city}`} // Ülke bilgisini ekledik
+                  data-tooltip-content={`${marker.name} - ${marker.country}, ${marker.city}`}
                   onClick={() => handleMarkerClick(marker.mroIndex)}
                 >
                   {/* Custom SVG Pin küçültülmüş boyut */}
-                  <svg width="15px" height="20px" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+                  <svg width="10px" height="14px" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
                     {/* Mevcut SVG içeriğiniz */}
                     <ellipse cx="256" cy="480" rx="30" ry="8" fill="rgba(0,0,0,0.2)" />
                     

@@ -416,7 +416,7 @@ const ContinentMap = () => {
   return (
     <div className="h-[550px] rounded-lg shadow-xl overflow-hidden border border-gray-700 bg-gray-800">
       <h3 className="text-xl font-semibold text-white px-4 py-3 border-b border-gray-700 bg-gray-700">
-        Kıtalara Göre MRO Dağılımı ve Bilgileri (Detay için tıklayın)
+        Kıtalara Göre MRO Dağılımı ve Bilgileri
       </h3>
       <div id="continentmapdiv" style={{ width: "100%", height: "490px" }}></div>
     </div>

@@ -91,7 +91,7 @@ const MRODetailPage = () => {
         <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6 mb-6">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
             <div className="flex items-center gap-4">
-              <MROLogo companyName={company.mroFirmasiAdi} size={128} className="border border-gray-200" />
+              <MROLogo companyName={company.mroFirmasiAdi} size={160} className="border border-gray-200" />
               <div>
                 <h1 className="text-2xl font-bold text-gray-800">{company.mroFirmasiAdi}</h1>
                 <p className="text-gray-600 mt-1">{company.kimdir.split('.')[0]}.</p>

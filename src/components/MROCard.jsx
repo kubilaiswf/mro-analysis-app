@@ -47,7 +47,7 @@ const MROCard = ({ mroData }) => {
       {/* Company Header */}
       <div className="bg-gradient-to-r from-primary-600 to-primary-500 p-4 text-white">
         <div className="flex items-center">
-          <MROLogo companyName={mroData.mroFirmasiAdi} size={48} className="mr-3" />
+          <MROLogo companyName={mroData.mroFirmasiAdi} size={64} className="mr-3" />
           <h2 className="text-xl font-bold">{mroData.mroFirmasiAdi}</h2>
         </div>
       </div>

@@ -6,11 +6,12 @@ import {
   FaMapMarkerAlt, FaPlane, FaUsers, FaFileContract, FaChartLine, 
   FaCogs, FaSync, FaSearch, FaTimes, FaSort, FaSortUp, FaSortDown, 
   FaEye, FaStar, FaStarHalfAlt, FaChevronDown, FaChevronUp, FaArrowLeft,
-  FaArrowUp, FaTools
+  FaArrowUp, FaTools, FaChevronRight
 } from 'react-icons/fa';
 import MROCard from '../components/MROCard';
 import MROComparisonTable from '../components/MROComparisonTable';
-import { mroFirmalari } from '../data/maintenanceData';
+import TurkishTechnicProfile from '../components/TurkishTechnicProfile';
+import { mroFirmalari, turkishTechnicData } from '../data/maintenanceData';
 import { formatMRODataForCharts, getCommonAircraftTypes, compareMROsByMetric } from '../utils/mroUtils';
 import { MROLogo } from '../utils/logoUtils.jsx';
 
@@ -180,6 +181,35 @@ const MROComparisonPage = () => {
       <div className="container mx-auto px-4 py-6">
         {!showComparison ? (
           <div>
+            {/* New Turkish Technic Compact Banner */}
+            <div className="bg-white rounded-lg shadow-sm border-2 border-red-300 mb-6 overflow-hidden">
+              <div className="flex flex-col sm:flex-row sm:items-center p-4">
+                <div className="flex items-center flex-grow">
+                  <MROLogo companyName="Turkish Technic" size={150} className="mr-3" />
+                  <div>
+                    <div className="flex items-center">
+                      <h3 className="font-bold text-red-600">THY Technic</h3>
+                    </div>
+                    <p className="text-sm text-gray-600 mt-1">THY Technic ile diğer MRO firmalarını birebir karşılaştırın</p>
+                  </div>
+                </div>
+                <button 
+                  onClick={() => navigate('/thy-comparison')}
+                  className="flex items-center px-4 py-2 mt-3 sm:mt-0 bg-red-600 hover:bg-red-700 text-white rounded-lg text-sm font-medium transition-colors"
+                >
+                  <FaExchangeAlt className="mr-1.5" />
+                  THY ile Karşılaştır
+                  <FaChevronRight className="ml-1.5" />
+                </button>
+              </div>
+            </div>
+            
+            {/* Diğer MRO Firmaları Bölümü */}
+            <div className="mb-4 mt-6">
+              <h2 className="text-2xl font-bold text-gray-800">MRO Firmaları</h2>
+              <p className="text-gray-600">Karşılaştırmak istediğiniz MRO firmalarını seçin.</p>
+            </div>
+            
             {/* Arama ve Filtreleme Kısmı */}
             <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-5 mb-6">
               <div className="flex flex-col md:flex-row gap-4 items-center mb-4">
@@ -203,37 +233,40 @@ const MROComparisonPage = () => {
                     </button>
                   )}
                 </div>
-                
-                <button
-                  className="px-4 py-2 bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-lg flex items-center"
-                  onClick={() => setShowFilters(!showFilters)}
-                >
-                  <FaFilter className="mr-2" />
-                  <span>Filtreler</span>
-                  {showFilters ? <FaChevronUp className="ml-2" /> : <FaChevronDown className="ml-2" />}
-                </button>
-                
+             
                 <div className="flex">
                   <button
                     className="px-4 py-2 bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-l-lg flex items-center"
                     onClick={() => requestSort('mroFirmasiAdi')}
                   >
-                    <FaSort className="mr-1" />
                     <span>İsim</span>
+                    {sortConfig.key === 'mroFirmasiAdi' ? (
+                      sortConfig.direction === 'ascending' ? <FaSortUp className="ml-1" /> : <FaSortDown className="ml-1" />
+                    ) : (
+                      <FaSort className="ml-1" />
+                    )}
                   </button>
                   <button
                     className="px-4 py-2 bg-gray-100 hover:bg-gray-200 text-gray-700 border-l border-gray-200 flex items-center"
                     onClick={() => requestSort('customerCount')}
                   >
-                    <FaSort className="mr-1" />
                     <span>Müşteri</span>
+                    {sortConfig.key === 'customerCount' ? (
+                      sortConfig.direction === 'ascending' ? <FaSortUp className="ml-1" /> : <FaSortDown className="ml-1" />
+                    ) : (
+                      <FaSort className="ml-1" />
+                    )}
                   </button>
                   <button
                     className="px-4 py-2 bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-r-lg border-l border-gray-200 flex items-center"
                     onClick={() => requestSort('serviceCount')}
                   >
-                    <FaSort className="mr-1" />
                     <span>Hizmet</span>
+                    {sortConfig.key === 'serviceCount' ? (
+                      sortConfig.direction === 'ascending' ? <FaSortUp className="ml-1" /> : <FaSortDown className="ml-1" />
+                    ) : (
+                      <FaSort className="ml-1" />
+                    )}
                   </button>
                 </div>
               </div>
@@ -281,7 +314,7 @@ const MROComparisonPage = () => {
                     key={originalIndex} 
                     className={`
                       bg-white rounded-lg shadow-sm overflow-hidden border transition-all duration-200 cursor-pointer
-                      h-40 flex flex-col
+                      h-auto flex flex-col
                       ${selectedMROs.includes(originalIndex) 
                         ? 'border-primary-500 shadow-md ring-2 ring-primary-100' 
                         : 'border-gray-200 hover:border-gray-300 hover:shadow-md'
@@ -290,11 +323,11 @@ const MROComparisonPage = () => {
                     onClick={() => toggleMROSelection(originalIndex)}
                   >
                     {/* Kart Başlığı */}
-                    <div className="relative p-4 flex-grow">
+                    <div className="relative p-3 flex-grow">
                       {/* Seçim İşaretçisi */}
                       <div 
                         className={`
-                          absolute top-3 right-3 w-6 h-6 rounded-full flex items-center justify-center overflow-hidden transition-colors
+                          absolute top-2 right-2 w-5 h-5 rounded-full flex items-center justify-center overflow-hidden transition-colors
                           ${selectedMROs.includes(originalIndex) 
                             ? 'bg-primary-500 text-white' 
                             : 'border border-gray-300 bg-white'
@@ -307,24 +340,27 @@ const MROComparisonPage = () => {
                       </div>
                       
                       {/* Firma Bilgileri */}
-                      <div className="pr-8 flex items-start gap-3">
-                        <MROLogo companyName={company.mroFirmasiAdi} size={48} />
+                      <div className="pr-6 flex items-start gap-3">
+                        <MROLogo companyName={company.mroFirmasiAdi} size={100} />
                         <div className="max-w-[70%]">
-                          <h3 className="text-base font-bold text-gray-800 mb-1 line-clamp-2 h-12 overflow-hidden break-words">{company.mroFirmasiAdi}</h3>
+                          <h3 className="text-sm font-bold text-gray-800 mb-1 line-clamp-2 overflow-hidden break-words">{company.mroFirmasiAdi}</h3>
                           
-                          {/* İstatistikler */}
-                          <div className="flex flex-wrap gap-3 mt-2">
-                            <div className="flex items-center text-gray-600">
-                              <FaHandshake className="text-primary-500 mr-1.5" />
-                              <span className="font-medium">{company.musteriPortfoyu.length}</span>
+                          {/* İstatistikler - Revised Layout */}
+                          <div className="space-y-1 mt-1">
+                            <div className="flex items-center text-xs text-gray-600">
+                              <FaHandshake className="text-primary-500 mr-1 w-3 h-3" />
+                              <span className="font-medium mr-1">{company.musteriPortfoyu.length}</span>
+                              <span className="text-xs">Müşteri</span>
                             </div>
-                            <div className="flex items-center text-gray-600">
-                              <FaCertificate className="text-primary-500 mr-1.5" />
-                              <span className="font-medium">{company.sertifikalar.length}</span>
+                            <div className="flex items-center text-xs text-gray-600">
+                              <FaCertificate className="text-primary-500 mr-1 w-3 h-3" />
+                              <span className="font-medium mr-1">{company.sertifikalar.length}</span>
+                              <span className="text-xs">Sertifika</span>
                             </div>
-                            <div className="flex items-center text-gray-600">
-                              <FaCogs className="text-primary-500 mr-1.5" />
-                              <span className="font-medium">{company.hizmetleri.length}</span>
+                            <div className="flex items-center text-xs text-gray-600">
+                              <FaCogs className="text-primary-500 mr-1 w-3 h-3" />
+                              <span className="font-medium mr-1">{company.hizmetleri.length}</span>
+                              <span className="text-xs">Hizmet</span>
                             </div>
                           </div>
                         </div>
@@ -441,7 +477,7 @@ const MROComparisonPage = () => {
             <div className="flex flex-wrap gap-2">
               {selectedMROCompanies.map((company, idx) => (
                 <div key={idx} className="bg-white rounded-full border border-primary-200 px-2 py-1 flex items-center shadow-sm">
-                  <MROLogo companyName={company.mroFirmasiAdi} size={24} className="mr-2" />
+                  <MROLogo companyName={company.mroFirmasiAdi} size={32} className="mr-2" />
                   <span className="text-sm font-medium text-gray-800">{company.mroFirmasiAdi}</span>
                 </div>
               ))}
@@ -516,13 +552,13 @@ const MROComparisonPage = () => {
         
         {/* Ekranı takip eden karşılaştırma butonu - Artık bounce animasyonu olmadan ve sağ altta */}
         {!showComparison && selectedMROs.length >= 2 && (
-          <div className="fixed bottom-6 left-6 z-50 transition-opacity duration-300 ease-in-out">
+          <div className="fixed bottom-6 right-6 z-50 transition-opacity duration-300 ease-in-out">
             <button
               onClick={startComparison}
               className="flex items-center px-5 py-3 bg-primary-600 text-white rounded-full shadow-lg hover:bg-primary-700 transition-colors font-medium"
               aria-label={`${selectedMROs.length} MRO'yu karşılaştır`}
             >
-              <span className="absolute -top-2 -left-2 w-6 h-6 bg-accent-900 text-white rounded-full text-xs flex items-center justify-center">
+              <span className="absolute -bottom-2 -right-2 w-6 h-6 bg-accent-900 text-white rounded-full text-xs flex items-center justify-center">
                 {selectedMROs.length}
               </span>
               <FaExchangeAlt className="mr-2" />

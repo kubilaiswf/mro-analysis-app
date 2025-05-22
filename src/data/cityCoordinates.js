@@ -9,7 +9,7 @@ export const cityCoordinates = {
   "Leipzig/Halle": { lat: 51.3397, lng: 12.3731 },
   "Frankfurt": { lat: 50.1109, lng: 8.6821 },
   "East Midlands": { lat: 52.8311, lng: -1.3321 },
-  "Tel Aviv": { lat: 32.0853, lng: 34.7818 },
+  "Tel Aviv": { lat: 32.0853, lng: 35.03 },
   "Ben": { lat: 32.0853, lng: 34.7818 },
   "Larnaca": { lat: 34.9002, lng: 33.6232 },
   "Athens": { lat: 37.9838, lng: 23.7275 },
@@ -24,7 +24,7 @@ export const cityCoordinates = {
   "Xiamen": { lat: 24.4798, lng: 118.0819 },
   "Haikou": { lat: 20.0440, lng: 110.3240 },
   "Shannon": { lat: 52.6996, lng: -8.9168 },
-  "Abu Dhabi": { lat: 24.4539, lng: 54.3773 },
+  "Abu Dhabi": { lat: 24, lng: 54.5773 },
   "Addis Ababa": { lat: 9.0320, lng: 38.7490 },
   "Cincinnati": { lat: 39.1031, lng: -84.5120 },
   "CVG": { lat: 39.0489, lng: -84.6678 },
@@ -66,7 +66,9 @@ export const cityCoordinates = {
   "Everett": { lat: 47.9790, lng: -122.2021 },  // ATS headquarters at Paine Field
   "Madrid": { lat: 40.4168, lng: -3.7038 },  // Iberia Maintenance headquarters
   "Jakarta": { lat: -6.2088, lng: 106.8456 },  // GMF AeroAsia headquarters
-  "Xiamen": { lat: 24.4798, lng: 118.0819 }  // HAECO Group location
+  "Xiamen": { lat: 24.4798, lng: 118.0819 },  // HAECO Group location
+  "Oklahoma City": { lat: 35.4676, lng: -97.5164 }, // AAR Corp. Oklahoma City için eklendi
+  "Oklahoma": { lat: 35.4676, lng: -97.5164 } // AAR Corp. Oklahoma City için alternatif anahtar
 }
 
 // MRO şirketleri için renkler - her şirket için benzersiz bir renk
@@ -172,7 +174,9 @@ export const cityToMroMapping = {
   "Hamburg": "Lufthansa Technik AG",
   "Lasham": "2Excel Engineering Ltd",
   "Vantaa": "GA Telesis Engine Services (GATES)",
-  "Wood Dale": "AAR Corp",
+  "Wood Dale": "AAR Corp", // Wood Dale AAR Corp merkezi olarak kalabilir.
+  "Oklahoma City": "AAR Corp", // Oklahoma City'de de bir tesisleri varsa ekleyebiliriz.
+  "Oklahoma": "AAR Corp", // Alternatif anahtar
   "Ljubljana": "Adria Tehnika",
   "Everett": "Aviation Technical Services (ATS)",
   "Madrid": "Iberia Maintenance",

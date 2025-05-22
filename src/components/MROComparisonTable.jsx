@@ -164,7 +164,7 @@ const MROComparisonTable = ({ mroCompanies }) => {
                   >
                     <div className="flex justify-between items-center mb-3">
                       <div className="flex items-center">
-                        <MROLogo companyName={item.company} size={32} className="mr-2" />
+                        <MROLogo companyName={item.company} size={42} className="mr-2" />
                         <h4 className="font-semibold text-gray-800">{item.company}</h4>
                       </div>
                       <div className="flex items-center">

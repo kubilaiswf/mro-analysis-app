@@ -3854,6 +3854,60 @@ export const iberiaMaintenanceData = {
   ]
 };
 
+export const turkishTechnicData = {
+  mroFirmasiAdi: "Turkish Technic",
+  kimdir: null, // Bu metinde "Kimdir" bölümü yok.
+  hizmetleri: [ // Tahmini Yıllık Kapasite bölümündeki bakım tiplerinden çıkarılabilir.
+    "Ağır Bakım (Base Maintenance - C ve D kontrolleri)",
+    "Hafif Bakım (A ve L kontrolleri)", // A + L olarak belirtilmiş
+    "B Kontrolü",
+    "S Kontrolü (Özel Kontrol)",
+    "Uçak Boyama (PAINT)"
+    // Bu metin daha çok bakım tipleri ve adetlerine odaklanmış, genel hizmet yelpazesi detayı yok.
+  ],
+  sertifikalar: [
+    // Bu metinde Turkish Technic için spesifik sertifika listesi bulunmuyor.
+  ],
+  hangarVeTesisKonumlari: [
+    // Bu metinde spesifik hangar ve tesis konum bilgisi bulunmuyor.
+  ],
+  musteriPortfoyu: [
+    { havayolu: "THY A.O. (Türk Hava Yolları)", ulke: "Türkiye", merkezSehir: null, anlasmaDetayi: "Ana müşteri, 2023'te çeşitli tiplerde 4.212 bakım işlemi." },
+    { havayolu: "3rd Party Müşteriler (Çeşitli)", ulke: null, merkezSehir: null, anlasmaDetayi: "2023'te çeşitli tiplerde 205 bakım işlemi." }
+    // Bu metinde spesifik 3. taraf müşteri isimleri yok.
+  ],
+  bakimHizmetiVerilenUcakTipleri: {
+    Airbus: ["A300", "A310", "A320 Family (A318, A319, A320, A321)", "A330", "A340"],
+    Boeing: ["737 NG (Next Generation)", "767", "777"],
+    Cessna: ["172 (veya F172)", "510 (Citation Mustang)"], // AJW şablonunda yok, "Diger" altına.
+    Bombardier: ["CL600 (Challenger 600 series)"], // Metinde geçtiği için eklendi
+    Gulfstream: ["Gulfstream IV (G-IV)", "Gulfstream V-SP (GV-SP / G550)"], // AJW şablonunda yok, "Diger" altına.
+    DiamondAircraft: ["DA40", "DA42"] // AJW şablonunda yok, "Diger" altına.
+    // Embraer bu metinde geçmediği için eklenmedi.
+  },
+  anlasmalar2023_2025: [
+    // Bu metinde 2023-2025 dönemi için spesifik yeni havayolu anlaşmaları bilgisi yok.
+    // Sadece 2023 yılı bakım adetleri verilmiş.
+  ],
+  sonDonemdekiYatirimlar: [
+    // Bu metinde 2020-2025 dönemi için spesifik yatırım bilgisi bulunmuyor.
+  ],
+  tahminiYillikBakimKapasitesi: [ // 2023 Yılı Bakım Adetleri (Base Maintenance)
+    "THY A.O. İçin Yapılan Bakımlar (2023): A+L: 4.008, B: 2, C: 139, S: 26, PAINT: 37. Toplam: 4.212.",
+    "3. Taraf Müşteriler İçin Yapılan Bakımlar (2023): A+L: 85, B: 1, C: 70, PAINT: 47. Toplam: 205."
+    // Toplam bakım (THY + 3. Taraf): 4.417
+  ],
+  finansalVeriler: [ // 2023 Yılı
+    "Toplam Gelir: 1,86 milyar ABD doları (2022'de 1,51 milyar USD idi, %23 artış).",
+    "Operasyonel Kâr: 255 milyon ABD doları (2022'de 178 milyon USD idi, %43 artış).",
+    "Toplam Çalışan Sayısı: 10.500 (2022'de yaklaşık 9.500, %10 artış)."
+  ],
+  teknikAltyapi: [
+    // Bu metinde spesifik hangar sayısı, toplam alan gibi teknik altyapı detayları yok.
+    "Çalışan Sayısı (2023): 10.500." // Finansal verilerden
+  ]
+};
+
 export const mroSablonu = {
   mroFirmasiAdi: "MRO Firma Adı",
   kimdir: "MRO firma tanımı ve kısa tarihçesi",

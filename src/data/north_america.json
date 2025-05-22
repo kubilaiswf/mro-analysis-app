@@ -1,0 +1,145 @@
+{
+    "bolge_adi": "Kuzey Amerika",
+    "genel_gorunum_basligi": "Kuzey Amerika MRO Pazarının Genel Görünümü",
+    "bolumler": [
+      {
+        "id": "pazar_buyuklugu_ve_trendler_na",
+        "baslikAna": "1. Pazarın Büyüklüğü ve Trendleri",
+        "tip": "pazar_trendi_tablosu_cagr_aciklamali",
+        "tabloVerileri": [
+          { "yil": "2022", "pazar_buyuklugu_usd": "24,22 milyar ABD doları", "cagr_str": null, "aciklama": "24.224,98 milyon ABD doları olarak belirtilmiştir." },
+          { "yil": "2023", "pazar_buyuklugu_usd": "21,56 Milyar ABD doları", "cagr_str": null, "aciklama": null },
+          { "yil": "2031 (tahmini)", "pazar_buyuklugu_usd": "28,61 Milyar ABD doları", "cagr_str": null, "aciklama": "Ulaşması bekleniyor." }
+        ],
+        "cagr_aciklamasi_html": "2024-2031 yılları arasında %4,1'lik yıllık büyüme oranıyla büyümesi öngörülmektedir."
+      },
+      {
+        "id": "segment_bazinda_dagilim_na",
+        "baslikAna": "2. Segment Bazında Dağılım",
+        "tip": "segment_aciklamalari_liste",
+        "segmentler": [
+          { 
+            "adi_html": "<strong>Motor MRO:</strong>", 
+            "aciklama_html": "2022 yılında %36,8 pazar payı ile en büyük segmenttir. 2030 yılına kadar 14,5 milyar ABD dolarına ulaşması ve %6,3 CAGR ile büyümesi öngörülmektedir." 
+          },
+          { 
+            "adi_html": "<strong>Gövde (Airframe) MRO:</strong>", 
+            "aciklama_html": "2024 yılında 24,8 milyar ABD doları değerindedir ve toplam pazarın %23,24'ünü oluşturmaktadır." 
+          },
+          { 
+            "adi_html": "<strong>Bileşen MRO:</strong>", 
+            "aciklama_html": "2024 yılında 20,3 milyar ABD doları değerindedir ve toplam pazarın %18,99'unu oluşturmaktadır." 
+          },
+          { 
+            "adi_html": "<strong>Uçak Hattı Bakımı (Line Maintenance):</strong>", 
+            "aciklama_html": "2024 yılında 20,8 milyar ABD doları değerindedir ve toplam pazarın %19,47'sini oluşturmaktadır." 
+          }
+        ]
+      },
+      {
+        "id": "bolgesel_liderler_na",
+        "baslikAna": "3. Bölgesel Liderler",
+        "tip": "ulke_detay_kartlari",
+        "ulkeler": [
+          {
+            "ulke_adi": "Amerika Birleşik Devletleri",
+            "detaylar_html": [
+              "Dünyanın en büyük MRO altyapısına sahiptir. Hem filonun büyüklüğü hem de ileri teknoloji bakım merkezleri ile global pazarda lider konumdadır. Öne çıkan firmalar:",
+              "<strong>Delta TechOps:</strong> Atlanta merkezlidir. Hem Delta filosuna hem de 150'den fazla üçüncü taraf müşteriye hizmet sunar. ABD'nin en büyük in-house MRO tesisidir.",
+              "<strong>GE Aerospace:</strong> Cincinnati, Ohio merkezli. LEAP motorları başta olmak üzere motor bakımında küresel liderdir.",
+              "<strong>AAR Corp.:</strong> Chicago merkezli bağımsız MRO sağlayıcısıdır. Indianapolis, Miami ve Rockford gibi şehirlerde büyük tesisleri vardır."
+            ]
+          },
+          {
+            "ulke_adi": "Kanada",
+            "detaylar_html": [
+              "MRO hizmetleri daha çok gövde bakımı ve bileşen modernizasyonu üzerine yoğunlaşmıştır. Montreal, ülkenin havacılık merkezi konumundadır.",
+              "<strong>KF Aerospace:</strong> Kelowna merkezli. Ülkenin en büyük ticari MRO sağlayıcısıdır. Hamilton ve Vancouver'da da tesisleri bulunmaktadır.",
+              "<strong>Héroux-Devtek:</strong> Quebec merkezlidir. Özellikle iniş takımları ve aktüatör sistemlerinde uzmanlaşmıştır."
+            ]
+          },
+          {
+            "ulke_adi": "Meksika",
+            "detaylar_html": [
+              "Düşük işçilik maliyetleri ve ABD'ye coğrafi yakınlık sayesinde bakım dış kaynak merkezi haline gelmiştir. Son yıllarda MRO yatırımları hızla artmıştır.",
+              "<strong>TechOps Mexico:</strong> Delta ve Aeroméxico ortaklığıyla kurulmuştur. Meksika'nın en büyük uçak bakım tesislerinden biridir. Kaynak: https://www.aeromexico.com/en-us/techops",
+              "<strong>Mexicana MRO Services:</strong> Mexicana Airlines'tan doğmuştur. Bölgedeki en köklü bakım merkezlerinden biridir."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "na_mro_pazari_ve_gelecek_projeksiyonlari",
+        "baslikAna": "4. Kuzey Amerika MRO Pazarı ve Gelecek Projeksiyonları",
+        "tip": "madde_imleriyle_liste",
+        "liste_elemanlari_html": [
+          "<strong>Mevcut Uçak Sayısı:</strong> 2023 itibarıyla Kuzey Amerika'da 7.500'den fazla ticari uçak aktif olarak hizmet vermektedir. Bu sayı, küresel ticari uçak filosunun yaklaşık %30'una karşılık gelmektedir.",
+          "<strong>2033 Projeksiyonu:</strong> Boeing ve Airbus'ın öngörülerine göre, Kuzey Amerika'daki toplam ticari uçak sayısının 2033 yılına kadar yaklaşık 9.000'e ulaşması beklenmektedir."
+        ]
+      },
+      {
+        "id": "yatirim_icin_stratejik_gerekceler_na",
+        "baslikAna": "5. Yatırım İçin Stratejik Gerekçeler",
+        "tip": "yatirim_gerekceleri_detayli",
+        "alt_bolumler": [
+          {
+            "id": "hizla_buyuyen_pazar_hacmi_na",
+            "baslik_alt": "Hızla Büyüyen Pazar Hacmi",
+            "aciklama_html": "Kuzey Amerika MRO pazarı, 2023 yılında yaklaşık 21,56 Milyar ABD doları değerindedir ve 2031 yılına kadar 28,61 Milyar ABD dolarına ulaşması beklenmektedir. %4,1'lik yıllık büyüme oranı öngörülmektedir. Bu büyüme, artan endüstriyel otomasyon, ekipman çalışma süresine olan ihtiyaç ve gelişmiş teknolojilerin entegrasyonu gibi faktörlerle desteklenmektedir."
+          },
+          {
+            "id": "yaslanan_ucak_filosu_na",
+            "baslik_alt": "Yaşlanan Uçak Filosu",
+            "aciklama_html": "Kuzey Amerika'daki ticari ve askeri uçak filolarının yaşlanması, MRO hizmetlerine olan talebi artırmaktadır. Özellikle avionik sistemlerin düzenli bakımı ve yükseltilmesi gerekliliği, MRO pazarında büyümeye katkı sağlamaktadır."
+          },
+          {
+            "id": "teknolojik_gelismeler_uzmanlik_na",
+            "baslik_alt": "Teknolojik Gelişmeler ve Uzmanlık Gereksinimi",
+            "aciklama_html": "Yeni nesil uçak motorları ve sistemleri, MRO hizmet sağlayıcılarından daha yüksek düzeyde uzmanlık ve teknoloji entegrasyonu talep etmektedir. Örneğin, GE Aerospace, artan talebi karşılamak ve bakım sürelerini azaltmak amacıyla önümüzdeki beş yıl içinde MRO tesislerine 1 milyar USD yatırım yapmayı planlamaktadır."
+          },
+          {
+            "id": "artan_ucak_siparisleri_filo_genislemesi_na",
+            "baslik_alt": "Artan Uçak Siparişleri ve Filonun Genişlemesi",
+            "aciklama_html": "Kuzey Amerika'daki havayolu şirketleri, filolarını genişletmek amacıyla büyük ölçekli uçak siparişleri vermektedir. Bu genişleme, MRO hizmetlerine olan talebi artırmaktadır. Örneğin, Airbus, Kuzey Amerika'nın ticari uçak hizmetleri pazarının 2042 yılına kadar 45 milyar USD'ye ulaşacağını öngörmektedir.",
+            "liste_tipi": "tablo_havayolu_siparis_detayli_na",
+            "tablo_basliklari": ["Havayolu Şirketi", "Sipariş Detayları"],
+            "tablo_verileri": [
+              ["American Airlines (2024)", "Sipariş Adedi: 260 yeni uçak (85 Airbus A321neo, 85 Boeing 737 MAX 10, 90 Embraer E175) ve 193 opsiyonel sipariş.<br>Toplam Sipariş: Yaklaşık 453 uçak."],
+              ["United Airlines (2022)", "Sipariş Adedi: 200 Boeing 787 Dreamliner geniş gövdeli uçak."],
+              ["Delta Air Lines", "Sipariş Adedi: 155 Airbus A321neo, 145 Airbus A220, 25 Airbus A330neo, 42 Airbus A350, 100 Boeing 737-10.<br>Toplam Sipariş: Yaklaşık 467 uçak."],
+              ["Alaska Airlines", "Sipariş Adedi: 50 Boeing 737 (20 MAX 8, 17 MAX 9, 13 737-900ER)"],
+              ["JetBlue Airways", "Sipariş Adedi: 100 Airbus A220-300, 30 Airbus A321neo.<br>Toplam Sipariş: 130 uçak."]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "filo_dagilimi_2025_na",
+        "baslikAna": "6. Kuzey Amerika'da 2025 İtibarıyla Filo Dağılımı",
+        "tip": "madde_imleriyle_liste",
+        "liste_elemanlari_html": [
+          "<strong>Dar Gövdeli Uçaklar (NB):</strong> Kuzey Amerika filosunun %65'ini oluşturmaktadır. Bu segmentte Airbus A320neo ve Boeing 737 MAX gibi modeller öne çıkmaktadır.",
+          "<strong>Geniş Gövdeli Uçaklar (WB):</strong> Kuzey Amerika filosunun %18'ini temsil etmektedir. Bu kategoride Boeing 787 ve Airbus A350 gibi uzun menzilli uçaklar bulunmaktadır.",
+          "<strong>Bölgesel Jetler (RJ):</strong> Toplamın %12'sini oluşturmaktadır. Embraer E-Jet ve Bombardier CRJ serisi bu segmentte yaygın olarak kullanılmaktadır.",
+          "<strong>Turbo-prop Uçaklar (TP):</strong> Toplamın %5'ini temsil etmektedir. Bu segmentte ATR 72 ve De Havilland Canada Dash 8 gibi modeller bulunmaktadır."
+        ]
+      },
+      {
+        "id": "gelecekteki_egilimler_ve_tahminler_na",
+        "baslikAna": "7. Gelecekteki Eğilimler ve Tahminler",
+        "tip": "yatirim_gerekceleri_detayli",
+        "alt_bolumler": [
+            {
+                "id": "filo_buyumesi_yeni_ucak_teslimatlari_na",
+                "baslik_alt": "Filo Büyümesi ve Yeni Uçak Teslimatları",
+                "aciklama_html": "<strong>Filo Artışı:</strong> Kuzey Amerika'daki ticari uçak filosunun, 2025 yılından 2035 yılına kadar %32 artış göstermesi beklenmektedir."
+            },
+            {
+                "id": "dar_govdeli_ucaklarin_artan_rolu_na",
+                "baslik_alt": "Dar Gövdeli Uçakların Artan Rolü",
+                "aciklama_html": "Airbus'ın 2024-2043 Genel Pazar Tahmini'ne göre, önümüzdeki 20 yıl içinde dünya genelinde 42.430 yeni yolcu ve kargo uçağına ihtiyaç duyulacak. Bu uçakların büyük bir kısmını dar gövdeli (tek koridorlu) uçaklar oluşturacak."
+            }
+        ]
+      }
+    ]
+}

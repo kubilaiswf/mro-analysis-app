@@ -7,6 +7,7 @@ import DashboardSummary from './components/DashboardSummary';
 import AIAssistantPage from './pages/AIAssistantPage';
 import MROComparisonPage from './pages/MROComparisonPage';
 import MRODetailPage from './pages/MRODetailPage';
+import TurkishTechnicComparisonPage from './pages/TurkishTechnicComparisonPage';
 import AirlineOperatorsPage from './pages/AirlineOperatorsPage';
 import ContinentDetailPage from './pages/ContinentDetailPage';
 import Footer from './components/Footer';
@@ -101,6 +102,7 @@ function App() {
           <Route path="/ai-assistant/:chatId" element={<AIAssistantPage />} />
           <Route path="/mro-comparison" element={<MROComparisonPage />} />
           <Route path="/mro-detail/:mroId" element={<MRODetailPage />} />
+          <Route path="/thy-comparison" element={<TurkishTechnicComparisonPage />} />
           <Route path="/airline-operators" element={<AirlineOperatorsPage />} />
           <Route path="/continent/:continentName" element={<ContinentDetailPage />} />
         </Routes>

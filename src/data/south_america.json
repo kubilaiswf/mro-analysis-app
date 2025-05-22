@@ -1,0 +1,125 @@
+{
+    "bolge_adi": "Güney Amerika",
+    "genel_gorunum_basligi": "Güney Amerika MRO Pazarının Genel Görünümü",
+    "bolumler": [
+      {
+        "id": "pazar_buyuklugu_ve_trendler_sa",
+        "baslikAna": "1. Pazarın Büyüklüğü ve Trendleri",
+        "tip": "pazar_trendi_tablosu_cagr_aciklamali",
+        "tabloVerileri": [
+          { "yil": "2025", "pazar_buyuklugu_usd": "6,52 milyar ABD doları", "cagr_str": null, "aciklama": null },
+          { "yil": "2030 (beklenti)", "pazar_buyuklugu_usd": "7,67 milyar ABD doları", "cagr_str": "%3,31", "aciklama": "2025-2030 döneminde %3,31'lik bir bileşik yıllık büyüme oranıyla ulaşması bekleniyor." }
+        ]
+      },
+      {
+        "id": "segment_bazinda_dagilim_sa",
+        "baslikAna": "2. Segment Bazında Dağılım",
+        "tip": "segment_aciklamalari_liste",
+        "segmentler": [
+          { 
+            "adi_html": "<strong>1. Motor MRO</strong>", 
+            "aciklama_html": "2022 pazar payı: %36,7 ile en büyük segment.<br>2030 tahmini: 2,02 milyar ABD doları.<br>Büyüme oranı (CAGR): %2,8" 
+          },
+          { 
+            "adi_html": "<strong>2. Gövde (Airframe) MRO</strong>", 
+            "aciklama_html": "2022 değeri: 1,15 milyar ABD doları<br>2030 tahmini: 1,4 milyar ABD doları" 
+          },
+          { 
+            "adi_html": "<strong>3. Aviyonik, Kabin ve İniş Takımı MRO</strong>", 
+            "aciklama_html": "Bu segmentler görece daha küçük olsa da toplam pazarın önemli bir kısmını oluşturmaktadır. Spesifik değerler ülkeye göre değişmektedir." 
+          }
+        ]
+      },
+      {
+        "id": "bolgesel_liderler_sa",
+        "baslikAna": "3. Bölgesel Liderler",
+        "tip": "paragraf_ve_maddeli_liste",
+        "liste_elemanlari_html": [
+          "<strong>LATAM MRO – São Carlos, Brezilya:</strong> LATAM Airlines'ın São Carlos'taki MRO tesisi, Güney Amerika'nın en büyük uçak bakım merkezi olarak tanınmaktadır.",
+          "<strong>TechOps México - Querétaro, Meksika:</strong> Delta Air Lines ve Aeroméxico'nun ortak girişimi olan TechOps México, Meksika'nın en büyük ve Latin Amerika'nın ikinci büyük MRO tesisi olarak faaliyet göstermektedir.",
+          "<strong>AerCaribe MRO - Lima, Peru:</strong> AerCaribe, Lima merkezli olarak kargo ve charter uçuşları için bakım hizmetleri sunmaktadır.",
+          "<strong>Aeroman - San Salvador, El Salvador:</strong> MRO Holdings'in bir parçası olan Aeroman, Latin Amerika'nın en büyük bağımsız MRO sağlayıcılarından biridir. San Salvador'daki tesisinde Airbus A320 ve Boeing 737 gibi uçaklara bakım hizmeti sunmaktadır."
+        ]
+      },
+      {
+        "id": "sa_mro_pazari_ve_gelecek_projeksiyonlari",
+        "baslikAna": "4. Güney Amerika MRO Pazarı ve Gelecek Projeksiyonları",
+        "tip": "basit_metin_bloklari_baslikli",
+         "alt_baslik_icerik": "Mevcut Uçak Sayısı",
+        "bloklar_html": [
+            "<strong>2022 Yılı:</strong> 2022 yılı verilerine göre, Güney Amerika'da toplam 1.196 uçak bulunmaktadır.",
+            "<strong>2023 Yılı:</strong> Güney Amerika'da 2023 yılı itibarıyla 1.500'den fazla ticari uçak operasyonel durumdadır.",
+            "<strong>2033 Tahmini:</strong> Güney Amerika'daki ticari uçak filosunun, 2033 yılına kadar 2.100'ün üzerine çıkması beklenmektedir."
+        ]
+      },
+      {
+        "id": "yatirim_icin_stratejik_gerekceler_sa",
+        "baslikAna": "5. Yatırım İçin Stratejik Gerekçeler",
+        "tip": "yatirim_gerekceleri_detayli",
+        "alt_bolumler": [
+          {
+            "id": "artan_hava_trafigi_yaslanan_filolar_sa",
+            "baslik_alt": "Artan Hava Trafiği ve Yaşlanan Uçak Filoları",
+            "aciklama_html": "Bölgedeki hava trafiği artışı ve yaşlanan uçak filoları, MRO hizmetlerine olan talebi artırmaktadır. 2022 yılı verilerine göre, Güney Amerika'da toplam 1.196 uçak bulunmaktadır; bunların 945'i aktif, 251'i ise yerde beklemektedir."
+          },
+          {
+            "id": "stratejik_cografi_konum_bolgesel_isbirlikleri_sa",
+            "baslik_alt": "Stratejik Coğrafi Konum ve Bölgesel İşbirlikleri",
+            "aciklama_html": "Güney Amerika'nın stratejik konumu, MRO hizmet sağlayıcıları için bölgesel işbirlikleri ve genişleme fırsatları sunmaktadır. Örneğin, Meksika'nın Querétaro bölgesi, Airbus, Delta ve Bombardier gibi şirketlerin işbirliğiyle kurulan havacılık kümelenmesiyle dikkat çekmektedir."
+          },
+          {
+            "id": "yeni_teknolojilerin_entegrasyonu_sa",
+            "baslik_alt": "Yeni Teknolojilerin Entegrasyonu",
+            "aciklama_html": "MRO hizmet sağlayıcıları, yapay zeka (AI) ve eklemeli üretim (additive manufacturing) gibi yeni teknolojileri operasyonlarına entegre ederek, bakım süreçlerini daha verimli hale getirmektedir. Bu teknolojik gelişmeler, yatırımcılar için cazip fırsatlar sunmaktadır."
+          },
+          {
+            "id": "pazarin_konsolidasyonu_uluslararasi_oyuncular_sa",
+            "baslik_alt": "Pazarın Konsolidasyonu ve Uluslararası Oyuncuların Girişi",
+            "aciklama_html": "Bölgedeki MRO pazarı, uluslararası oyuncuların yatırımlarıyla konsolide olmaktadır. Örneğin, Aeroman (MRO Holdings), GE Aerospace ve Lufthansa Technik gibi şirketler, Latin Amerika'daki MRO hizmet ağlarını genişletmektedir."
+          }
+        ]
+      },
+      {
+        "id": "filo_dagilimi_2025_sa",
+        "baslikAna": "6. Güney Amerika'da 2025 İtibarıyla Filo Dağılımı",
+        "tip": "madde_imleriyle_liste_aciklamali",
+        "giris_paragrafi_html": "<strong>Toplam Ticari Uçak Sayısı (İlk 5 Havayolu):</strong> 884 adet",
+        "liste_elemanlari_html": [
+          "<strong>Dar Gövdeli Uçaklar:</strong> (%84,8)",
+          "<strong>Geniş Gövdeli Uçaklar:</strong> (%10,5)",
+          "<strong>Kargo Uçakları:</strong> (%4,6)"
+        ],
+        "sonuc_paragrafi_html": "İlk 5 hava yolu üzerinden toplam uçak sayıları incelendiğinde oransal olarak dar gövde uçakların büyük çoğunluğu oluşturduğu dikkat çekmektedir."
+      },
+      {
+        "id": "gelecekteki_egilimler_ve_tahminler_sa",
+        "baslikAna": "7. Gelecekteki Eğilimler ve Tahminler",
+        "tip": "yatirim_gerekceleri_detayli",
+        "alt_bolumler": [
+            {
+                "id": "buyume_hizi_latin_amerika_sa",
+                "baslik_alt": "Büyüme Hızı",
+                "aciklama_html": "Latin Amerika'nın ticari MRO talebinin önümüzdeki on yıl içinde %31 oranında artması öngörülmektedir. Bu, küresel toplamın %6'sını oluşturmasına rağmen, bölgeyi Batı Avrupa (%35), Orta Doğu (%60) ve Hindistan (%141) gibi bölgelerin ardından dördüncü en hızlı büyüyen pazar yapmaktadır."
+            },
+            {
+                "id": "mevcut_filo_dagilimi_2022_sa",
+                "baslik_alt": "Mevcut Filo Dağılımı (2022)",
+                "madde_imleriyle_liste_html": [
+                    "<strong>Dar Gövdeli Uçaklar:</strong> Toplam filonun yaklaşık %81'ini oluşturmaktadır.",
+                    "<strong>Geniş Gövdeli Uçaklar:</strong> Yaklaşık %19'luk bir paya sahiptir."
+                ],
+                "aciklama_html_ek": "Bu dağılım, bölgedeki havayolu şirketlerinin çoğunlukla kısa ve orta mesafeli rotalarda faaliyet göstermesi ve düşük maliyetli taşıyıcıların dar gövdeli uçakları tercih etmesiyle açıklanabilir."
+            },
+            {
+                "id": "gelecek_projeksiyonlari_2040_2042_sa",
+                "baslik_alt": "Gelecek Projeksiyonları (2040-2042)",
+                "aciklama_html": "Airbus ve Boeing'in öngörülerine göre, Latin Amerika ve Karayipler bölgesindeki ticari uçak filosu önümüzdeki 20 yıl içinde neredeyse iki katına çıkarak yaklaşık 2.820 uçağa ulaşacaktır.",
+                "madde_imleriyle_liste_html": [
+                    "<strong>Dar Gövdeli Uçaklar:</strong> Yeni teslimatların yaklaşık %88-92'sini oluşturması beklenmektedir.",
+                    "<strong>Geniş Gövdeli Uçaklar:</strong> Kalan %8-12'lik kısmı temsil edecektir."
+                ]
+            }
+        ]
+      }
+    ]
+}

@@ -27,9 +27,9 @@ const continentFileMapping = {
     "Europe": "europe",
     "Africa": "africa",
     "Asia": "asia_pacific", // Dosya adımız asia_pacific.json
+    "North America": "north_america",
+    "South America": "south_america"
     // Diğer kıtalar eklenecek:
-    // "North America": "north_america",
-    // "South America": "south_america",
     // "Oceania": "oceania"
 };
 
@@ -38,19 +38,33 @@ const sectionIconMapping = {
     pazar_buyuklugu_ve_trendler: FaChartBar,
     pazar_buyuklugu_ve_trendler_afrika: FaChartBar,
     pazar_buyuklugu_ve_trendler_asya: FaChartBar,
+    pazar_buyuklugu_ve_trendler_na: FaChartBar,
+    pazar_buyuklugu_ve_trendler_sa: FaChartBar,
     segment_bazinda_dagilim: FaPercentage,
     segment_bazinda_dagilim_afrika: FaPercentage,
     segment_bazinda_dagilim_asya: FaPercentage,
+    segment_bazinda_dagilim_na: FaPercentage,
+    segment_bazinda_dagilim_sa: FaPercentage,
     bolgesel_liderler: FaUserTie,
     bolgesel_liderler_afrika: FaUserTie,
+    bolgesel_liderler_na: FaUserTie,
+    bolgesel_liderler_sa: FaUserTie,
     mevcut_durum_ve_projeksiyonlar_genel: FaChartLine,
     afrika_mro_pazari_ve_gelecek_projeksiyonlari: FaChartLine,
     asya_pasifik_mro_pazari_ve_gelecek_projeksiyonlari: FaChartLine,
+    na_mro_pazari_ve_gelecek_projeksiyonlari: FaChartLine,
+    sa_mro_pazari_ve_gelecek_projeksiyonlari: FaChartLine,
     yatirim_icin_stratejik_gerekceler: FaLightbulb,
     yatirim_icin_stratejik_gerekceler_afrika: FaLightbulb,
     yatirim_icin_stratejik_gerekceler_asya: FaLightbulb,
+    yatirim_icin_stratejik_gerekceler_na: FaLightbulb,
+    yatirim_icin_stratejik_gerekceler_sa: FaLightbulb,
+    filo_dagilimi_2025_na: FaPlane,
+    filo_dagilimi_2025_sa: FaPlane,
     gelecekteki_egilimler_ve_tahminler_bolgesel: FaChartLine,
     gelecekteki_egilimler_ve_tahminler_afrika: FaChartLine,
+    gelecekteki_egilimler_ve_tahminler_na: FaChartLine,
+    gelecekteki_egilimler_ve_tahminler_sa: FaChartLine,
     bolgesel_dinamikler_ulke_bazli_asya: FaGlobeEurope,
     default: FaInfoCircle
 };
@@ -264,55 +278,43 @@ const RenderYatirimGerekceleriDetayli = ({ bolumData }) => (
     </div>
 );
 
-// Tip: 'pazar_trendi_tablosu_cagr_aciklamali' (Afrika ve Asya için)
+// Tip: 'pazar_trendi_tablosu_cagr_aciklamali'
 const RenderPazarTrendiTablosuCagrAciklamali = ({ bolumData }) => (
-    <div>
+    <div className="space-y-6">
         <h2 className="text-2xl font-bold text-gray-800 mb-4">{bolumData.baslikAna}</h2>
-        <div className="overflow-x-auto shadow-md rounded-lg mb-4">
+        <div className="overflow-x-auto shadow-md rounded-lg">
             <table className="min-w-full bg-white">
                 <thead className="bg-red-600 text-white">
                     <tr>
-                        <th className="py-3 px-4 text-left font-semibold">Yıl/Dönem</th>
+                        <th className="py-3 px-4 text-left font-semibold">Yıl</th>
                         <th className="py-3 px-4 text-left font-semibold">Pazar Büyüklüğü (USD)</th>
-                        <th className="py-3 px-4 text-left font-semibold">CAGR / Büyüme</th>
-                        {bolumData.tabloVerileri[0]?.aciklama && <th className="py-3 px-4 text-left font-semibold">Açıklama</th>}
+                        <th className="py-3 px-4 text-left font-semibold">Büyüme Oranı</th>
                     </tr>
                 </thead>
                 <tbody className="text-gray-700">
                     {bolumData.tabloVerileri.map((item, index) => (
-                        <tr key={item.yil || item.donem} className={index % 2 === 0 ? 'bg-red-50' : 'bg-white'}>
-                            <td className="py-3 px-4 border-b border-gray-200">{item.yil || item.donem}</td>
+                        <tr key={item.yil} className={index % 2 === 0 ? 'bg-red-50' : 'bg-white'}>
+                            <td className="py-3 px-4 border-b border-gray-200">{item.yil}</td>
                             <td className="py-3 px-4 border-b border-gray-200">{item.pazar_buyuklugu_usd}</td>
-                            <td className="py-3 px-4 border-b border-gray-200">{item.cagr_str || item.buyume_orani_str || '-'}</td>
-                            {item.aciklama && <td className="py-3 px-4 border-b border-gray-200 text-sm">{item.aciklama}</td>}
+                            <td className="py-3 px-4 border-b border-gray-200">
+                                {item.cagr_str ? (
+                                    <span className="inline-flex items-center">
+                                        {item.cagr_str}
+                                        {item.aciklama && (
+                                            <span className="ml-2 text-sm text-gray-500 italic">
+                                                {item.aciklama}
+                                            </span>
+                                        )}
+                                    </span>
+                                ) : (
+                                    <span className="text-gray-400">-</span>
+                                )}
+                            </td>
                         </tr>
                     ))}
                 </tbody>
             </table>
         </div>
-        {bolumData.ek_bilgi_tablosu && (
-             <div className="overflow-x-auto shadow-md rounded-lg my-4">
-                <table className="min-w-full bg-white">
-                    <thead className="bg-gray-200 text-gray-600">
-                        <tr>
-                            <th className="py-2 px-3 text-left font-semibold">Dönem</th>
-                            <th className="py-2 px-3 text-left font-semibold">Değer</th>
-                            <th className="py-2 px-3 text-left font-semibold">Açıklama</th>
-                        </tr>
-                    </thead>
-                     <tbody className="text-gray-700">
-                        {bolumData.ek_bilgi_tablosu.map((item, index) => (
-                            <tr key={index} className={index % 2 === 0 ? 'bg-gray-50' : 'bg-white'}>
-                                <td className="py-2 px-3 border-b border-gray-200">{item.donem}</td>
-                                <td className="py-2 px-3 border-b border-gray-200">{item.deger}</td>
-                                <td className="py-2 px-3 border-b border-gray-200 text-sm">{item.aciklama}</td>
-                            </tr>
-                        ))}
-                    </tbody>
-                </table>
-            </div>
-        )}
-        {bolumData.cagr_aciklamasi_html && <p className="text-sm text-gray-600 mt-2" dangerouslySetInnerHTML={{__html: bolumData.cagr_aciklamasi_html}}/>}
     </div>
 );
 
@@ -365,6 +367,30 @@ const RenderUlkeDetayKartlari = ({ bolumData }) => (
     </div>
 );
 
+// Tip: 'madde_imleriyle_liste_aciklamali' (Güney Amerika için)
+const RenderMaddeImleriyleListeAciklamali = ({ bolumData }) => (
+    <div>
+        <h2 className="text-2xl font-bold text-gray-800 mb-4">{bolumData.baslikAna}</h2>
+        {bolumData.giris_paragrafi_html && <p className="mb-3 text-gray-700 font-medium" dangerouslySetInnerHTML={{ __html: bolumData.giris_paragrafi_html }} />}
+        <ul className="list-disc pl-5 space-y-2 text-gray-700 mb-3">
+            {bolumData.liste_elemanlari_html.map((item, index) => (
+                <li key={index} dangerouslySetInnerHTML={{ __html: item }} />
+            ))}
+        </ul>
+        {bolumData.sonuc_paragrafi_html && <p className="text-gray-700 italic" dangerouslySetInnerHTML={{ __html: bolumData.sonuc_paragrafi_html }} />}
+    </div>
+);
+
+// Tip: 'basit_metin_bloklari_baslikli' (Güney Amerika için)
+const RenderBasitMetinBloklariBaslikli = ({ bolumData }) => (
+    <div>
+        <h2 className="text-2xl font-bold text-gray-800 mb-4">{bolumData.baslikAna}</h2>
+        {bolumData.alt_baslik_icerik && <h3 className="text-lg font-semibold text-red-700 mb-2">{bolumData.alt_baslik_icerik}</h3>}
+        {bolumData.bloklar_html && bolumData.bloklar_html.map((blok, index) => (
+            <p key={index} className="text-gray-700 mb-2" dangerouslySetInnerHTML={{ __html: blok }} />
+        ))}
+    </div>
+);
 
 // --- ANA KITA DETAY SAYFASI BİLEŞENİ ---
 const ContinentDetailPage = () => {
@@ -496,6 +522,12 @@ const ContinentDetailPage = () => {
                                 break;
                             case 'ulke_detay_kartlari':
                                 renderSpecificComponent = <RenderUlkeDetayKartlari bolumData={bolum} />;
+                                break;
+                            case 'madde_imleriyle_liste_aciklamali':
+                                renderSpecificComponent = <RenderMaddeImleriyleListeAciklamali bolumData={bolum} />;
+                                break;
+                            case 'basit_metin_bloklari_baslikli':
+                                renderSpecificComponent = <RenderBasitMetinBloklariBaslikli bolumData={bolum} />;
                                 break;
                             default:
                                 renderSpecificComponent = (
