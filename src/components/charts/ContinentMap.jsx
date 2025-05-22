@@ -4,7 +4,6 @@ import { useNavigate } from 'react-router-dom';
 // amCharts imports
 import * as am5 from '@amcharts/amcharts5';
 import * as am5map from '@amcharts/amcharts5/map';
-// import am5geodata_worldLow from '@amcharts/amcharts5-geodata/worldLow'; // Kullanılmıyor
 import am5geodata_continentsLow from '@amcharts/amcharts5-geodata/continentsLow';
 import am5themes_Animated from '@amcharts/amcharts5/themes/Animated';
 
@@ -144,16 +143,23 @@ const ContinentMap = () => {
     let root = am5.Root.new("continentmapdiv");
     root.setThemes([am5themes_Animated.new(root)]);
 
+    // Interface renklerini sıfırla
     root.interfaceColors.set("grid", am5.color(0xffffff));
     root.interfaceColors.set("text", am5.color(0xffffff));
     root.interfaceColors.set("background", am5.color(0x1f2937));
+    root.interfaceColors.set("fill", am5.color(0xdc2626)); // Varsayılan fill rengini kırmızı yap
+    root.interfaceColors.set("primaryButton", am5.color(0xdc2626));
+    root.interfaceColors.set("primaryButtonHover", am5.color(0xef4444));
 
     let chart = root.container.children.push(
       am5map.MapChart.new(root, {
         panX: "rotateX",
         panY: "rotateY",
         projection: am5map.geoOrthographic(),
-        paddingBottom: 10, paddingTop: 10, paddingLeft: 10, paddingRight: 10,
+        paddingBottom: 20, 
+        paddingTop: 20, 
+        paddingLeft: 20, 
+        paddingRight: 20,
         homeZoomLevel: 1,
         homeGeoPoint: { longitude: 0, latitude: 20 }, // Başlangıç merkezi
         maxZoomLevel: 7,
@@ -171,6 +177,7 @@ const ContinentMap = () => {
         fillOpacity: 1
     }));
 
+    // Ana kıta serisi
     let continentSeries = chart.series.push(
       am5map.MapPolygonSeries.new(root, {
         geoJSON: am5geodata_continentsLow,
@@ -179,23 +186,46 @@ const ContinentMap = () => {
       })
     );
 
-    continentSeries.data.setAll([
-      { id: "AF", value: 1, name: "Africa", polygonSettings: { fill: am5.color("#fbbf24")} },
-      { id: "AS", value: 2, name: "Asia", polygonSettings: { fill: am5.color("#34d399")} },
-      { id: "EU", value: 3, name: "Europe", polygonSettings: { fill: am5.color("#818cf8")} },
-      { id: "NA", value: 4, name: "North America", polygonSettings: { fill: am5.color("#f87171")} },
-      { id: "SA", value: 5, name: "South America", polygonSettings: { fill: am5.color("#a78bfa")} },
-      { id: "OC", value: 6, name: "Oceania", polygonSettings: { fill: am5.color("#60a5fa")} }
-    ]);
-
     continentSeries.mapPolygons.template.setAll({
-      tooltipText: "{name}",
       interactive: true,
-      templateField: "polygonSettings",
       strokeWidth: 1.5,
       strokeOpacity: 0.7,
       stroke: am5.color(0xffffff),
-      fillOpacity: 0.75
+      fillOpacity: 0.75,
+      fill: am5.color(0xdc2626) // Varsayılan olarak kırmızı ata
+    });
+
+    // Grimsi renkler ile kıta verilerini ayarla
+    continentSeries.data.setAll([
+      { id: "AF", value: 1, name: "Africa" },
+      { id: "AS", value: 2, name: "Asia" },
+      { id: "EU", value: 3, name: "Europe" },
+      { id: "NA", value: 4, name: "North America" },
+      { id: "SA", value: 5, name: "South America" },
+      { id: "OC", value: 6, name: "Oceania" }
+    ]);
+
+    // Renk haritası - kırmızımsı tonlar
+    const colorMap = {
+      "AF": "#dc2626", // Africa - kırmızı
+      "AS": "#991b1b", // Asia - koyu kırmızı  
+      "EU": "#b91c1c", // Europe - orta kırmızı
+      "NA": "#7f1d1d", // North America - çok koyu kırmızı
+      "SA": "#ef4444", // South America - açık kırmızı
+      "OC": "#f87171"  // Oceania - pembe kırmızı
+    };
+
+    // Her polygon için rengi manuel olarak ayarla
+    continentSeries.events.on("datavalidated", function() {
+      continentSeries.mapPolygons.each(function(polygon) {
+        if (polygon.dataItem && polygon.dataItem.dataContext) {
+          const continentId = polygon.dataItem.dataContext.id;
+          const color = colorMap[continentId];
+          if (color) {
+            polygon.set("fill", am5.color(color));
+          }
+        }
+      });
     });
 
     continentSeries.mapPolygons.template.states.create("hover", {
@@ -203,16 +233,54 @@ const ContinentMap = () => {
       strokeWidth: 2,
       strokeOpacity: 1,
     });
+
+    // Hover olaylarını ekle - diğer kıtaları saydamlaştır
+    continentSeries.mapPolygons.template.events.on("pointerover", function(ev) {
+      let hoveredPolygon = ev.target;
+      continentSeries.mapPolygons.each(function(polygon) {
+        if (polygon !== hoveredPolygon) {
+          polygon.animate({ key: "fillOpacity", to: 0.3, duration: 200 });
+          polygon.animate({ key: "strokeOpacity", to: 0.3, duration: 200 });
+        }
+      });
+    });
+
+    // Hover çıktığında opacity'leri normale döndür
+    continentSeries.mapPolygons.template.events.on("pointerout", function(ev) {
+      continentSeries.mapPolygons.each(function(polygon) {
+        polygon.animate({ key: "fillOpacity", to: 0.75, duration: 200 });
+        polygon.animate({ key: "strokeOpacity", to: 0.7, duration: 200 });
+      });
+    });
     
     continentSeries.mapPolygons.template.events.on("click", function(ev) {
       let dataItem = ev.target.dataItem;
       if (dataItem && dataItem.dataContext && dataItem.dataContext.name) {
-        // DÜZELTME 3: Dynamic centroid kullanımını kaldırıp sabit tanımladığımız merkez noktalarına güveniyoruz
         console.log(`Polygon Click: ${dataItem.dataContext.name}`); 
         handleContinentClick(dataItem.dataContext.name);
       }
     });
 
+    // Arkaplan fill serisi
+    let backgroundSeries = chart.series.push(am5map.MapPolygonSeries.new(root, {}));
+    backgroundSeries.mapPolygons.template.setAll({
+      fill: root.interfaceColors.get("alternativeBackground"),
+      fillOpacity: 0.05,
+      strokeOpacity: 0
+    });
+    backgroundSeries.data.push({
+      geometry: am5map.getGeoRectangle(90, 180, -90, -180)
+    });
+
+    // Graticule (çizgi çizgi efekt) serisi
+    let graticuleSeries = chart.series.unshift(
+      am5map.GraticuleSeries.new(root, {
+        step: 10
+      })
+    );
+    graticuleSeries.mapLines.template.set("strokeOpacity", 0.1);
+
+    // Label serisi
     let labelSeries = chart.series.push(
       am5map.MapPointSeries.new(root, {
         longitudeField: "longitude",
@@ -242,7 +310,6 @@ const ContinentMap = () => {
       label.events.on("click", function(ev) {
         const labelDataContext = dataItem.dataContext;
         if (labelDataContext && labelDataContext.name) {
-          // DÜZELTME 4: Etiket tıklamalarında da geoCentroid hesaplamayı kaldırdık
           console.log(`Label Click for ${labelDataContext.name}`);
           handleContinentClick(labelDataContext.name);
         }
@@ -291,127 +358,6 @@ const ContinentMap = () => {
       chartRef.current = null;
     };
   }, [navigate]);
-
-  // renderPazarBuyuklugu, renderBolgeselLiderler, renderYatirimGerekceleri fonksiyonları aynı kalır.
-  const renderPazarBuyuklugu = (data) => {
-    if (!data) return null;
-    return (
-        <div className="mb-4">
-            <h4 className="text-md font-semibold text-blue-300 mb-2">{data.baslik}</h4>
-            {data.veriler && Array.isArray(data.veriler) && (
-                <ul className="list-disc list-inside text-sm text-gray-300 pl-2">
-                    {data.veriler.map((item, idx) => (
-                        <li key={idx} className="mb-1">
-                            {item.yil || item.donem}: {item.pazar_buyuklugu_usd || item.pazar_buyuklugu_milyar_abd_dolari || 'N/A'}
-                            {(item.buyume_orani || item.oran || item.buyume_orani_cagr) && ` (Büyüme: ${item.buyume_orani || item.oran || item.buyume_orani_cagr})`}
-                            {item.aciklama && <span className="text-xs text-gray-400 italic ml-2">({item.aciklama})</span>}
-                        </li>
-                    ))}
-                </ul>
-            )}
-        </div>
-    );
-  };
-
-  const renderBolgeselLiderler = (data) => {
-    if (!data) return null;
-    const ulkelerSource = data.ulkeler || (data.bolgesel_dinamikler_ve_ulke_bazli_mro_analizi && data.bolgesel_dinamikler_ve_ulke_bazli_mro_analizi.ulkeler);
-    
-    return (
-        <div className="mb-4">
-            <h4 className="text-md font-semibold text-blue-300 mb-2">{data.baslik || (data.bolgesel_dinamikler_ve_ulke_bazli_mro_analizi && data.bolgesel_dinamikler_ve_ulke_bazli_mro_analizi.baslik)}</h4>
-            {data.aciklama_giris && <p className="text-sm text-gray-300 mb-2">{data.aciklama_giris}</p>}
-            {ulkelerSource && Array.isArray(ulkelerSource) && (
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                    {ulkelerSource.map((ulkeItem, idx) => (
-                        <div key={idx} className="bg-gray-600 p-3 rounded-md">
-                            <h5 className="font-medium text-sm text-white mb-1">{ulkeItem.ulke || ulkeItem.ulke_adi}</h5>
-                            <p className="text-xs text-gray-300">{ulkeItem.aciklama || ulkeItem.mro_firma_sayisi || ulkeItem.pazar_buyuklugu || ''}</p>
-                            {ulkeItem.filo_buyuklugu && <p className="text-xs text-gray-400 mt-1">Filo: {ulkeItem.filo_buyuklugu}</p>}
-                            {ulkeItem.tedarik_zinciri && <p className="text-xs text-gray-400 mt-1">Tedarik: {ulkeItem.tedarik_zinciri}</p>}
-                        </div>
-                    ))}
-                </div>
-            )}
-        </div>
-    );
-  };
-
-  const renderYatirimGerekceleri = (data) => {
-    if (!data || !data.yatirim_icin_stratejik_gerekceler) return null;
-    
-    const yatirimData = data.yatirim_icin_stratejik_gerekceler;
-    const yeniUcakSiparisleriData = yatirimData.yeni_ucak_siparisleri;
-    let siparisListesi;
-
-    if (yeniUcakSiparisleriData) {
-        siparisListesi = yeniUcakSiparisleriData.en_fazla_siparis_veren_havayollari_2015_2025 ||
-                         yeniUcakSiparisleriData.siparis_listesi ||
-                         yeniUcakSiparisleriData.en_fazla_ucak_siparisi_veren_ve_en_buyuk_filolara_sahip_10_havayolu;
-    }
-
-    const yaslananFilolarData = yatirimData.yaslanan_ucak_filolari || yatirimData.filo_buyuklugu_ve_yaslanan_ucaklar_artan_bakim_talebi;
-
-    return (
-        <div className="mb-4">
-            <h3 className="text-lg font-bold text-blue-200 mb-3">{yatirimData.baslik}</h3>
-            {yeniUcakSiparisleriData && (
-                <div className="mb-3">
-                    <h4 className="text-md font-semibold text-blue-300 mb-1">{yeniUcakSiparisleriData.baslik}</h4>
-                    <p className="text-sm text-gray-300 mb-2">{yeniUcakSiparisleriData.aciklama || yeniUcakSiparisleriData.giris_aciklamasi}</p>
-                    {siparisListesi && Array.isArray(siparisListesi) && (
-                        <ul className="list-decimal list-inside text-xs text-gray-300 pl-3">
-                            {siparisListesi.slice(0, 5).map((item, idx) => (
-                                <li key={idx}>
-                                    {item.havayolu || item.havayolu_sirketi}: {item.siparis_sayisi || item.siparis_detaylari || (item.yeni_siparisler ? `${item.yeni_siparisler} (Mevcut: ${item.mevcut_filo || 'N/A'})` : 'N/A')}
-                                    {item.agirlikli_modeller && ` (${item.agirlikli_modeller})`}
-                                    {item.one_cikan_siparisler_ve_notlar && <span className="text-xxs text-gray-400 block">Not: {item.one_cikan_siparisler_ve_notlar}</span>}
-                                </li>
-                            ))}
-                        </ul>
-                    )}
-                </div>
-            )}
-            {yaslananFilolarData && (
-                <div className="mb-3">
-                    <h4 className="text-md font-semibold text-blue-300 mb-1">{yaslananFilolarData.baslik}</h4>
-                    {yaslananFilolarData.aciklama && <p className="text-sm text-gray-300 mb-2">{yaslananFilolarData.aciklama}</p> }
-                    {yaslananFilolarData.ornekler && Array.isArray(yaslananFilolarData.ornekler) && yaslananFilolarData.ornekler.map((item, idx) => (
-                        <p key={idx} className="text-xs text-gray-400 mb-1 pl-3">*{item.sirket}: {item.bilgi}</p>
-                    ))}
-                    {yaslananFilolarData.yaslanan_filo_etkisi_ve_bakim_ihtiyaclari &&
-                        <p className="text-xs text-gray-400 mt-1">{yaslananFilolarData.yaslanan_filo_etkisi_ve_bakim_ihtiyaclari}</p>
-                    }
-                    {yatirimData.yolcu_trafigi_artiyor && (
-                        <div className="mt-2">
-                             <h5 className="text-sm font-semibold text-blue-300 mb-1">{yatirimData.yolcu_trafigi_artiyor.baslik}</h5>
-                             <p className="text-xs text-gray-300">{yatirimData.yolcu_trafigi_artiyor.aciklama}</p>
-                        </div>
-                    )}
-                    {yatirimData.mro_altyapisi_zayif && (
-                        <div className="mt-2">
-                             <h5 className="text-sm font-semibold text-blue-300 mb-1">{yatirimData.mro_altyapisi_zayif.baslik}</h5>
-                             <p className="text-xs text-gray-300">{yatirimData.mro_altyapisi_zayif.aciklama}</p>
-                        </div>
-                    )}
-                </div>
-            )}
-            {yatirimData.teknolojik_gelismeler && (
-                <div className="mb-3">
-                    <h4 className="text-md font-semibold text-blue-300 mb-1">{yatirimData.teknolojik_gelismeler.baslik}</h4>
-                    <p className="text-sm text-gray-300">{yatirimData.teknolojik_gelismeler.aciklama}</p>
-                </div>
-            )}
-            {yatirimData.regulasyonlar_ve_guvenlik_standartlari && (
-                <div className="mb-3">
-                    <h4 className="text-md font-semibold text-blue-300 mb-1">{yatirimData.regulasyonlar_ve_guvenlik_standartlari.baslik}</h4>
-                    <p className="text-sm text-gray-300">{yatirimData.regulasyonlar_ve_guvenlik_standartlari.aciklama}</p>
-                </div>
-            )}
-        </div>
-    );
-  };
-
 
   return (
     <div className="h-[550px] rounded-lg shadow-xl overflow-hidden border border-gray-700 bg-gray-800">
