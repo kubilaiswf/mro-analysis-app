@@ -54,7 +54,6 @@ const TurkishTechnicComparisonPage = () => {
     { id: 'kapasite', label: 'Bakım Kapasitesi', icon: <FaChartLine className="mr-2" /> },
     { id: 'hizmetler', label: 'Sunulan Hizmetler', icon: <FaCogs className="mr-2" /> },
     { id: 'ucaklar', label: 'Desteklenen Uçak Tipleri', icon: <FaPlane className="mr-2" /> },
-    { id: 'musteriler', label: 'Müşteri Portföyü', icon: <FaHandshake className="mr-2" /> },
     { id: 'altyapi', label: 'Teknik Altyapı', icon: <FaBuilding className="mr-2" /> }
   ];
 

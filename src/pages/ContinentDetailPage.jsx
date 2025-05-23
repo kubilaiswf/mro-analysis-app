@@ -107,7 +107,7 @@ const RenderSegmentDagilimiPastaGrafikGenel = ({ bolumData }) => (
         
         <div className="grid md:grid-cols-2 gap-6 items-center">
             {bolumData.pasta_grafigi_verileri && (
-                <div className="bg-gray-50 p-4 rounded-lg shadow">
+                <div className="bg-gray-50 p-4 rounded-lg shadow max-w-sm mx-auto h-90">
                     {bolumData.pasta_grafigi_baslik && <h3 className="text-lg font-semibold text-center text-gray-700 mb-3">{bolumData.pasta_grafigi_baslik}</h3>}
                     <Doughnut
                         data={bolumData.pasta_grafigi_verileri}

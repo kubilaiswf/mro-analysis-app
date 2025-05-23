@@ -119,8 +119,8 @@ export const MROLogo = ({ companyName, size = 48, isRounded = false, className =
   
   return (
     <div 
-      className={`flex items-center justify-center ${isRounded ? 'rounded-full' : 'rounded-md'} overflow-hidden shadow-xl border border-gray-300 ${className}`}
-      style={{ width: `${size}px`, height: `${size}px` }}
+      className={`flex items-center justify-center aspect-square w-full ${isRounded ? 'rounded-full' : 'rounded-md'} overflow-hidden shadow-xl border border-gray-300 ${className}`}
+      style={{ maxWidth: `${size}px`, maxHeight: `${size}px` }}
     >
       {logoPath ? (
         <img 

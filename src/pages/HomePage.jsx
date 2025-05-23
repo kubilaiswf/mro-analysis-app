@@ -122,8 +122,8 @@ const HomePage = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-100 to-red-50 pt-20 pb-12">
-      <div className="container mx-auto px-4">
+    <div className="min-h-screen bg-gradient-to-br from-gray-100 to-red-50">
+      <div className="container mx-auto px-4 pt-20 pb-12">
         <div className="text-center py-10">
           <h1 className="text-5xl font-extrabold text-gray-800 mb-4">MRO Sektörü Analiz Paneli</h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -203,19 +203,14 @@ const HomePage = () => {
             </div>
           </div>
         )}
-
-        <section className="mb-12 bg-white rounded-xl shadow-lg overflow-hidden">
-          <h2 className="text-3xl font-bold text-gray-800 px-6 pt-6 pb-4">MRO Firmalarının Küresel Dağılımı</h2>
-          <div className="h-[600px]">
-            <ContinentMap />
-          </div>
-        </section>
-
-        {/* Footer */}
-        <div className="text-center mt-16 text-gray-500 text-xs opacity-60">
-          ░▒▓█ 0x6b7562696c6169737766 was here █▓▒░
-        </div>
       </div>
+
+      <section className="bg-white">
+        <h2 className="text-3xl font-bold text-gray-800 px-6 pt-6 pb-4 text-center">MRO Firmalarının Küresel Dağılımı</h2>
+        <div className="h-screen">
+          <ContinentMap />
+        </div>
+      </section>
     </div>
   );
 };
