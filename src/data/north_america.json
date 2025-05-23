@@ -14,31 +14,8 @@
         "cagr_aciklamasi_html": "2024-2031 yılları arasında %4,1'lik yıllık büyüme oranıyla büyümesi öngörülmektedir."
       },
       {
-        "id": "segment_bazinda_dagilim_na",
-        "baslikAna": "2. Segment Bazında Dağılım",
-        "tip": "segment_aciklamalari_liste",
-        "segmentler": [
-          { 
-            "adi_html": "<strong>Motor MRO:</strong>", 
-            "aciklama_html": "2022 yılında %36,8 pazar payı ile en büyük segmenttir. 2030 yılına kadar 14,5 milyar ABD dolarına ulaşması ve %6,3 CAGR ile büyümesi öngörülmektedir." 
-          },
-          { 
-            "adi_html": "<strong>Gövde (Airframe) MRO:</strong>", 
-            "aciklama_html": "2024 yılında 24,8 milyar ABD doları değerindedir ve toplam pazarın %23,24'ünü oluşturmaktadır." 
-          },
-          { 
-            "adi_html": "<strong>Bileşen MRO:</strong>", 
-            "aciklama_html": "2024 yılında 20,3 milyar ABD doları değerindedir ve toplam pazarın %18,99'unu oluşturmaktadır." 
-          },
-          { 
-            "adi_html": "<strong>Uçak Hattı Bakımı (Line Maintenance):</strong>", 
-            "aciklama_html": "2024 yılında 20,8 milyar ABD doları değerindedir ve toplam pazarın %19,47'sini oluşturmaktadır." 
-          }
-        ]
-      },
-      {
         "id": "bolgesel_liderler_na",
-        "baslikAna": "3. Bölgesel Liderler",
+        "baslikAna": "2. Bölgesel Liderler",
         "tip": "ulke_detay_kartlari",
         "ulkeler": [
           {
@@ -62,7 +39,7 @@
             "ulke_adi": "Meksika",
             "detaylar_html": [
               "Düşük işçilik maliyetleri ve ABD'ye coğrafi yakınlık sayesinde bakım dış kaynak merkezi haline gelmiştir. Son yıllarda MRO yatırımları hızla artmıştır.",
-              "<strong>TechOps Mexico:</strong> Delta ve Aeroméxico ortaklığıyla kurulmuştur. Meksika'nın en büyük uçak bakım tesislerinden biridir. Kaynak: https://www.aeromexico.com/en-us/techops",
+              "<strong>TechOps Mexico:</strong> Delta ve Aeroméxico ortaklığıyla kurulmuştur. Meksika'nın en büyük uçak bakım tesislerinden biridir.",
               "<strong>Mexicana MRO Services:</strong> Mexicana Airlines'tan doğmuştur. Bölgedeki en köklü bakım merkezlerinden biridir."
             ]
           }
@@ -70,7 +47,7 @@
       },
       {
         "id": "na_mro_pazari_ve_gelecek_projeksiyonlari",
-        "baslikAna": "4. Kuzey Amerika MRO Pazarı ve Gelecek Projeksiyonları",
+        "baslikAna": "3. Kuzey Amerika MRO Pazarı ve Gelecek Projeksiyonları",
         "tip": "madde_imleriyle_liste",
         "liste_elemanlari_html": [
           "<strong>Mevcut Uçak Sayısı:</strong> 2023 itibarıyla Kuzey Amerika'da 7.500'den fazla ticari uçak aktif olarak hizmet vermektedir. Bu sayı, küresel ticari uçak filosunun yaklaşık %30'una karşılık gelmektedir.",
@@ -79,7 +56,7 @@
       },
       {
         "id": "yatirim_icin_stratejik_gerekceler_na",
-        "baslikAna": "5. Yatırım İçin Stratejik Gerekçeler",
+        "baslikAna": "4. Yatırım İçin Stratejik Gerekçeler",
         "tip": "yatirim_gerekceleri_detayli",
         "alt_bolumler": [
           {
@@ -115,7 +92,7 @@
       },
       {
         "id": "filo_dagilimi_2025_na",
-        "baslikAna": "6. Kuzey Amerika'da 2025 İtibarıyla Filo Dağılımı",
+        "baslikAna": "5. Kuzey Amerika'da 2025 İtibarıyla Filo Dağılımı",
         "tip": "madde_imleriyle_liste",
         "liste_elemanlari_html": [
           "<strong>Dar Gövdeli Uçaklar (NB):</strong> Kuzey Amerika filosunun %65'ini oluşturmaktadır. Bu segmentte Airbus A320neo ve Boeing 737 MAX gibi modeller öne çıkmaktadır.",
@@ -126,18 +103,13 @@
       },
       {
         "id": "gelecekteki_egilimler_ve_tahminler_na",
-        "baslikAna": "7. Gelecekteki Eğilimler ve Tahminler",
+        "baslikAna": "6. Gelecekteki Eğilimler ve Tahminler",
         "tip": "yatirim_gerekceleri_detayli",
         "alt_bolumler": [
             {
                 "id": "filo_buyumesi_yeni_ucak_teslimatlari_na",
                 "baslik_alt": "Filo Büyümesi ve Yeni Uçak Teslimatları",
                 "aciklama_html": "<strong>Filo Artışı:</strong> Kuzey Amerika'daki ticari uçak filosunun, 2025 yılından 2035 yılına kadar %32 artış göstermesi beklenmektedir."
-            },
-            {
-                "id": "dar_govdeli_ucaklarin_artan_rolu_na",
-                "baslik_alt": "Dar Gövdeli Uçakların Artan Rolü",
-                "aciklama_html": "Airbus'ın 2024-2043 Genel Pazar Tahmini'ne göre, önümüzdeki 20 yıl içinde dünya genelinde 42.430 yeni yolcu ve kargo uçağına ihtiyaç duyulacak. Bu uçakların büyük bir kısmını dar gövdeli (tek koridorlu) uçaklar oluşturacak."
             }
         ]
       }

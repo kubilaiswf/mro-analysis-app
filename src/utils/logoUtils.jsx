@@ -75,8 +75,11 @@ export const getMROLogoFilename = (companyName) => {
     'thy technic': 'Turkish.png',
     'turkish airlines technic': 'Turkish.png',
     'thy technical': 'Turkish.png',
-    // 'exhibitor bird': 'exhibitor-bird.jpg', // Still unclear
-    // 'Untitled-1.png' : '' // Still needs MRO Name
+    'czech airlines technics': 'czech.jpg',
+    'air france industries klm e&m (afi klm e&m)' : 'airfrance.png',
+    'boeing shanghai aviation services' : 'boeing.jpg',
+    'caerdav' : 'caerdav.jpg',
+    'aei aeronautical engineers, inc. (aei)' : 'AEI.jpg'
   };
 
   // Try to find a match in the logo map

@@ -3908,6 +3908,505 @@ export const turkishTechnicData = {
   ]
 };
 
+export const czechAirlinesTechnicsData = {
+  mroFirmasiAdi: "Czech Airlines Technics (CSAT)",
+  kimdir: "Czech Airlines Technics (CSAT), Çek Cumhuriyeti’nin başkenti Prag’da bulunan ve Prague Airport Group’un bir iştirakidir. Şirket, ticari uçaklar için uçak bakım, onarım ve revizyon (MRO – Maintenance, Repair, Overhaul) hizmetleri sunar. Kuruluş: 2010 (öncesinde Czech Airlines’ın teknik bölümü olarak hizmet veriyordu). Ana merkezi: Václav Havel Havalimanı, Prag. Sahibi: Prague Airport (Letiště Praha, a. s.). CEO (2023): Petr Doberský.",
+  hizmetleri: [
+    "Ağır Bakım (Base Maintenance): Airbus A320 ailesi, Boeing 737 Classic/NG/MAX, A321neo uçakları için bakım. Yıllık ortalama 70-80 ağır bakım işlemi.",
+    "Line Maintenance (Hat Bakımı): Günlük operasyonel kontroller, arıza giderme ve rutin kontroller.",
+    "Komponent Bakımı: Hidrolik, pnömatik, elektrikli komponentlerin onarımı.",
+    "Landing Gear Maintenance (İniş Takımı Bakımı): İniş takımlarının sökülmesi, kontrolü ve revizyonu.",
+    "Uçak Boyama (Aircraft Painting): Yeni 1.800 m² boya hangarı (2023’te faaliyete geçti). Yılda 35 uçağa kadar boya hizmeti. Austrian Airlines ilk müşterisidir.",
+    "Dijital Alet Yönetimi: QOCO MROTools sistemi ile dijital alet takip ve yönetimi (2023 itibariyle devreye alındı)."
+  ],
+  sertifikalar: [
+    "EASA Part-145 (Avrupa Havacılık Güvenliği Ajansı) — Base & Line Maintenance Yetkisi",
+    "TCCA (Transport Canada Civil Aviation) — Kanada uçakları için bakım yetkisi",
+    "FAA (ABD Federal Havacılık İdaresi) — FAA onaylı iş emirleri",
+    "Czech Civil Aviation Authority Approval",
+    "EN/ISO 9001:2015 — Kalite yönetimi",
+    "EN/ISO 14001:2015 — Çevre yönetimi",
+    "EN/ISO 45001:2018 — İş sağlığı ve güvenliği"
+  ],
+  hangarVeTesisKonumlari: [
+    {
+      konum: "Václav Havel Havalimanı – Prag (PRG), Çek Cumhuriyeti (Ana Tesis)",
+      detay: "CSAT’ın tüm ana operasyonları Prag Václav Havel Havalimanı’nda konuşlanmıştır. 4 Bakım Hangarı (dar gövdeli ve geniş gövdeli uçaklara uygun, aynı anda 5 uçağa kadar ağır bakım yapılabiliyor). Yeni Boya Hangarı (2023'te faaliyete geçti, 1.800 m², dar gövdeli uçaklara özel, tamamen kapalı ve modern iklimlendirme sistemine sahip). Landing Gear Shop (İniş Takımı Atölyesi). Komponent Onarım Atölyesi. Alet Kalibrasyon ve Yönetim Merkezi. Tüm tesisler Prag Havalimanı’nın teknik bakım alanı içinde entegre şekilde çalışmaktadır. Başka bir şehirde ek tesis bulunmamaktadır."
+    }
+  ],
+  musteriPortfoyu: [
+    { havayolu: "Austrian Airlines", ulke: null, merkezSehir: null, anlasmaDetayi: "13 adet Airbus A320 ailesi uçağı" },
+    { havayolu: "Finnair", ulke: null, merkezSehir: null, anlasmaDetayi: "Airbus A320 ailesi (sayı belirtilmemiş)" },
+    { havayolu: "Transavia Airlines", ulke: null, merkezSehir: null, anlasmaDetayi: "Airbus A320neo dahil (sayı belirtilmemiş)" },
+    { havayolu: "NEOS", ulke: null, merkezSehir: null, anlasmaDetayi: "Airbus A320 ailesi (sayı belirtilmemiş)" },
+    { havayolu: "Jet2.com", ulke: null, merkezSehir: null, anlasmaDetayi: "1 adet bakım işlemi" },
+    { havayolu: "Air Corsica", ulke: null, merkezSehir: null, anlasmaDetayi: "2 adet Airbus A320 uçağı" },
+    { havayolu: "Air Serbia", ulke: null, merkezSehir: null, anlasmaDetayi: "Tüm filo için tekerlek ve fren bakımı" },
+    { havayolu: "Icelandair", ulke: null, merkezSehir: null, anlasmaDetayi: "Boeing 737-8 MAX (sayı belirtilmemiş)" },
+    { havayolu: "LOT Polish Airlines", ulke: null, merkezSehir: null, anlasmaDetayi: "Boeing 737 MAX (sayı belirtilmemiş)" },
+    { havayolu: "Pobeda Airlines", ulke: null, merkezSehir: null, anlasmaDetayi: "Hat bakımı hizmeti – uçak tipi ve sayı belirtilmemiş" },
+    { havayolu: "Czech Airlines", ulke: null, merkezSehir: null, anlasmaDetayi: "Airbus A220-300 ve A320-200 (sayı belirtilmemiş)" },
+    { havayolu: "Smartwings", ulke: null, merkezSehir: null, anlasmaDetayi: "Airbus A320 ailesi ve Boeing 737 serisi (sayı belirtilmemiş)" },
+    { havayolu: "Novair", ulke: null, merkezSehir: null, anlasmaDetayi: "2 adet Airbus A321neo" },
+    { havayolu: "KLM Royal Dutch Airlines", ulke: null, merkezSehir: null, anlasmaDetayi: null },
+    { havayolu: "Transavia France", ulke: null, merkezSehir: null, anlasmaDetayi: null },
+    { havayolu: "TUIfly", ulke: null, merkezSehir: null, anlasmaDetayi: null },
+    { havayolu: "Atran Aerospace", ulke: null, merkezSehir: null, anlasmaDetayi: null },
+    { havayolu: "Air Explore", ulke: null, merkezSehir: null, anlasmaDetayi: null },
+    { havayolu: "Tarom", ulke: null, merkezSehir: null, anlasmaDetayi: null },
+    { havayolu: "Corendon Dutch Airlines", ulke: null, merkezSehir: null, anlasmaDetayi: null },
+    { havayolu: "Ukraine Int’l Airlines", ulke: null, merkezSehir: null, anlasmaDetayi: null },
+    { havayolu: "AMAC Aerospace", ulke: null, merkezSehir: null, anlasmaDetayi: null },
+    { havayolu: "World Star Aviation", ulke: null, merkezSehir: null, anlasmaDetayi: null },
+    { havayolu: "Aviation Capital Group", ulke: null, merkezSehir: null, anlasmaDetayi: null },
+    { havayolu: "Horizon Aviation 4 Ltd", ulke: null, merkezSehir: null, anlasmaDetayi: null },
+    { havayolu: "Israir Airlines", ulke: null, merkezSehir: null, anlasmaDetayi: null },
+    { havayolu: "Swiss Int’l Air Lines", ulke: null, merkezSehir: null, anlasmaDetayi: null },
+    { havayolu: "TAP Air Portugal", ulke: null, merkezSehir: null, anlasmaDetayi: null },
+    { havayolu: "Brussels Airlines", ulke: null, merkezSehir: null, anlasmaDetayi: null },
+    { havayolu: "Germania", ulke: null, merkezSehir: null, anlasmaDetayi: null },
+    { havayolu: "Germania Flug / Chair Airlines", ulke: null, merkezSehir: null, anlasmaDetayi: null }
+  ],
+  bakimHizmetiVerilenUcakTipleri: {
+    Airbus: ["A320 ailesi (A319, A320, A321)", "A320neo ailesi", "A220-300"],
+    Boeing: ["737 serisi (Classic, NG, MAX)"],
+    ATR: ["ATR 42/72"]
+  },
+  anlasmalar2023_2025: [
+    "Air Serbia: Tüm filo için tekerlek ve fren bakımı anlaşması imzalandı.",
+    "Icelandair: Boeing 737-8 MAX uçağı için denetim ve modifikasyon anlaşması yapıldı.",
+    "Air Corsica: 2 adet Airbus A320 uçağı için ağır bakım anlaşması imzalandı.",
+    "Jet2.com: 1 adet uçak için ağır bakım hizmeti sağlandı.",
+    "Transavia Airlines: Airbus A320neo dahil olmak üzere yeni bakım anlaşması imzalandı.",
+    "Finnair: Uzun vadeli ağır bakım anlaşması yapıldı."
+  ],
+  sonDonemdekiYatirimlar: [
+    "2020: Pandemi nedeniyle yatırımlar durgunluk yaşadı. CSA Technics bu dönemde operasyonlarını sürdürülebilirlik üzerine yoğunlaştırdı.",
+    "2021: Airbus A220-300 uçağı bakımına yönelik altyapı ve eğitim yatırımları.",
+    "2021: Yeni müşteri kazanımı için süreç ve kalite iyileştirme yatırımları.",
+    "2022: Yeni uçak tipi bakım kabiliyetleri geliştirme (A320neo, B737 MAX).",
+    "2022: Tekerlek ve fren atölyesi kapasite artışı.",
+    "2022: Dijital bakım süreçleri yatırımları.",
+    "2023: 275 milyon CZK değerinde yeni hangar inşaatına başlandı (dördüncü hangar).",
+    "2023: IT altyapısı ve dijital dönüşüm yatırımları.",
+    "2023: Yeni eğitim merkezi kurulumu ve personel gelişimi için yatırım.",
+    "2023: A220 uçaklarına yönelik özel bakım ekipmanları alımı.",
+    "2024–2025 (Planlanan/Yürütülen): Yeni hangarın tamamlanması ve tam faaliyete geçmesi (2024 sonu hedefleniyor).",
+    "2024–2025 (Planlanan/Yürütülen): Bakım kapasitesinin %30 artırılması planlanıyor.",
+    "2024–2025 (Planlanan/Yürütülen): Sürdürülebilir enerji ve yeşil bakım uygulamaları yatırımları.",
+    "2024–2025 (Planlanan/Yürütülen): Uzun vadeli MRO ortaklıkları kurmaya yönelik stratejik yatırımlar."
+  ],
+  tahminiYillikBakimKapasitesi: [
+    "Mevcut kapasite: 120-140 dar gövdeli uçak yıllık bazda (C-check ve base maintenance dahil).",
+    "Yeni yatırımlarla 2025’te kapasitenin 170 uçağa çıkarılması hedefleniyor."
+  ],
+  finansalVeriler: [
+    "2020: Gelir: ~920 milyon CZK; Zarar: Pandemiden ötürü faaliyet zararı; Uçak bakım sayısı düşüşteydi.",
+    "2021: Gelir: 1,2 milyar CZK; Kar: Mütevazı bir iyileşme; Bakım yapılan uçak sayısı artış eğiliminde.",
+    "2022: Gelir: 1,8 milyar CZK; Kar: ~30 milyon CZK; Büyüme oranı (gelir): %50+; Çalışan sayısı %15 arttı; Bakım yapılan uçak sayısı %20 arttı.",
+    "2023: Gelir: 2,06 milyar CZK; Kar: ~54 milyon CZK; Gelir büyüme oranı: %14; Çalışan sayısı: ~840; Bakım yapılan uçak sayısında da artış: %10 civarı; Şirket %100 kapasiteye yakın çalıştı."
+  ],
+  teknikAltyapi: [
+    "Ana tesis: Prag Václav Havel Havalimanı.",
+    "Hangarlar: 4 Bakım Hangarı (dar ve geniş gövdeli uçaklara uygun), 1 Yeni Boya Hangarı (1.800 m², dar gövdeli uçaklara özel, 2023'te faaliyete geçti).",
+    "Atölyeler: Landing Gear Shop (İniş Takımı Atölyesi), Komponent Onarım Atölyesi, Alet Kalibrasyon ve Yönetim Merkezi.",
+    "Çalışan Sayısı: ~840 (2023 itibariyle).",
+    "Eğitim: Airbus A220-300 bakım eğitimi altyapısı (2021), Yeni eğitim merkezi kurulumu (2023).",
+    "Dijitalleşme: QOCO MROTools sistemi ile dijital alet takip ve yönetimi (2023)."
+  ]
+};
+
+export const afiKlmEMData = {
+  mroFirmasiAdi: "Air France Industries KLM E&M (AFI KLM E&M)",
+  kimdir: "AFI KLM E&M, Air France-KLM Grubu bünyesinde faaliyet gösteren, dünyanın önde gelen uçak bakım, onarım ve revizyon (MRO) şirketlerinden biridir. Paris merkezli Air France Industries ve Amsterdam merkezli KLM Engineering & Maintenance’in birleşimiyle faaliyet gösteren şirket, hem grubun kendi filosuna hem de dış müşterilere global ölçekte hizmet vermektedir. Dünya genelinde 200'den fazla havayolu şirketine kapsamlı MRO hizmetleri sunmaktadır. 12.800 çalışanı ile dünya genelinde yaklaşık 3000 uçağa bakım hizmeti vermektedir.",
+  hizmetleri: [
+    "Motor Bakımı: CFM56, GE90, GEnx, LEAP-1A ve LEAP-1B gibi motorlar için kapsamlı bakım, onarım ve revizyon (MRO) hizmetleri. LEAP-1A ve LEAP-1B motorları için tam kapsamlı MRO.",
+    "Bileşen Desteği: Boeing (777, 737 NG & MAX, 787) ve Airbus (A220, A330/A340, A320ceo & A320neo, A350, A380) uçakları için bileşen bakım ve onarım hizmetleri. Power-by-the-hour (PBH) ve Power-by-event (PBE) gibi esnek sözleşme seçenekleri.",
+    "Ağır Bakım: Amsterdam, Paris, Toulouse, Norwich ve Casablanca'daki bakım tesislerinde C checklerden redelivery checklerine kadar kapsamlı ağır bakım hizmetleri.",
+    "Hat Bakım: Dünya çapında yaklaşık 100 havalimanında hat bakım hizmeti.",
+    "Aeroyapı Hizmetleri: Nacelle, thrust reverser, radome ve flight control surfaces gibi aeroyapı bileşenlerinin onarım ve revizyonu.",
+    "Dijital ve Yenilikçi Çözümler: Prognos® (büyük veri analitiği ile motor/bileşen izleme ve arıza tahmini), MRO Lab (drone denetimleri, 3D baskı, AR/VR gibi yenilikçi teknolojiler).",
+    "Kabin Modları",
+    "Kompozit Onarımları"
+  ],
+  sertifikalar: [
+    "EASA Part-145",
+    "FAA Part-145",
+    "TCCA",
+    "EASA Part-147",
+    "EMAR 145",
+    "FRA 21J",
+    "+30 diğer ulusal havacılık otoritesi onayı"
+  ],
+  hangarVeTesisKonumlari: [
+    {
+      konum: "Amsterdam Schiphol Havalimanı, Hollanda",
+      detay: "GEnx 1-B motorları için özel dikey motor çukurları gibi gelişmiş teknolojilere sahip motor bakım tesisleri."
+    },
+    {
+      konum: "Paris Orly Havalimanı, Fransa",
+      detay: "'Single Roof' projesi kapsamında yeni nesil motorlar (CFM LEAP, Trent XWB, PW1500G) için 4.200 m²'lik modern bir motor bakım tesisi (2023'te açıldı)."
+    },
+    {
+      konum: "Paris Charles de Gaulle (CDG) Havalimanı, Fransa",
+      detay: "Motor bakım faaliyetlerinin yürütüldüğü önemli bir tesis."
+    },
+    {
+      konum: "Toulouse, Fransa",
+      detay: "Ağır bakım hizmetlerinin sunulduğu bir tesis."
+    },
+    {
+      konum: "Norwich, İngiltere",
+      detay: "Ağır bakım hizmetleri için kullanılan bir tesis."
+    },
+    {
+      konum: "Casablanca, Fas",
+      detay: "Aerotechnic Industries (ATI) ortak girişimi aracılığıyla A320 ve 737NG uçakları için bakım hizmetleri."
+    },
+    {
+      konum: "Dubai Jebel Ali Serbest Bölgesi, BAE",
+      detay: "Aerostructures Middle East Services (AMES) tesisi, nacelle ve kompozit parça onarımları konusunda uzmanlaşmıştır."
+    },
+    {
+      konum: "Miami, ABD",
+      detay: "AMG, Barfield ve Bonus Aerospace gibi üç farklı tesisle motor ve komponent bakımı hizmetleri."
+    },
+    {
+      konum: "Phoenix, Louisville ve Atlanta, ABD",
+      detay: "Barfield'in bakım ve destek tesisleri."
+    },
+    {
+      konum: "Singapur",
+      detay: "Sabena ile ortaklaşa kurulan Singapore Component Solutions, ekipman onarımı hizmetleri sunmaktadır."
+    },
+    {
+      konum: "Dünya Geneli Hat Bakım İstasyonları",
+      detay: "Yaklaşık 100 havalimanında hat bakım hizmetleri."
+    }
+  ],
+  musteriPortfoyu: [
+    { havayolu: "Air France", ulke: "Fransa", merkezSehir: "Paris", anlasmaDetayi: "Ana müşteri, motor, komponent, gövde bakımı." },
+    { havayolu: "KLM Royal Dutch Airlines", ulke: "Hollanda", merkezSehir: "Amsterdam", anlasmaDetayi: "Ana müşteri, motor, komponent, aviyonik bakım, predictive maintenance." },
+    { havayolu: "Akasa Air", ulke: null, merkezSehir: null, anlasmaDetayi: null },
+    { havayolu: "Malaysia Airlines", ulke: null, merkezSehir: null, anlasmaDetayi: null },
+    { havayolu: "Volotea", ulke: null, merkezSehir: null, anlasmaDetayi: null },
+    { havayolu: "Aerolineas Argentinas", ulke: null, merkezSehir: null, anlasmaDetayi: null },
+    { havayolu: "Philippine Airlines", ulke: null, merkezSehir: null, anlasmaDetayi: null },
+    { havayolu: "WestJet", ulke: null, merkezSehir: null, anlasmaDetayi: null },
+    { havayolu: "El Al", ulke: null, merkezSehir: null, anlasmaDetayi: null },
+    { havayolu: "China Southern Airlines", ulke: null, merkezSehir: null, anlasmaDetayi: null },
+    { havayolu: "Air Asia X", ulke: null, merkezSehir: null, anlasmaDetayi: null },
+    { havayolu: "Cebu Pacific", ulke: null, merkezSehir: null, anlasmaDetayi: null }, // "Cebu Pasific" olarak yazılmıştı, düzelttim.
+    { havayolu: "ULS Airlines", ulke: null, merkezSehir: null, anlasmaDetayi: null },
+    { havayolu: "MNG Airlines", ulke: null, merkezSehir: null, anlasmaDetayi: null },
+    { havayolu: "Corendon Airlines", ulke: null, merkezSehir: null, anlasmaDetayi: null },
+    { havayolu: "Ethiopian Airlines", ulke: "Etiyopya", merkezSehir: null, anlasmaDetayi: "Boeing 777 komponent destek (Nisan 2024)." },
+    { havayolu: "Air Tanzania", ulke: "Tanzanya", merkezSehir: null, anlasmaDetayi: "Boeing 737 MAX-9 komponent bakım (2023)." },
+    { havayolu: "Aeromexico", ulke: "Meksika", merkezSehir: null, anlasmaDetayi: "Boeing 737 NG/MAX (komponent), B787 (APU) (2022)." },
+    { havayolu: "CMA CGM Air Cargo", ulke: null, merkezSehir: null, anlasmaDetayi: "Boeing 777F, Airbus A330F motor, komponent, aerostructure, APU (Haziran 2023)." },
+    { havayolu: "Kuwait Airways", ulke: "Kuveyt", merkezSehir: null, anlasmaDetayi: "Boeing 777-300ER GE90-115B motor bakım (Kasım 2017)." },
+    { havayolu: "Air Arabia", ulke: "BAE", merkezSehir: null, anlasmaDetayi: "Airbus A320 CFM56-5B motor destek (Kasım 2017)." },
+    { havayolu: "Air Tahiti Nui", ulke: null, merkezSehir: null, anlasmaDetayi: "Boeing 787-9 komponent, motor, hat bakım (Nisan 2019)." },
+    { havayolu: "Gulf Air", ulke: "Bahreyn", merkezSehir: null, anlasmaDetayi: "Airbus A320ceo CFM56-5B motor destek (Kasım 2021)." },
+    { havayolu: "Air Corsica", ulke: null, merkezSehir: null, anlasmaDetayi: "Airbus A320ceo/neo komponent destek (Ekim 2024 - Aralık 2035)." },
+    { havayolu: "Croatia Airlines", ulke: "Hırvatistan", merkezSehir: null, anlasmaDetayi: "Airbus A220 komponent destek (Haziran 2024)." },
+    { havayolu: "Hawaiian Airlines", ulke: "ABD", merkezSehir: null, anlasmaDetayi: "Boeing 787-9 komponent destek (Nisan 2024)." },
+    { havayolu: "Air Europa", ulke: "İspanya", merkezSehir: null, anlasmaDetayi: "Boeing 787 komponent destek (Ekim 2024)." },
+    { havayolu: "Air Côte d'Ivoire", ulke: "Fildişi Sahili", merkezSehir: null, anlasmaDetayi: "Airbus A320ceo/neo, A330neo komponent destek (Şubat 2025)." },
+    { havayolu: "Transavia (Hollanda ve Fransa)", ulke: null, merkezSehir: null, anlasmaDetayi: "Airbus A320neo/A321neo, Boeing 737 komponent ve motor destek (Mayıs 2024)." },
+    { havayolu: "TAAG Angola Airlines", ulke: "Angola", merkezSehir: null, anlasmaDetayi: "Boeing 777 komponent destek (Mayıs 2024)." },
+    { havayolu: "Syrian Airlines", ulke: "Suriye", merkezSehir: null, anlasmaDetayi: "Boeing 777 komponent destek (Mayıs 2024)." },
+    { havayolu: "Air Canada", ulke: "Kanada", merkezSehir: null, anlasmaDetayi: "Boeing 787 için 10 yıllık komponent destek (24 Şubat 2025)." },
+    { havayolu: "Air China Cargo", ulke: "Çin", merkezSehir: null, anlasmaDetayi: "Boeing 777F PBH kontrat değişikliği (10 Ocak 2025)." },
+    { havayolu: "Smartwings Airlines", ulke: null, merkezSehir: null, anlasmaDetayi: "LEAP-1B motor desteği (6 Kasım 2024)." },
+    { havayolu: "Equair", ulke: "Ekvador", merkezSehir: null, anlasmaDetayi: "2 adet Boeing 737 NG komponent desteği (Haziran 2023)." },
+    { havayolu: "Air Austral", ulke: null, merkezSehir: null, anlasmaDetayi: "3 adet Airbus A220 için APU (GTCP131-9C) bakım (Haziran 2023)." },
+    { havayolu: "JetBlue", ulke: "ABD", merkezSehir: null, anlasmaDetayi: "Airbus A220 için komponent desteği (+200 uçak) (Haziran 2023)." }
+  ],
+  bakimHizmetiVerilenUcakTipleri: {
+    Airbus: ["A220", "A320ceo/neo", "A330-200 / -300", "A340", "A350", "A380"],
+    Boeing: ["737 NG / 737 MAX", "747", "767", "777 (200LR, 300ER, F)", "787 Dreamliner"],
+    BölgeselUçaklar: ["Embraer E-jet Serisi", "Bombardier CRJ Serisi", "ATR 42 / 72"]
+  },
+  anlasmalar2023_2025: [
+    "Air France (ana müşteri): A318, A319, A320, A321, A330-200/-300, A350-900, Boeing 777-200ER / 777-300ER için motor, komponent, gövde bakımı.",
+    "KLM Royal Dutch Airlines (ana müşteri): Boeing 737-700/-800/-900 (CFM56-7B motor bakımı), Boeing 787-9/-10 Dreamliner (GEnx motor desteği, predictive maintenance), Embraer E190/E195-E2 (KLM Cityhopper) için komponent ve aviyonik bakım.",
+    "Ethiopian Airlines: 25 adet Boeing 777-200LR, 777-300ER, 777F için komponent destek programı, yedek parça temini ve onarım hizmetleri (Nisan 2024).",
+    "Air Tanzania: 2 adet Boeing 737 MAX-9 için 24 saat mühendislik desteği ve komponent bakım hizmeti (2023).",
+    "Aeromexico: Boeing 737 NG/MAX (komponent), B787 (APU desteği) için 24 saat mühendislik desteği ve komponent bakım hizmeti (2022).",
+    "CMA CGM Air Cargo: 2 adet Boeing 777F, 4 adet Airbus A330F için motor ve komponent destek, aerostructure ve APU hizmetleri (Haziran 2023).",
+    "Air Corsica: Airbus A320ceo, A320neo için komponent destek programı, yedek parça temini ve onarım hizmetleri (Ekim 2024 - Aralık 2035).",
+    "Croatia Airlines: Airbus A220 için komponent destek programı, yedek parça temini ve onarım hizmetleri (Haziran 2024).",
+    "Hawaiian Airlines: 12 adet Boeing 787-9 için komponent destek programı, yedek parça temini ve onarım hizmetleri (Nisan 2024).",
+    "Air Europa: Boeing 787 için komponent destek programı, yedek parça temini ve onarım hizmetleri (Ekim 2024).",
+    "Air Côte d'Ivoire: 10 adet Airbus A320ceo, A320neo, A330neo için komponent destek programı, yedek parça temini ve onarım hizmetleri (Şubat 2025).",
+    "Transavia (Hollanda ve Fransa): Airbus A320neo, A321neo, Boeing 737 için komponent ve motor destek programı, yedek parça temini ve onarım hizmetleri (Mayıs 2024).",
+    "TAAG Angola Airlines: Boeing 777 için komponent destek programı, yedek parça temini ve onarım hizmetleri (Mayıs 2024).",
+    "Syrian Airlines: Tüm Boeing 777 filosu için komponent destek programı, yedek parça temini ve onarım hizmetleri (Mayıs 2024).",
+    "Air Canada: Boeing 787 için 10 yıllık komponent destek programı (24 Şubat 2025).",
+    "Air China Cargo: Boeing 777F için PBH (Power By the Hour) kontrat değişikliği (10 Ocak 2025).",
+    "Smartwings Airlines: LEAP-1B motor desteği (6 Kasım 2024).",
+    "Equair: 2 adet Boeing 737 NG için komponent desteği (Haziran 2023).",
+    "Air Austral: 3 adet Airbus A220 için APU (GTCP131-9C) bakım hizmetleri (Haziran 2023).",
+    "JetBlue: Airbus A220 için komponent desteği (+200 uçak) (Haziran 2023)."
+  ],
+  sonDonemdekiYatirimlar: [
+    "LEAP Motorları İçin Yedek Motor Alımı (2025): CFM International ile 10 adede kadar LEAP-1A ve LEAP-1B yedek motor alımı.",
+    "Asya-Pasifik Bölgesinde Ortak Girişim (2024): AAR CORP. ile Tayland, Chonburi'de yeni nesil uçakların motor kaplamalarına (nacelle) yönelik MRO hizmetleri sunacak ortak girişim.",
+    "Sürdürülebilirlik Yatırımları: Elektrikli yer araçları kullanımı, Amsterdam ve Norwich hangarlarına güneş panelleri (6.897 + 735 adet), Boeing 777 motor temizliğinde su tasarrufu (12.000L'den 150L'ye ve geri dönüşüm), motor test hücrelerinde SAF kullanımı çalışmaları.",
+    "Parker Aerospace ile Blockchain Tabanlı Parça Takip Sistemi İş Birliği (Temmuz 2024): Boeing 787 filosu için SkyThread'in blockchain tabanlı parça takip ve izleme platformu uygulaması.",
+    "Orly Havalimanı Yeni Motor Bakım Tesisi (2023): Paris-Orly'de açılan 4.200 m²'lik tesis; LEAP, TRENT XWB, PW1500G gibi yeni nesil motorların bakımı, %15 işleme süresi azaltma ve karbon ayak izi düşürme hedefi."
+  ],
+  tahminiYillikBakimKapasitesi: [
+    "Tahmini yıllık bakım kapasitesi 3.000 uçak civarıdır."
+  ],
+  finansalVeriler: [
+    "Toplam gelir: 4,2 milyar euro",
+    "Net Kâr: 150 milyon Euro",
+    "Üçüncü Taraf Gelir Artışı: %26,9",
+    "Üçüncü Taraf Satış Artışı: %23",
+    "Üçüncü Taraf Gelir Payı: %40",
+    "Not: Üçüncü taraf satışlarının artışı motor bakım hizmetlerine olan yüksek talepten kaynaklanmıştır. Ancak, tedarik zinciri sorunları ve artan dış onarım maliyetleri, operasyonel kârlılığı olumsuz etkiledi."
+  ],
+  teknikAltyapi: [
+    "Çalışan Sayısı: 12.800.",
+    "Hizmet Verilen Uçak Sayısı: Dünya genelinde yaklaşık 3000 uçak.",
+    "Ana Bakım Merkezleri: Amsterdam Schiphol, Paris Orly, Paris CDG, Toulouse, Norwich, Casablanca (ATI), Dubai (AMES), Miami (AMG, Barfield, Bonus Aerospace), Singapur (Singapore Component Solutions).",
+    "Hat Bakım İstasyonları: Dünya genelinde yaklaşık 100 havalimanı.",
+    "Dijital Çözümler: Prognos® (tahmine dayalı bakım), MRO Lab (drone denetimleri, 3D baskı, AR/VR), SkyThread (blockchain tabanlı parça takip).",
+    "Özel Tesisler: Amsterdam'da GEnx 1-B için dikey motor çukurları, Paris-Orly'de yeni nesil motorlar için 4.200 m²'lik 'Single Roof' tesisi."
+  ]
+};
+
+export const boeingShanghaiAviationServicesData = {
+  mroFirmasiAdi: "Boeing Shanghai Aviation Services",
+  kimdir: "Boeing Shanghai Aviation Services, Haziran 2006’da Şanghay'da kurulmuş bir MRO şirketidir. %60 Boeing, %25 Shanghai Airport Authority, %15 China Eastern Airlines’a aittir. Merkezi Çin, Şanghay Pudong Uluslararası Havalimanı’nda bulunmaktadır.",
+  hizmetleri: [
+    "Hat Bakımı (Line Maintenance): Günlük, transit, A&B kontrolleri, motor boroskopi ve acil durum hizmetleri.",
+    "Ağır Bakım (Heavy Maintenance): Boeing 737, 747, 767, 777 ve 787 modelleri için kapsamlı bakım hizmetleri.",
+    "Modifikasyon ve Dönüşüm: Yolcu-kargo dönüşümleri (P2F), kabin içi modifikasyonlar ve Wi-Fi sistem entegrasyonu.",
+    "Komponent Tamiri ve Revizyonu: Çeşitli uçak parçalarının tamiri ve revizyonu.",
+    "Mühendislik ve Planlama: EASA Part 21 DOA kapsamında mühendislik tasarım ve planlama hizmetleri.",
+    "Malzeme Yönetimi: Yedek parça tedariki ve envanter yönetimi.",
+    "Eğitim Hizmetleri: Teknik personel için eğitim programları."
+  ],
+  sertifikalar: [
+    "FAA 145",
+    "EASA 145",
+    "CAAC (China)",
+    "AS9110: Havacılık Bakım Kuruluşları için Kalite Yönetim Sistemi Sertifikası"
+  ],
+  hangarVeTesisKonumlari: [
+    {
+      konum: "Shanghai Pudong Uluslararası Havalimanı, Çin",
+      detay: "Mevcut tesis. Hangar alanı: 16.000 m², toplam tesis alanı: 52.000 m². Kapasite: 2 geniş gövdeli hat - 2 dar gövdeli hat."
+    },
+    {
+      konum: "Lingang Özel Kapsamlı Bağlı Bölgesi, Shanghai, Çin (Yeni Tesis)",
+      detay: "Yapım aşamasında. Tamamlanma Tarihi: 2025 sonu. Yatırım Tutarı: 850 milyon RMB. Arazi Alanı: Yaklaşık 83.000 m². Kapasite: Dört geniş gövdeli ve iki dar gövdeli uçağa aynı anda hizmet verebilecek. Çin'deki en büyük tek açıklıklı bakım hangarı olması hedeflenmektedir. Lojistik avantajlar ve ekonomik teşvikler sağlamaktadır."
+    }
+  ],
+  musteriPortfoyu: [
+    { havayolu: "Xiamen Air", ulke: "Çin", merkezSehir: null, anlasmaDetayi: null },
+    { havayolu: "SF Airlines", ulke: "Çin", merkezSehir: null, anlasmaDetayi: null },
+    { havayolu: "Hainan Airlines", ulke: "Çin", merkezSehir: null, anlasmaDetayi: null },
+    { havayolu: "Suparna Airlines", ulke: "Çin", merkezSehir: null, anlasmaDetayi: null },
+    { havayolu: "Thomas Cook Group Airlines", ulke: "Almanya", merkezSehir: null, anlasmaDetayi: null },
+    { havayolu: "Aeromexico", ulke: "Meksika", merkezSehir: null, anlasmaDetayi: null },
+    { havayolu: "NordStar Airlines", ulke: "Rusya", merkezSehir: null, anlasmaDetayi: null },
+    { havayolu: "Rossiya Airlines", ulke: "Rusya", merkezSehir: null, anlasmaDetayi: null },
+    { havayolu: "Silk Way West Airlines", ulke: "Azerbaycan", merkezSehir: null, anlasmaDetayi: null },
+    { havayolu: "Nok Air", ulke: "Tayland", merkezSehir: null, anlasmaDetayi: null },
+    { havayolu: "Jeju Air", ulke: "Güney Kore", merkezSehir: null, anlasmaDetayi: null },
+    { havayolu: "Air Astana", ulke: "Kazakistan", merkezSehir: null, anlasmaDetayi: null },
+    { havayolu: "GECAS", ulke: null, merkezSehir: null, anlasmaDetayi: null },
+    { havayolu: "Kenya Airways", ulke: "Kenya", merkezSehir: null, anlasmaDetayi: null },
+    { havayolu: "Lot Airlines", ulke: "Polonya", merkezSehir: null, anlasmaDetayi: null }
+  ],
+  bakimHizmetiVerilenUcakTipleri: {
+    Boeing: ["B737", "B747", "B767", "B777", "B787"],
+    Airbus: ["A319", "A320", "A321", "A330"]
+  },
+  anlasmalar2023_2025: [
+    { havayolu: "Air Premia", anlasmaDetayi: "787 Dreamliner için 5 yıllık anlaşma (Aralık 2024). Uçak sayısı bilinmiyor." },
+    { havayolu: "Virgin Atlantic", anlasmaDetayi: "B787 filosu için 25. C-check bakımları yapıldı (2024)." }
+  ],
+  sonDonemdekiYatirimlar: [
+    "Lingang Özel Kapsamlı Bağlı Bölgesi'nde Yeni Hangar Tesisi: 850 milyon Çin Yuanı tutarında bir yatırım. Yaklaşık 83.000 metrekare arazi alanına sahip. Aynı anda dört geniş gövdeli ve iki dar gövdeli uçağa hizmet verebilecek şekilde tasarlandı. 2025 yılı sonuna kadar tamamlanması planlanmaktadır. Çin'deki en büyük tek açıklıklı bakım hangarı olması hedeflenmektedir. Lingang Özel Kapsamlı Bağlı Bölgesi'nde yer alması, BSAS'a lojistik avantajlar ve ekonomik teşvikler sağlamaktadır."
+  ],
+  tahminiYillikBakimKapasitesi: [],
+  finansalVeriler: [],
+  teknikAltyapi: [
+    "Mevcut Tesis (Pudong): 16.000 m² hangar alanı, toplam 52.000 m² tesis alanı. Kapasite: 2 geniş gövdeli hat, 2 dar gövdeli hat.",
+    "Yeni Tesis (Lingang, 2025 sonu): ~83.000 m² arazi. Kapasite: 4 geniş gövdeli, 2 dar gövdeli uçak. Çin'in en büyük tek açıklıklı bakım hangarı olacak.",
+    "Çalışan Sayısı: 501-1000.",
+    "Mühendislik Yetkinliği: EASA Part 21 DOA."
+  ]
+};
+
+export const aeiAeronauticalEngineersData = {
+  mroFirmasiAdi: "AEI Aeronautical Engineers, Inc. (AEI)",
+  kimdir: "Aeronautical Engineers, Inc. (AEI), 1958 yılında kurulmuş olup, yolcu uçaklarını kargo uçaklarına dönüştürme alanında dünya çapında lider bir şirkettir. Şirket, Boeing 737-800, 737-400, 737-300, MD-80 serisi ve CRJ200 uçakları için yolcu-kargo dönüşüm hizmetleri sunmaktadır. AEI, 2023 yılı itibarıyla 600'den fazla freighter dönüşümünü tamamlamıştır. Küresel ölçekte dönüşüm hizmetlerinde bir dünya lideridir.",
+  hizmetleri: [
+    "Yolcu Uçağından Kargo Uçağına Dönüşüm (Passenger-to-Freighter Conversion): Boeing 737, MD-80 ve CRJ200 gibi uçakları kargo taşımacılığına uygun hale getiren dönüşüm süreçleri.",
+    "Kargo Kapı Modifikasyonları: Hidrolik kontrollü ve bağımsız bir sistemle çalışan kargo kapıları tasarımı.",
+    "Kargo Uçağı İç Mekân Modifikasyonları: Yolcu iç mekânları çıkarılır, yan duvarlar kargo yalıtımıyla değiştirilir, bağımsız duman dedektörleri kurulur, zemin kirişleri güçlendirilir ve kargo yükleme sistemine uygun hale getirilir.",
+    "Dönüşüm Merkezi Ortaklıkları: Dünya genelinde lisanslı dönüşüm merkezleriyle iş birliği yaparak kargo dönüşüm süreçlerini küresel ölçekte sunma."
+  ],
+  sertifikalar: [
+    "FAA (ABD)",
+    "EASA (AB)",
+    "CAAC (Çin)",
+    "ANAC (Brezilya)",
+    "ECAA (Mısır)",
+    "CAAM (Malezya)"
+  ],
+  hangarVeTesisKonumlari: [
+    {
+      konum: "Commercial Jet Inc. – Miami Uluslararası Havalimanı, Miami, Florida, ABD",
+      detay: "Hizmetler: Ağır bakım, hat bakımı, modifikasyon hizmetleri, tam gövde denetimleri, kargo dönüşümleri, iç mekan modifikasyonları ve aviyonik yükseltme programları. Sertifikalar: FAA, EASA ve çeşitli diğer yabancı sertifikalar."
+    },
+    {
+      konum: "Commercial Jet Services, LLC – Dothan Bölgesel Havalimanı, Dothan, Alabama, ABD",
+      detay: "Hizmetler: Ağır bakım ve modifikasyon hizmetleri, tam gövde denetimleri, kargo dönüşümleri, iç mekan modifikasyonları, aviyonik yükseltme programları ve uçak boyama. Sertifikalar: FAA, EASA ve çeşitli diğer yabancı sertifikalar."
+    },
+    {
+      konum: "KF Aerospace – Kelowna, British Columbia, Kanada",
+      detay: "Kuruluş Yılı: 1970. Hizmetler: Ağır uçak bakımı, revizyon, modifikasyon, mekanik, yapısal, aviyonik, iç mekan, motor, iniş takımı, parça temini, NDT, bileşen revizyonları, üretim ve filo yönetimi hizmetleri. Sertifikalar: ISO 9001, Transport Canada Design Approval Organization ve DND Recognized Design Approval Organization (Engineering) yetkileri. (Air Inuit için Boeing 737-800 dönüşüm merkezi)."
+    },
+    {
+      konum: "STAECO (Taikoo Shandong Aircraft Engineering Co., Ltd.) – Jinan Yaoqiang Uluslararası Havalimanı, Jinan, Shandong, Çin",
+      detay: "Kuruluş Yılı: 1999. Tesisler: Toplam 170.000 metrekarelik alanda beş hangar ve 24 bakım hattı. Hizmetler: Uçak gövde bakımı, kargo dönüşümü, mühendislik tasarımı, hat bakımı, parça üretimi ve havacılık eğitimi. Sertifikalar: CAAC, FAA, EASA, JCAB, CASA dahil olmak üzere 15 otoriteden Part145 onayı; ayrıca MOA, DOA ve POA onaylarına sahip. (CALC için Boeing 737-800SF dönüşüm merkezi)."
+    },
+    {
+      konum: "HAECO Xiamen – Xiamen, Çin",
+      detay: "Kuruluş Yılı: 1993. Hizmetler: Uçak gövde bakımı, modifikasyon, kabin yeniden yapılandırma, yolcu-kargo dönüşümleri ve hat hizmetleri. Özellikler: HAECO Xiamen, AEI'nin yetkili dönüşüm merkezi olarak 2020 yılında seçilmiştir ve ilk Boeing 737-800SF dönüşümünü 2021 yılında tamamlamıştır."
+    },
+    {
+      konum: "GCAM (Grand China Aviation Maintenance) – Meilan Uluslararası Havalimanı, Haikou, Hainan, Çin",
+      detay: "Kuruluş Yılı: 2012. AEI'nin yetkili dönüşüm merkezi. (Hainan Airlines için Boeing 737-800SF dönüşüm merkezi)."
+    }
+  ],
+  musteriPortfoyu: [
+    { havayolu: "Cargo Air", ulke: "Bulgaristan", merkezSehir: null, anlasmaDetayi: null },
+    { havayolu: "Air Inuit", ulke: "Kanada", merkezSehir: null, anlasmaDetayi: null },
+    { havayolu: "Serve Air", ulke: "Demokratik Kongo Cumhuriyeti", merkezSehir: null, anlasmaDetayi: null },
+    { havayolu: "Aerolíneas Argentinas", ulke: null, merkezSehir: null, anlasmaDetayi: null },
+    { havayolu: "Aeronaves TSM", ulke: "Meksika", merkezSehir: null, anlasmaDetayi: null },
+    { havayolu: "EgyptAir", ulke: null, merkezSehir: null, anlasmaDetayi: null },
+    { havayolu: "Rimbun Air", ulke: null, merkezSehir: null, anlasmaDetayi: null },
+    { havayolu: "Nauru Airlines", ulke: null, merkezSehir: null, anlasmaDetayi: null }
+  ],
+  bakimHizmetiVerilenUcakTipleri: { // Bu başlık altında P2F dönüşümü yapılan uçaklar listelenmiştir.
+    Boeing: ["737-800", "737-400", "737-300", "737-200"],
+    McDonnellDouglas: ["MD-80 serisi"],
+    Bombardier: ["CRJ200"]
+  },
+  anlasmalar2023_2025: [
+    "Aero Capital Solutions (ACS): Boeing 737-800SF, Toplam 34 uçak (2020–2023 arası). İlk sipariş Ekim 2020'de 4 uçak; ardından 10 uçaklık sipariş ve ek siparişlerle toplam 34 uçak.",
+    "GA Telesis: Boeing 737-800SF, Toplam 6 uçak (2'si 2021'de tamamlandı, 4'ü ek sipariş). İlk iki uçak 2021'de teslim edildi; ek dört uçaklık sipariş Nisan 2021'de verildi.",
+    "Chrono Aviation: Boeing 737-800SF, 2 uçak. Anlaşma Tarihi: 2022.",
+    "Airwork: Boeing 737-400SF, 12 uçak. Ocak 2020'de 12. uçak için anlaşma sağlandı.",
+    "Vx Capital Partners: Boeing 737-400SF, Toplam 3 uçak. Anlaşma Tarihi: Ocak 2020.",
+    "Nauru Airlines: Boeing 737-300SF, 10 uçak. Anlaşma Tarihi: Mart 2020.",
+    "Hainan Airlines: Boeing 737-800SF, En az 3 uçak. Anlaşma Yılı: 2023. Dönüşüm Merkezi: Grand China Aviation Maintenance (GCAM), Haikou, Çin.",
+    "CALC (China Aircraft Leasing Group): Boeing 737-800SF, 1 uçak. Anlaşma Yılı: 2022. Dönüşüm Merkezi: STAECO, Jinan, Çin.",
+    "Jackson Square Aviation (JSA): Boeing 737-800SF, Sipariş Adedi: 6 adet. Anlaşma Yılı: 2021.",
+    "Air Inuit: Boeing 737-800, Adet: 3. Anlaşma Yılı: Ekim 2023. Dönüşüm Merkezi: Kelowna. Hizmetler: Uçak gövde bakımı, kira sözleşmesi sonu denetimleri, kabin yenileme ve modifikasyon hizmetleri. Sertifikalar: CAAC, FAA, EASA, SSCA, CAACI, DCA, BCAA, ARUBA, MOLIT ve JMM onayları."
+  ],
+  sonDonemdekiYatirimlar: [], // Metinde bu başlık altında doğrudan bir bilgi bulunmamaktadır.
+  tahminiYillikBakimKapasitesi: [], // Metinde bu başlık altında doğrudan bir bilgi bulunmamaktadır. 2023'te 28 dönüşüm yapılmıştır.
+  finansalVeriler: [], // Metinde bu başlık altında doğrudan bir bilgi bulunmamaktadır.
+  teknikAltyapi: [
+    "Kuruluş: 1958.",
+    "Uzmanlık Alanı: Yolcu uçaklarından kargo uçaklarına dönüşüm (P2F).",
+    "Dönüşümü Yapılan Uçak Tipleri: Boeing 737-800, 737-400, 737-300, MD-80 serisi, CRJ200.",
+    "Tamamlanan Dönüşüm Sayısı: 600+ (2023 yılı itibarıyla).",
+    "2023 Yılı Teslimatları: Toplam 28 uçak (Boeing 737-800SF: 18, Boeing 737-400SF: 5, MD-80SF: 2, Bombardier CRJ200SF: 3).",
+    "Kargo Kapı Teknolojisi: Hidrolik kontrollü ve bağımsız bir sistemle çalışan kargo kapıları.",
+    "Dönüşüm Süreci Detayları: Yolcu iç mekânlarının çıkarılması, yan duvarların kargo yalıtımıyla değiştirilmesi, bağımsız duman dedektörlerinin kurulması, zemin kirişlerinin güçlendirilmesi ve kargo yükleme sistemine uygun hale getirilmesi.",
+    "İş Modeli: Dünya genelinde lisanslı dönüşüm merkezleriyle iş birliği."
+  ]
+};
+
+export const caerdavData = {
+  mroFirmasiAdi: "Caerdav",
+  kimdir: "Caerdav, Galler merkezli bağımsız bir bakım, onarım ve revizyon (MRO) firmasıdır. 2012 yılında Bruce Dickinson tarafından Cardiff Aviation adıyla kurulmuştur. Şirket, 2019 yılında yeniden markalaşarak “Caerdav” ismini almıştır. Merkezi, Güney Galler’de St. Athan’da bulunan eski RAF bakım üssünde yer almaktadır. Caerdav; sivil havacılığa yönelik hat bakımı, üs bakımı, bileşen onarımı, uçak modifikasyonu, iç mekan yenileme, uçuş eğitimi ve havacılık danışmanlığı gibi alanlarda hizmet sunar. Özellikle Airbus A320 ailesi ve Boeing 737, 757 ve 767 tipi uçaklara uzmanlaşmıştır.",
+  hizmetleri: [
+    "Üs Bakım (Base Maintenance)",
+    "Komponent Değişiklikleri",
+    "Kompozit Onarımları",
+    "Kabin İçi Yenileme ve Modifikasyon",
+    "Redelivery Bakımı Hizmetleri",
+    "End-of Life Hizmetleri",
+    "Hat Bakımı (Line Maintenance)",
+    "MRO Firmalarına Yönelik Eğitim/Danışmanlık",
+    "Ekipman Kiralama: Bakım faaliyetleri için gerekli olan ekipmanların kiralanması (Uçak jackları, boot strap kitleri, test kitleri, LG toolları vb.)",
+    "Parking Ve Storage"
+  ],
+  sertifikalar: [
+    "CAA (UK)",
+    "EASA",
+    "FAA",
+    "GACA (Saudi Aviation Authority)",
+    "GUERNSEY (2-Reg Aircraft Registry)",
+    "TCCA"
+  ],
+  hangarVeTesisKonumlari: [
+    {
+      konum: "St. Athan, Bro Tathan Havacılık İş Parkı, Vale of Glamorgan, Galler (Ana Tesis)",
+      detay: "Eski RAF bakım üssünde yer alır. 6.000 fit (yaklaşık 1.825 metre) uzunluğunda ILS destekli bir piste sahiptir. Yaklaşık 12.450 metrekare (134.000 fit kare) alana sahip bir hangar kompleksi. İki ana hangara sahip; sonradan inşa edilen bakım hangarı 50mx50m ölçülerinde, en yüksek noktası 18,5 metredir. 2024 yılında hangarlardan biri yeniden düzenlenerek üçüncü bir bakım hattı eklendi (bakım kapasitesi %50 arttı). Dış alanda 20 dar gövdeli uçağın park edebileceği alan bulunmaktadır. Tesis bünyesinde kompozit onarım ve parça boyama atölyeleri bulunmaktadır. Pilot eğitimi için iki adet Boeing 747-400 tam hareketli simülatör ve bir adet S-61 helikopter simülatörü mevcuttur."
+    },
+    {
+      konum: "Cardiff Havalimanı, Galler (Hat Bakım İstasyonu)",
+      detay: "Mayıs 2024'te Avion Express için özel bir hat bakım istasyonu kuruldu. Bu istasyon, Airbus A320, Boeing 737, 757 ve 767 uçaklarına günlük ve haftalık bakım hizmetleri sunmaktadır. İlk olarak TUI Airways için yaz sezonunda hizmet vermeye başlayan bu istasyonun kalıcı hale getirilmesi planlanmaktadır."
+    }
+  ],
+  musteriPortfoyu: [
+    { havayolu: "EasyJet", ulke: null, merkezSehir: null, anlasmaDetayi: null },
+    { havayolu: "Comlux", ulke: null, merkezSehir: null, anlasmaDetayi: null },
+    { havayolu: "Flyadeal", ulke: null, merkezSehir: null, anlasmaDetayi: null },
+    { havayolu: "DHL", ulke: null, merkezSehir: null, anlasmaDetayi: null },
+    { havayolu: "Avion Express", ulke: null, merkezSehir: null, anlasmaDetayi: "2024'te Cardiff Havalimanı'nda Airbus A320 uçakları için hat bakım hizmeti (2024 yaz sezonu)." },
+    { havayolu: "TUI Airways", ulke: null, merkezSehir: null, anlasmaDetayi: "2019'dan beri St. Athan'da çeşitli bakım hizmetleri; 2022'de 4 uçak daha bakım için yerleştirildi." },
+    { havayolu: "Ryanair", ulke: null, merkezSehir: null, anlasmaDetayi: "Haziran 2022'de 737-800 filosu için ağır bakım anlaşması." }
+  ],
+  bakimHizmetiVerilenUcakTipleri: {
+    Airbus: ["A319", "A320", "A321"],
+    Boeing: ["B737-300 / 400 / 500", "B737-600 / 700 / 800", "B757-200", "B767"]
+  },
+  anlasmalar2023_2025: [
+    "Avion Express: 2024 yılında, Caerdav, Cardiff Havalimanı'nda yeni bir hat bakım istasyonu açarak Avion Express'e Airbus A320 uçakları için günlük ve haftalık hat bakım hizmetleri sunmaya başladı (2024 yaz sezonu).",
+    "TUI Airways: 2019 yılında başlayan iş birliği kapsamında, TUI Airways, Caerdav'ın St. Athan'daki tesisine çeşitli bakım çalışmaları için 2022'de dört uçak daha yerleştirdi.",
+    "Ryanair: Haziran 2022'de Ryanair’in 737-800 filosu için ağır bakım anlaşması imzalandı."
+  ],
+  sonDonemdekiYatirimlar: [
+    "St. Athan Tesisinde Üçüncü Bakım Hattı Açılışı (2024): Bakım kapasitesini %50 oranında artırdı. Bu genişleme, Boeing 737 veya Airbus A320 tipi bir uçağı barındırabilecek şekilde hangarların yeniden düzenlenmesiyle gerçekleştirildi. Yaklaşık 50 yeni teknik personel istihdam edildi.",
+    "Cardiff Havalimanı'nda Hat Bakım İstasyonu Kurulması (Mayıs 2024): Avion Express için özel bir hat bakım istasyonu kuruldu. Airbus A320, Boeing 737, 757 ve 767 uçaklarına günlük ve haftalık bakım hizmetleri sunmaktadır. Kalıcı hale getirilmesi planlanmaktadır.",
+    "Yapay Zeka Tabanlı FinTwin® Platformunun Kullanımı (Ekim 2024): KeepFlying® şirketi ile iş birliği yaparak FinTwin® MRO Edition platformunu kullanmaya başladı. Bu platform, bakım süreçlerinin izlenmesi, iş akışlarının optimize edilmesi ve stok yönetiminin iyileştirilmesine katkı sağlamaktadır.",
+    "Kargo Uçak Dönüşüm Pazarına Giriş (2020): Yolcu uçaklarının kargo uçaklarına dönüştürülmesi alanına yatırım yapıldı. St. Athan'daki tesiste aynı anda iki dar gövdeli uçağın dönüşümünü gerçekleştirebilecek kapasiteye sahip."
+  ],
+  tahminiYillikBakimKapasitesi: [
+    "Yıllık ortalama 15-180"
+  ],
+  finansalVeriler: [
+    "Yıllık geliri yaklaşık 45,7 milyon ABD dolarıdır."
+  ],
+  teknikAltyapi: [
+    "Ana tesis: St. Athan, Galler, eski RAF üssü, yaklaşık 12.450 m² hangar alanı.",
+    "Pist: St. Athan'da 6.000 fit (yaklaşık 1.825 metre) uzunluğunda ILS destekli pist.",
+    "Hangar Kapasitesi: İki ana hangar; 2024'te üçüncü bir bakım hattı eklenerek kapasite %50 arttırıldı.",
+    "Park Alanı: St. Athan'da dış alanda 20 dar gövdeli uçak için park alanı.",
+    "Atölyeler: Kompozit onarım, parça boyama.",
+    "Pilot Eğitim Simülatörleri: 2 adet Boeing 747-400 tam hareketli simülatör, 1 adet S-61 helikopter simülatörü.",
+    "Ekipman Kiralama Hizmeti: Uçak jackları, boot strap kitleri, test kitleri, LG toolları vb.",
+    "Çalışan Sayısı: +200.",
+    "Dijitalleşme: FinTwin® MRO Edition platformu (Ekim 2024) ile bakım süreçleri izleme, iş akışı optimizasyonu ve stok yönetimi.",
+    "Kargo Dönüşüm Kabiliyeti: 2020'den beri, St. Athan'da aynı anda iki dar gövdeli uçağın dönüşümünü gerçekleştirebilme."
+  ]
+};
+
+
 export const mroSablonu = {
   mroFirmasiAdi: "MRO Firma Adı",
   kimdir: "MRO firma tanımı ve kısa tarihçesi",
@@ -4114,7 +4613,12 @@ export const mroFirmalari = [
   atsData,
   iberiaMaintenanceData,
   haecoGroupData,
-  gmfAeroAsiaData
+  gmfAeroAsiaData,
+  czechAirlinesTechnicsData,
+  afiKlmEMData,
+  boeingShanghaiAviationServicesData,
+  aeiAeronauticalEngineersData,
+  caerdavData
 ];
 
 // Eski veri yapısıyla geriye uyumluluk için yardımcı fonksiyon
