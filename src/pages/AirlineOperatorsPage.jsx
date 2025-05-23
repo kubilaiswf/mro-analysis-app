@@ -47,13 +47,30 @@ const AirlineOperatorsPage = () => {
   // Filtrelenmiş havayolları
   const filteredAirlines = useMemo(() => {
     return allAirlines.filter(airline => {
+      if (!airline) return false; // Guard against null/undefined airline objects
+
+      const currentSearchQuery = searchQuery || ""; // Ensure searchQuery is a string, default to empty
+      const searchTerm = currentSearchQuery.toLowerCase();
+
+      // Safely get lowercase airline name, default to empty string if not a string
+      const airlineName = (typeof airline.havayolu === 'string') 
+        ? airline.havayolu.toLowerCase() 
+        : "";
+      
+      // Safely get lowercase airline city, default to empty string if not a string
+      const airlineCity = (typeof airline.merkezSehir === 'string') 
+        ? airline.merkezSehir.toLowerCase() 
+        : "";
+      
       // Arama sorgusuna göre filtrele
-      const matchesSearch = searchQuery === '' || 
-        airline.havayolu.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        airline.merkezSehir.toLowerCase().includes(searchQuery.toLowerCase());
+      const matchesSearch = currentSearchQuery === '' || 
+        (airlineName && airlineName.includes(searchTerm)) ||
+        (airlineCity && airlineCity.includes(searchTerm));
       
       // Ülkeye göre filtrele
-      const matchesCountry = selectedCountry === '' || airline.ulke === selectedCountry;
+      // Safely get airline country, default to empty string if not a string
+      const airlineCountry = (typeof airline.ulke === 'string') ? airline.ulke : "";
+      const matchesCountry = selectedCountry === '' || airlineCountry === selectedCountry;
       
       return matchesSearch && matchesCountry;
     });
