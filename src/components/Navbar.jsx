@@ -12,15 +12,13 @@ const Navbar = ({ toggleSidebar, navigateToAI }) => {
     return location.pathname === path;
   };
   
-  // Check if we're on the AI Assistant page
-  const isAIAssistantPage = location.pathname.startsWith('/ai-assistant');
-  
   return (
     <nav className="fixed top-0 left-0 right-0 bg-white shadow-md z-50 border-b-2 border-primary-500">
       <div className="mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <div className="flex items-center">
-            <Link to="/" className="ml-4 flex items-center text-primary-600 font-semibold">
+          {/* Logo Section */}
+          <div className="flex items-center flex-shrink-0">
+            <Link to="/" className="flex items-center text-primary-600 font-semibold">
               <svg version="1.1" id="thy_logo" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" style={{width:'32px', height:'32px', minWidth:'32px', minHeight:'32px', marginRight:'12px'}} xmlSpace="preserve">
                 <style type="text/css">
                     {`.st0 {
@@ -54,6 +52,7 @@ const Navbar = ({ toggleSidebar, navigateToAI }) => {
             </Link>
           </div>
           
+          {/* Desktop Navigation */}
           <div className="hidden md:block">
             <div className="flex items-center space-x-4">
               <Link
@@ -105,46 +104,56 @@ const Navbar = ({ toggleSidebar, navigateToAI }) => {
             </div>
           </div>
           
-          {/* Hide mobile buttons on AI Assistant page */}
-          {!isAIAssistantPage && (
-            <div className="flex space-x-1 md:hidden">
-              <Link
-                to="/mro-comparison"
-                className={`p-2 rounded-md ${
-                  isActive('/mro-comparison') 
-                    ? 'bg-primary-500 text-white' 
-                    : 'text-accent-700 hover:bg-accent-100'
-                }`}
-                aria-label="MRO Karşılaştırma"
-              >
-                <FaExchangeAlt className="h-5 w-5" />
-              </Link>
-              
-              <Link
-                to="/airline-operators"
-                className={`p-2 rounded-md ${
-                  isActive('/airline-operators') 
-                    ? 'bg-primary-500 text-white' 
-                    : 'text-accent-700 hover:bg-accent-100'
-                }`}
-                aria-label="Havayolu Operatörleri"
-              >
-                <FaPlaneDeparture className="h-5 w-5" />
-              </Link>
-              
-              <button
-                onClick={navigateToAI}
-                className={`p-2 rounded-md ${
-                  isActive('/ai-assistant')
-                    ? 'bg-accent-900 text-white'
-                    : 'bg-primary-100 text-primary-700 hover:bg-primary-200'
-                }`}
-                aria-label="AI Asistan"
-              >
-                <FaRobot className="h-5 w-5" />
-              </button>
-            </div>
-          )}
+          {/* Mobile Navigation - Fixed positioning */}
+          <div className="flex items-center space-x-1 md:hidden flex-shrink-0">
+            <Link
+              to="/"
+              className={`p-2 rounded-md ${
+                isActive('/') 
+                  ? 'bg-primary-500 text-white' 
+                  : 'text-accent-700 hover:bg-accent-100'
+              }`}
+              aria-label="Ana Sayfa"
+            >
+              <FaPlane className="h-5 w-5" />
+            </Link>
+            
+            <Link
+              to="/mro-comparison"
+              className={`p-2 rounded-md ${
+                isActive('/mro-comparison') 
+                  ? 'bg-primary-500 text-white' 
+                  : 'text-accent-700 hover:bg-accent-100'
+              }`}
+              aria-label="MRO Karşılaştırma"
+            >
+              <FaExchangeAlt className="h-5 w-5" />
+            </Link>
+            
+            <Link
+              to="/airline-operators"
+              className={`p-2 rounded-md ${
+                isActive('/airline-operators') 
+                  ? 'bg-primary-500 text-white' 
+                  : 'text-accent-700 hover:bg-accent-100'
+              }`}
+              aria-label="Havayolu Operatörleri"
+            >
+              <FaPlaneDeparture className="h-5 w-5" />
+            </Link>
+            
+            <button
+              onClick={navigateToAI}
+              className={`p-2 rounded-md ${
+                isActive('/ai-assistant')
+                  ? 'bg-accent-900 text-white'
+                  : 'bg-primary-100 text-primary-700 hover:bg-primary-200'
+              }`}
+              aria-label="AI Asistan"
+            >
+              <FaRobot className="h-5 w-5" />
+            </button>
+          </div>
         </div>
       </div>
     </nav>

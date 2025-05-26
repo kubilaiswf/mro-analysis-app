@@ -1,4 +1,3 @@
-// Script to update .env file
 import { writeFileSync } from 'fs';
 
 const envContent = `# MRO Dashboard Configuration

@@ -4,15 +4,12 @@ import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import { GoogleGenAI } from "@google/genai";
 
-// Get environment variables with fallbacks
 const DEFAULT_PROMPT_TEMPLATE = import.meta.env.VITE_DEFAULT_PROMPT_TEMPLATE || 
   'Ben {bot_name}, MRO bakım verilerini analiz eden bir AI asistanıyım. Aşağıdaki veri setini kullanarak soruları yanıtla: {data_context}';
 
 const AIAssistant = ({ onClose, data, mroData = [], initialMessages = [], onUpdateMessages, chatName, onUpdateChatName }) => {
-  // Use a ref to track if this is the first render
   const isFirstRender = useRef(true);
   
-  // Initialize messages state with a stable reference
   const [messages, setMessages] = useState(() => {
     return initialMessages.length > 0 ? 
       initialMessages : 
@@ -22,7 +19,6 @@ const AIAssistant = ({ onClose, data, mroData = [], initialMessages = [], onUpda
       }];
   });
 
-  // Other state variables
   const [userInput, setUserInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [showSettings, setShowSettings] = useState(false);
@@ -31,7 +27,6 @@ const AIAssistant = ({ onClose, data, mroData = [], initialMessages = [], onUpda
     localStorage.getItem('gemini_prompt_template') || DEFAULT_PROMPT_TEMPLATE
   );
 
-  // Bot configuration settings
   const [botName, setBotName] = useState(localStorage.getItem('bot_name') || '0x6B7562696C6169737766');
   const [botBehaviors, setBotBehaviors] = useState({
     formal: localStorage.getItem('bot_formal') === 'true' || false,

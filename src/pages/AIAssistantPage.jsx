@@ -2,7 +2,7 @@ import React, { useState, useEffect, useMemo, useCallback } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import AIAssistant from '../components/AIAssistant';
 import { maintenanceData, mroFirmalari } from '../data/maintenanceData';
-import { FaPlus, FaTrash, FaEdit } from 'react-icons/fa';
+import { FaPlus, FaTrash, FaEdit, FaBars, FaTimes } from 'react-icons/fa';
 
 const AIAssistantPage = () => {
   const { chatId } = useParams();
@@ -10,6 +10,7 @@ const AIAssistantPage = () => {
   const [chats, setChats] = useState([]);
   const [currentChatName, setCurrentChatName] = useState('');
   const [isEditingName, setIsEditingName] = useState(false);
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   // Load chats from localStorage
   useEffect(() => {
@@ -136,9 +137,33 @@ const AIAssistantPage = () => {
 
   return (
     <div className="flex flex-col h-screen pt-16 bg-gray-50">
-      <div className="flex flex-1 overflow-hidden">
+      <div className="flex flex-1 overflow-hidden relative">
+        {/* Mobile Menu Button */}
+        <button
+          onClick={() => setIsSidebarOpen(!isSidebarOpen)}
+          className="lg:hidden fixed top-20 left-4 z-50 p-2 bg-white rounded-md shadow-md border border-gray-200 hover:bg-gray-50"
+          aria-label="Menü"
+        >
+          {isSidebarOpen ? <FaTimes className="h-5 w-5" /> : <FaBars className="h-5 w-5" />}
+        </button>
+
+        {/* Sidebar Overlay */}
+        {isSidebarOpen && (
+          <div 
+            className="lg:hidden fixed inset-0 bg-black bg-opacity-50 z-30"
+            onClick={() => setIsSidebarOpen(false)}
+          />
+        )}
+
         {/* Sidebar */}
-        <div className="w-64 bg-white border-r border-gray-200 flex flex-col overflow-hidden">
+        <div className={`
+          ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'}
+          lg:translate-x-0 lg:static
+          fixed inset-y-0 left-0 z-40
+          w-64 bg-white border-r border-gray-200 flex flex-col overflow-hidden
+          transition-transform duration-300 ease-in-out
+          mt-16 lg:mt-0
+        `}>
           <div className="p-4 border-b border-gray-200 flex justify-between items-center">
             <h2 className="font-medium text-gray-800">Sohbetler</h2>
             <button 
@@ -154,7 +179,10 @@ const AIAssistantPage = () => {
               <div 
                 key={chat.id}
                 className={`flex justify-between items-center p-3 border-b border-gray-100 hover:bg-gray-50 cursor-pointer ${chat.id === chatId ? 'bg-primary-50 border-l-4 border-l-primary-600' : ''}`}
-                onClick={() => navigate(`/ai-assistant/${chat.id}`)}
+                onClick={() => {
+                  navigate(`/ai-assistant/${chat.id}`);
+                  setIsSidebarOpen(false); // Close sidebar on mobile after navigation
+                }}
               >
                 <div className="truncate flex-1">
                   {isEditingName && chat.id === chatId ? (
@@ -210,7 +238,7 @@ const AIAssistantPage = () => {
         </div>
 
         {/* Chat area */}
-        <div className="flex-1 flex flex-col overflow-hidden">
+        <div className="flex-1 flex flex-col overflow-hidden lg:ml-0">
           {currentChat ? memoizedAssistant : (
             <div className="flex items-center justify-center h-full">
               <p className="text-gray-500">Yükleniyor...</p>

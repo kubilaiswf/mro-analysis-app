@@ -21,11 +21,9 @@ function App() {
   const navigate = useNavigate();
   const location = useLocation();
 
-  // Tüm havayollarını çıkarma
   const allAirlines = useMemo(() => {
     const airlinesSet = new Set();
     
-    // Tüm MRO firmalarının müşteri portföyünden havayollarını topla
     mroFirmalari.forEach(mro => {
       if (mro.musteriPortfoyu && Array.isArray(mro.musteriPortfoyu)) {
         mro.musteriPortfoyu.forEach(musteri => {
@@ -38,7 +36,6 @@ function App() {
   }, []);
 
   const navigateToAI = () => {
-    // Doğrudan yeni bir AI asistan sayfasına yönlendir
     const newChatId = `chat_${Date.now()}`;
     const savedChats = JSON.parse(localStorage.getItem('mro_ai_chats') || '[]');
     
@@ -59,13 +56,11 @@ function App() {
     navigate(`/ai-assistant/${newChatId}`);
   };
 
-  // Harita üzerinde yukarı/aşağı kaydırmayı engellemek için
   const preventPageScroll = (e) => {
     if (e.ctrlKey || e.metaKey) return;
     e.preventDefault();
   };
 
-  // Check if we're on an AI Assistant page
   const isAIPage = location.pathname.startsWith('/ai-assistant');
 
   const Dashboard = () => (
