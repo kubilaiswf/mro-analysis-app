@@ -14,6 +14,7 @@ import Footer from './components/Footer';
 import { maintenanceData, mroFirmalari } from './data/maintenanceData';
 import MROWorldMap from './components/charts/MROWorldMap';
 import ContinentMap from './components/charts/ContinentMap';
+import HomePage from './pages/HomePage';
 
 function App() {
   const [activeView, setActiveView] = useState('dashboard');
@@ -97,7 +98,7 @@ function App() {
       <Navbar navigateToAI={navigateToAI} />
       <div className="flex-grow">
         <Routes>
-          <Route path="/" element={<Dashboard />} />
+          <Route path="/" element={<HomePage />} />
           <Route path="/ai-assistant" element={<AIAssistantPage />} />
           <Route path="/ai-assistant/:chatId" element={<AIAssistantPage />} />
           <Route path="/mro-comparison" element={<MROComparisonPage />} />
