@@ -261,8 +261,8 @@ const ContinentMap = () => {
       strokeWidth: 1.5,
       strokeOpacity: 0.7,
       stroke: am5.color(0xe5e7eb),
-      fillOpacity: 0.85,
-      fill: am5.color(0x991b1b) // Varsayılan olarak koyu kırmızı ata
+      fillOpacity: 0.9,
+      fill: am5.color(0xdc2424) // Varsayılan olarak koyu kırmızı ata
     });
 
     // Kıta verilerini ayarla
@@ -335,7 +335,7 @@ const ContinentMap = () => {
     let backgroundSeries = chart.series.push(am5map.MapPolygonSeries.new(root, {}));
     backgroundSeries.mapPolygons.template.setAll({
       fill: am5.color(0xe2e8f0), // Kapalı beyaz/gri
-      fillOpacity: 0.6,
+      fillOpacity: 0.1,
       strokeOpacity: 0
     });
     backgroundSeries.data.push({
