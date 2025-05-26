@@ -19,7 +19,7 @@
         "giris_aciklamasi_html": "Havacılık MRO sektörü dört ana segmentten oluşur. Avrupa pazarında bu segmentlerin oranları ve trendleri aşağıdaki gibidir:",
         "pasta_grafigi_baslik": "MRO Pazar Segmentleri Dağılımı",
         "pasta_grafigi_verileri": {
-          "labels": ["Bileşen MRO", "Uçak Gövde Bakımı", "Uçak Hattı Bakımı", "Motor MRO"],
+          "labels": ["Bileşen MRO", "Uçak Gövde Bakımı", "Hat Bakımı", "Motor MRO"],
           "datasets": [
             {
               "label": "Dağılım (%)",
@@ -35,7 +35,7 @@
             }
           ]
         },
-        "grafik_alti_aciklama_html": "MRO (Bakım, Onarım ve Revizyon) pazar segmentlerinin yüzde dağılımını gösteren pasta grafiği. Motor MRO segmenti %38.4 ile en büyük paya sahip, onu sırasıyla Uçak Hattı Bakımı (%23.2), Uçak Gövde Bakımı (%20.2) ve Bileşen MRO (%18.2) takip ediyor."
+        "grafik_alti_aciklama_html": "MRO (Bakım, Onarım ve Revizyon) pazar segmentlerinin yüzde dağılımını gösteren pasta grafiği. Motor MRO segmenti %38.4 ile en büyük paya sahip, onu sırasıyla Hat Bakım (%23.2), Uçak Gövde Bakımı (%20.2) ve Bileşen MRO (%18.2) takip ediyor."
       },
       {
         "id": "bolgesel_liderler",
