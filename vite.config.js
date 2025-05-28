@@ -26,5 +26,8 @@ export default defineConfig({
         }
       }
     }
-  }
+  },
+  // Production environment için .env.production dosyasını kullan
+  envDir: '.',
+  envPrefix: 'VITE_'
 }); 

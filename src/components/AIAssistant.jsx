@@ -272,8 +272,12 @@ const AIAssistant = ({ onClose, data, mroData = [], initialMessages = [], onUpda
       });
 
       // Backend API çağrısı yap
-      // Development'ta proxy kullan, production'da direkt backend URL'i kullan
-      const apiUrl = import.meta.env.DEV ? '/api/gemini' : 'http://localhost:3000/api/gemini';
+      // Development'ta proxy kullan, production'da environment variable kullan
+      const apiUrl = import.meta.env.DEV 
+        ? '/api/gemini' 
+        : import.meta.env.VITE_API_URL 
+          ? `${import.meta.env.VITE_API_URL}/api/gemini`
+          : `${window.location.origin}/api/gemini`;
       
       const response = await fetch(apiUrl, {
         method: 'POST',
