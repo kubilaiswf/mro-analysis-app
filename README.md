@@ -13,7 +13,7 @@ Turkish Technic stajımda yaptığım, MRO Bakım verilerini analiz eden ve gör
 1. Projeyi klonlayın:
 
 ```
-git clone <repo-url>
+git clone https://github.com/kubilaiswf/mro-analysis-app
 cd mro-analysis-app
 ```
 
