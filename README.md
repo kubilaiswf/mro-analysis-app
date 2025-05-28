@@ -33,21 +33,44 @@ npm run dev
 
 Uygulamadaki AI asistanını kullanmak için Gemini API'ye ihtiyacınız vardır.
 
-### API Anahtarı Yapılandırması
+### Güvenli API Anahtarı Yapılandırması
 
-1. `.env` dosyasını oluşturun (`.env.example` dosyasını referans alabilirsiniz):
+**ÖNEMLİ:** Güvenlik için API anahtarları backend'de tutulur, frontend'e gömülmez.
 
-```
-# MRO Dashboard Configuration
+1. `.env.backend` dosyasını oluşturun:
 
-# Gemini API Entegrasyonu
+```bash
+# Backend Environment Variables
+# Bu dosya backend tarafından kullanılacak
+
+# Gemini API Key (sadece backend'de kullanılır)
 VITE_GEMINI_API_KEY=your_api_key_here
 
 # Default Prompt Template
-VITE_DEFAULT_PROMPT_TEMPLATE="Sen MRO bakım verilerini analiz eden bir AI asistanısın. Aşağıdaki veri setini kullanarak soruları yanıtla: {data_context}"
+VITE_DEFAULT_PROMPT_TEMPLATE="Sen MRO bakım verilerini analiz eden bir AI asistanısın..."
 ```
 
-2. [Google AI Studio](https://ai.google.dev/)'dan bir API anahtarı alın ve `.env` dosyasındaki `VITE_GEMINI_API_KEY` değişkenine ekleyin.
+2. [Google AI Studio](https://ai.google.dev/)'dan bir API anahtarı alın ve `.env.backend` dosyasındaki `VITE_GEMINI_API_KEY` değişkenine ekleyin.
+
+3. Backend ve frontend'i birlikte çalıştırın:
+
+```bash
+npm run dev:full
+```
+
+Bu komut hem backend server'ını (port 3001) hem de frontend'i (port 5173) aynı anda başlatır.
+
+### Alternatif Çalıştırma
+
+Ayrı terminallerde çalıştırmak isterseniz:
+
+```bash
+# Terminal 1 - Backend
+npm run server
+
+# Terminal 2 - Frontend  
+npm run dev
+```
 
 3. Alternatif olarak, API anahtarınızı ve prompt şablonunuzu uygulamanın "Ayarlar" bölümünden de yapılandırabilirsiniz.
 

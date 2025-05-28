@@ -5,7 +5,14 @@ export default defineConfig({
   plugins: [react()],
   assetsInclude: ['**/*.geojson'],
   server: {
-    open: true
+    open: true,
+    port: 5173, // Force port to 5173
+    proxy: {
+      '/api': {
+        target: 'http://localhost:3000',
+        changeOrigin: true
+      }
+    }
   },
   build: {
     cssMinify: 'esbuild',

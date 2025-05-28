@@ -2,7 +2,6 @@ import React, { useState, useRef, useEffect, useCallback } from 'react';
 import { FaRobot, FaPaperPlane, FaArrowLeft, FaCog, FaSave, FaTimes, FaUserEdit, FaSpinner, FaArrowUp, FaEdit, FaUser, FaSync, FaCopy, FaPencilAlt } from 'react-icons/fa';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
-import { GoogleGenAI } from "@google/genai";
 
 const DEFAULT_PROMPT_TEMPLATE = import.meta.env.VITE_DEFAULT_PROMPT_TEMPLATE || 
   'Ben {bot_name}, MRO bakım verilerini analiz eden bir AI asistanıyım. Aşağıdaki veri setini kullanarak soruları yanıtla: {data_context}';
@@ -22,7 +21,7 @@ const AIAssistant = ({ onClose, data, mroData = [], initialMessages = [], onUpda
   const [userInput, setUserInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [showSettings, setShowSettings] = useState(false);
-  const [apiKey, setApiKey] = useState(import.meta.env.VITE_GEMINI_API_KEY || localStorage.getItem('gemini_api_key') || '');
+  // API Key artık backend'de tutulduğu için frontend'de gerek yok
   const [promptTemplate, setPromptTemplate] = useState(
     localStorage.getItem('gemini_prompt_template') || DEFAULT_PROMPT_TEMPLATE
   );
@@ -219,10 +218,6 @@ const AIAssistant = ({ onClose, data, mroData = [], initialMessages = [], onUpda
 
   // Call Gemini API
   const callGeminiAPI = async (userMessage) => {
-    if (!apiKey) {
-      return "API anahtarı eksik. Lütfen ayarlar kısmından bir API anahtarı ekleyin veya .env dosyasında tanımlayın.";
-    }
-
     try {
       // Prepare the context with the data
       const dataContext = prepareDataContext();
@@ -276,54 +271,55 @@ const AIAssistant = ({ onClose, data, mroData = [], initialMessages = [], onUpda
         parts: [{ text: userMessage }]
       });
 
-      // Map roles to what the Gemini API expects ('user', 'model')
-      const apiContents = conversationHistoryForAPI.map(item => ({
-        ...item,
-        role: item.role === 'assistant' ? 'model' : item.role // 'user' -> 'user', 'assistant' -> 'model', 'model' -> 'model'
-      }));
+      // Backend API çağrısı yap
+      // Development'ta proxy kullan, production'da direkt backend URL'i kullan
+      const apiUrl = import.meta.env.DEV ? '/api/gemini' : 'http://localhost:3000/api/gemini';
       
-      // Instantiate the GoogleGenAI client
-      const ai = new GoogleGenAI({ apiKey }); // As per user's snippet, using shorthand for { apiKey: apiKey }
-
-      const generationConfig = {
-        temperature: 0.7,
-        topK: 40,
-        topP: 0.95,
-        maxOutputTokens: 8192, // Ensure this is a number
-      };
-      
-      // Make the API request using the user's specified method
-      const apiResponse = await ai.models.generateContent({
-        model: "gemini-2.0-flash",
-        contents: apiContents,
-        generationConfig: generationConfig 
+      const response = await fetch(apiUrl, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          prompt: systemPrompt + '\n\nKullanıcı: ' + userMessage,
+          data_context: dataContext
+        })
       });
-      
-      // Extract the response text as per user's example
-      const generatedContent = apiResponse.text;
-      
-      if (typeof generatedContent !== 'string') { // Check if text is actually present
-        // Attempt to get a more detailed error if possible, or default
-        let errorDetail = "API yanıtından metin içeriği alınamadı.";
-        if (apiResponse && apiResponse.promptFeedback && apiResponse.promptFeedback.blockReason) {
-            errorDetail = `İstek engellendi: ${apiResponse.promptFeedback.blockReason}. Sebep: ${apiResponse.promptFeedback.blockReasonMessage || 'Belirtilmemiş'}`;
-        } else if (apiResponse && apiResponse.candidates && apiResponse.candidates.length > 0 && apiResponse.candidates[0].finishReason !== 'STOP') {
-            errorDetail = `İçerik üretimi durduruldu, sebep: ${apiResponse.candidates[0].finishReason}. ${apiResponse.candidates[0].finishMessage || ''}`;
+
+      if (!response.ok) {
+        console.error("Response not OK:", response.status, response.statusText);
+        const responseText = await response.text();
+        console.error("Response body:", responseText);
+        
+        try {
+          const errorData = JSON.parse(responseText);
+          throw new Error(errorData.error || `HTTP error! status: ${response.status}`);
+        } catch (parseError) {
+          throw new Error(`HTTP error! status: ${response.status}. Response: ${responseText.substring(0, 200)}`);
         }
-        throw new Error(errorDetail);
+      }
+
+      const responseText = await response.text();
+      console.log("Raw response:", responseText);
+      
+      try {
+        const data = JSON.parse(responseText);
+        return data.response;
+      } catch (parseError) {
+        console.error("JSON parse error:", parseError);
+        console.error("Response text:", responseText);
+        throw new Error(`Invalid JSON response: ${responseText.substring(0, 200)}`);
+      }
+    } catch (error) {
+      console.error("Backend API hatası:", error);
+      let errorMessage = `Backend API ile iletişim kurulurken bir hata oluştu: ${error.message}`;
+      
+      if (error.message.includes('fetch')) {
+        errorMessage = "Backend sunucusuna bağlanılamadı. Lütfen sunucunun çalıştığından emin olun.";
+      } else if (error.message.includes('API key')) {
+        errorMessage = "API anahtarı hatası. Lütfen backend konfigürasyonunu kontrol edin.";
       }
       
-      return generatedContent;
-    } catch (error) {
-      console.error("Gemini API hatası:", error);
-      // Construct a more informative error message
-      let errorMessage = `Gemini API ile iletişim kurulurken bir hata oluştu: ${error.message}`;
-      if (error.response && error.response.data && error.response.data.error && error.response.data.error.message) {
-        // If the error object has response data from an HTTP error (e.g. via Axios like structure, though not used here)
-        errorMessage = `Gemini API Hatası: ${error.response.data.error.message}`;
-      } else if (error.message && error.message.includes("API key not valid")) {
-        errorMessage = "Geçersiz API Anahtarı. Lütfen ayarlarınızı kontrol edin.";
-      }
       return errorMessage;
     }
   };
